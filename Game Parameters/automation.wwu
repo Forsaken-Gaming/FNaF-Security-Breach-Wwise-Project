@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{475D7F95-CD20-40EF-95C1-03B6B9771A72}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="automation" ID="{475D7F95-CD20-40EF-95C1-03B6B9771A72}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="chica_behind_you_automation" ID="{D76FCC45-9EDE-4A58-8D24-68ED0DD58E8B}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="chica_teleport_fadein_automation" ID="{237AF634-250A-4C4A-9BF9-B21B0C7FE7DA}">
+					<PropertyList>
+						<Property Name="FilterTimeUp" Type="Real64" Value="2"/>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="freddy_lowpower_automation" ID="{6838EE30-5F24-45E0-8699-E08BDDBCA1BF}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="2"/>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="elevator_movement_automation" ID="{0FB6D61A-840D-4FF5-8469-2F4E94802439}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="3"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="7"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{03B1922E-830D-47BD-B72F-AE653E26E89D}" SchemaVersion="103">
+	<States>
+		<WorkUnit Name="minigames" ID="{03B1922E-830D-47BD-B72F-AE653E26E89D}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="golf" ID="{2D62DDAD-BE52-48E6-99B0-6AB106AE3D68}">
+					<ChildrenList>
+						<State Name="None" ID="{2696FF76-92BA-49F6-BA5F-A2EB5C970F6D}"/>
+						<State Name="active" ID="{679AEA9D-6888-4D51-A8F6-69052DF621BE}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

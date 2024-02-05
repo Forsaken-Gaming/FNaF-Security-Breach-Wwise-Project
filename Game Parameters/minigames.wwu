@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4057D84F-C22E-4C24-A683-3A6CC6617A60}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="minigames" ID="{4057D84F-C22E-4C24-A683-3A6CC6617A60}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="golf_current_hole" ID="{AC55B927-F1FE-49C8-97C7-43432F614790}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="18"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="golf_putt_power" ID="{C67C037A-6A37-4082-8E89-ADA569540E4E}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="pq_glitch_effect" ID="{3D3DAA67-8F7C-4DA8-8F1D-A55FBF05925F}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="0.7"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="1.5"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

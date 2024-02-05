@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FD30A1FE-12AF-44C2-9F08-3046133645BA}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="overtime" ID="{FD30A1FE-12AF-44C2-9F08-3046133645BA}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="underground_phase" ID="{19F0DB57-3B1F-4069-959E-239898D37B80}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="10"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="6"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

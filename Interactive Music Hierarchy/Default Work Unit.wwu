@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F4E455A6-C1B5-4BEE-909B-ACB477202504}" SchemaVersion="103">
+	<InteractiveMusic>
+		<WorkUnit Name="Default Work Unit" ID="{F4E455A6-C1B5-4BEE-909B-ACB477202504}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="OneShotMusic_3D" ID="{7AE17DBA-E7EE-4A11-BB01-5A2B3469C3BB}" ShortID="555636485">
+					<ChildrenList>
+						<MusicSegment Name="mus_silence" ID="{ECDEDF5E-1DFF-4488-9DBC-C2D0C5821D00}" ShortID="674458417">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="7440.54421768707"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-96</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="07 PRIZE BOX - Theme D - Closure" ID="{EA4154CF-926B-4F32-A43E-49476AEEA754}" ShortID="132236507">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="07 PRIZE BOX - Theme D - Closure" ID="{E24F7E01-13CD-4C65-8953-ED54909B8B38}">
+											<Language>SFX</Language>
+											<AudioFile>07 PRIZE BOX - Theme D - Closure.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1012358590"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{7BAFBACC-0A03-47C6-ACD0-637FF3030B8E}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{62153621-8C51-45FA-BB15-5E8BB617FA8A}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="07 PRIZE BOX - Theme D - Closure" ID="{E9F17174-D5DE-47B6-B5F8-B105895031BC}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="219.083333333333"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="07 PRIZE BOX - Theme D - Closure" ID="{E24F7E01-13CD-4C65-8953-ED54909B8B38}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{7A06BE2F-3441-4C82-8670-71CAF765E6B0}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{14CEDD6E-6C85-401F-85A0-056502FE14C6}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="7440.54421768707"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="mus_silence_01" ID="{3B2D55F6-DB70-4D0B-AD9C-033E6AB5874D}" ShortID="827565757">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="7733.69614512472"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-96</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="07 PRIZE BOX - Theme C - Statement" ID="{CC206561-FBF2-400F-8968-9A2B1271730C}" ShortID="510321869">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="07 PRIZE BOX - Theme C - Statement" ID="{A533CD2A-4A66-4FB5-93D7-ED3737F63E5A}">
+											<Language>SFX</Language>
+											<AudioFile>07 PRIZE BOX - Theme C - Statement.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="177803915"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{01AD75B8-1CAE-4320-BF2F-A9A5B6DA1CD6}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{03A16365-8AC9-4020-8938-667F41EC9AC3}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="07 PRIZE BOX - Theme C - Statement" ID="{A7C31E32-196C-47CD-ABBE-319981B3C250}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="407"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="07 PRIZE BOX - Theme C - Statement" ID="{A533CD2A-4A66-4FB5-93D7-ED3737F63E5A}"/>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="Highpass">
+																					<Curve Name="" ID="{27A714C3-6910-44DA-9C60-63942F3E2FB6}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.407</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Lowpass">
+																					<Curve Name="" ID="{AFDFA35C-46AD-4557-AF7F-83A4501D8B6F}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.407</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Volume">
+																					<Curve Name="" ID="{EBDC38EC-3AF4-48F0-99D2-F3F0B8DCD833}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.407</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{A15CCE1E-754F-44A2-8D32-1615F6831DAB}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{AB5BBF74-C117-47F9-8C4F-36290ADD9569}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="7733.69614512472"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="PrizeBoxCrankMusic" ID="{5C2E9432-B173-4196-BD67-61F321928D22}" ShortID="768709997">
+					<ChildrenList>
+						<MusicSegment Name="mus_prizebox_crank_02" ID="{1A449279-4A68-4FB4-9436-81B1615FD0CD}" ShortID="375261275">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="16617.3333333333"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="PrizeBoxes" ID="{7F20B22C-CEDE-4724-84E2-167DAC7D99F4}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="07 PRIZE BOX - Suspense B" ID="{470AE4F9-FAE1-4ADF-8063-B74152861CE9}" ShortID="1709618">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="07 PRIZE BOX - Suspense B" ID="{426B22F6-E643-4509-9CE0-F888611DF9ED}">
+											<Language>SFX</Language>
+											<AudioFile>07 PRIZE BOX - Suspense B.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="486231930"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{D8904006-BE4B-43D0-8A77-12960550E03F}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{58856CEE-2129-4D78-B5E0-9E9E56305535}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="07 PRIZE BOX - Suspense B" ID="{ED07F235-3B81-4A26-AFA8-E99A6ABDBA74}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="16617.3333333333"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="07 PRIZE BOX - Suspense B" ID="{426B22F6-E643-4509-9CE0-F888611DF9ED}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{8481C395-D538-4CFD-BCBC-B9538C7C08B4}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{CEE10E6E-B0CD-400B-B9C7-F042AA9A9BE7}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="16617.3333333333"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="mus_prizebox_crank_04" ID="{BC44B553-BBF3-4D28-8156-FD9E0BA73C4D}" ShortID="305355110">
+							<Comment>769755688</Comment>
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="14218.6666666667"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="PrizeBoxes" ID="{7F20B22C-CEDE-4724-84E2-167DAC7D99F4}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="07 PRIZE BOX - Suspense D" ID="{BF8C5259-DC9E-471F-AE82-B195B717D266}" ShortID="476528244">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="07 PRIZE BOX - Suspense D" ID="{C1DBD865-FADC-44CC-B267-A45B33485CA0}">
+											<Language>SFX</Language>
+											<AudioFile>07 PRIZE BOX - Suspense D.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="947548017"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{176EDDE2-30F8-4E01-85F7-143C89253602}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{22780E8D-1538-4D4F-B94F-ABBFCDF7FD24}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="07 PRIZE BOX - Suspense D" ID="{E31EF2C8-671B-4F4D-89BD-E63D41A25EE6}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="14218.6666666667"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="07 PRIZE BOX - Suspense D" ID="{C1DBD865-FADC-44CC-B267-A45B33485CA0}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{1F26BC2A-F1C4-4F5C-825E-09E488174F0B}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{6A8057D9-3A2D-41A8-B897-AC2F05A74E15}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="14218.6666666667"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="mus_prizebox_crank_08" ID="{BEB9B2E5-B6C5-4AB2-9E7B-B303E0856353}" ShortID="412053378">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="14286.6666666667"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="PrizeBoxes" ID="{7F20B22C-CEDE-4724-84E2-167DAC7D99F4}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="07 PRIZE BOX - Suspense H" ID="{D693C9AA-0492-4ECA-B2BE-AA202D10EA51}" ShortID="843460094">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="07 PRIZE BOX - Suspense H" ID="{B1A600E0-AAA4-48B6-8BB0-6FFCC0D61D2B}">
+											<Language>SFX</Language>
+											<AudioFile>07 PRIZE BOX - Suspense H.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="453081774"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{2CE9969B-1CD2-4C45-9474-3E66E0A35D45}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{9F528A88-02A7-4DE7-8947-2587103C3588}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="07 PRIZE BOX - Suspense H" ID="{368CBBAD-634D-4556-A0CF-A6E8927C045B}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="14286.6666666667"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="07 PRIZE BOX - Suspense H" ID="{B1A600E0-AAA4-48B6-8BB0-6FFCC0D61D2B}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{1C6B080B-4A58-4B55-9D25-3707A25F676A}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{C7ECFCAA-AE60-4CE2-A436-2EFEEFBD1E9C}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="14286.6666666667"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="mus_prizebox_crank_03" ID="{30FA62D2-647A-4340-AC51-7BD53C9C22F7}" ShortID="600573258">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="15573.3333333333"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="PrizeBoxes" ID="{7F20B22C-CEDE-4724-84E2-167DAC7D99F4}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="07 PRIZE BOX - Suspense C" ID="{9A990730-56B8-4CD6-B50C-C0D46D9E84CA}" ShortID="570757360">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="07 PRIZE BOX - Suspense C" ID="{DD1C5BD4-7B0E-4C01-8C38-7DC8ACBE55AD}">
+											<Language>SFX</Language>
+											<AudioFile>07 PRIZE BOX - Suspense C.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="452975813"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{CA4EA783-8C80-4913-A616-E824A36197DD}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{5DBCB8C7-DCAD-46BA-9384-39883A357A8C}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="07 PRIZE BOX - Suspense C" ID="{EDD31EE2-A3ED-4A2C-B40D-318D2CD57715}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="15573.3333333333"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="07 PRIZE BOX - Suspense C" ID="{DD1C5BD4-7B0E-4C01-8C38-7DC8ACBE55AD}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{DBF9A95F-D2C6-4CFA-8B60-8E6433A25EC2}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{BA7F254B-30DA-4812-8A3B-03C09E9EA87A}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="15573.3333333333"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="mus_prizebox_crank_01" ID="{C8A7C636-BFB7-4AAE-AD4D-76A1EF52CD69}" ShortID="1567426">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="12686.6666666667"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="PrizeBoxes" ID="{7F20B22C-CEDE-4724-84E2-167DAC7D99F4}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="07 PRIZE BOX - Suspense A" ID="{0C913848-3B1E-4EF6-88D9-655F9B3DEC2B}" ShortID="344786588">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="07 PRIZE BOX - Suspense A" ID="{FBFEDC62-59C4-45F4-8D13-E0D5394B6F89}">
+											<Language>SFX</Language>
+											<AudioFile>07 PRIZE BOX - Suspense A.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="380934573"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{D6ADD484-2A7B-4F30-A9DC-554EAABBBFCA}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{7C0FD6CC-8947-48D1-9E19-7401C487A05F}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="07 PRIZE BOX - Suspense A" ID="{438765F2-FA39-43AA-99DB-4B4AC1281CF2}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="12686.6666666667"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="07 PRIZE BOX - Suspense A" ID="{FBFEDC62-59C4-45F4-8D13-E0D5394B6F89}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{F7D5E6EB-01C5-4E86-BD26-54738E373FAB}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{3AC7F8C1-ABB6-4B1F-B6AD-626D92770495}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="12686.6666666667"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="mus_prizebox_crank_06" ID="{0363E5C7-53EE-4A5B-AA81-71CC16EE0BD1}" ShortID="981412774">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="12325.3333333333"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="PrizeBoxes" ID="{7F20B22C-CEDE-4724-84E2-167DAC7D99F4}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="07 PRIZE BOX - Suspense F" ID="{0E6EE58D-A2DD-429F-8D3C-7B0085B47AE8}" ShortID="758466691">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="07 PRIZE BOX - Suspense F" ID="{961A487F-B4B9-4451-B469-A3B809493625}">
+											<Language>SFX</Language>
+											<AudioFile>07 PRIZE BOX - Suspense F.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="254401863"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{DA4E8979-8DA6-464F-8338-FC8A6C5DC47A}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{EAA4821B-90F6-4B0E-9BE7-C456DAA31A2C}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="07 PRIZE BOX - Suspense F" ID="{63392883-44B5-45A2-A0C9-985D41AE55E3}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="12325.3333333333"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="07 PRIZE BOX - Suspense F" ID="{961A487F-B4B9-4451-B469-A3B809493625}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{C2D57E81-EBDB-465C-8191-6B63C553A3BE}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{8C7719D6-8DD9-42CB-B286-696FD2E8FC82}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="12325.3333333333"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="mus_prizebox_crank_07" ID="{8074A762-93A6-428B-8CFB-1E5139C84950}" ShortID="281645757">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="12578.6666666667"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="PrizeBoxes" ID="{7F20B22C-CEDE-4724-84E2-167DAC7D99F4}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="07 PRIZE BOX - Suspense G" ID="{AE333C68-2DAD-4746-A4CD-4707B0F7E99A}" ShortID="751336910">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="07 PRIZE BOX - Suspense G" ID="{248A15C9-6F1D-488D-A82D-7E0E0053DE4C}">
+											<Language>SFX</Language>
+											<AudioFile>07 PRIZE BOX - Suspense G.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="881364834"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{92E19D02-08D9-4F6F-9494-643CDB13C023}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{076E9958-C287-43EF-B391-39CD91C20628}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="07 PRIZE BOX - Suspense G" ID="{3E4C728F-8CEA-4151-9D88-E338DBC3B0D7}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="12578.6666666667"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="07 PRIZE BOX - Suspense G" ID="{248A15C9-6F1D-488D-A82D-7E0E0053DE4C}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{2EFC88F8-BA97-44EF-A869-E5D7EFF2D0F1}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{D069537B-E495-4F31-BB42-DB7FF89EC3B3}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="12578.6666666667"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="mus_prizebox_crank_05" ID="{9D603D87-4120-4172-8EC4-76AF3C247ACF}" ShortID="669636326">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="14768"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="PrizeBoxes" ID="{7F20B22C-CEDE-4724-84E2-167DAC7D99F4}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="07 PRIZE BOX - Suspense E" ID="{6635E936-0F83-4FF8-960A-22604B875639}" ShortID="127127728">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="07 PRIZE BOX - Suspense E" ID="{4646227A-1964-4F73-8702-174BA1363A3C}">
+											<Language>SFX</Language>
+											<AudioFile>07 PRIZE BOX - Suspense E.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="251355822"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{938E8741-34D8-48C3-8EAB-6C8B1871A106}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{BEFAA652-54A5-4285-BBE4-0E5E45A41AD3}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="07 PRIZE BOX - Suspense E" ID="{843F6B7E-0A6E-4FDC-8506-E056F152F8C3}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="14768"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="07 PRIZE BOX - Suspense E" ID="{4646227A-1964-4F73-8702-174BA1363A3C}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{B4CEDCC8-6BF0-4378-AAB1-71968F8924E0}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{B66D38A2-ACAD-4BC6-8B3A-0C8A9D2F8687}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="14768"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>

@@ -1,0 +1,1162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{ED9B8629-2B86-4F03-8F03-9A99E71DF017}" SchemaVersion="103">
+	<InteractiveMusic>
+		<WorkUnit Name="DJ Music Man" ID="{ED9B8629-2B86-4F03-8F03-9A99E71DF017}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSwitchContainer Name="DJMM" ID="{6FF88C48-47D0-4FFD-B3E7-AA254B9E5A8C}" ShortID="964489316">
+					<PropertyList>
+						<Property Name="ContinuePlay" Type="bool" Value="False"/>
+						<Property Name="OutputBusLowpass" Type="int16">
+							<ValueList>
+								<Value>10</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OutputBusVolume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Tempo" Type="Real64" Value="130"/>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>8</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="LocationMusic" ID="{21BA3FD5-68D6-4456-AA2D-A6B092694F24}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="REV_Room_Tiled_Large" ID="{023C8D2A-5240-4992-A859-393C02B2D421}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="DJ Music Man part FILL - 04-15-21" ID="{9BBA97EC-531E-4C9C-AA5C-D4C141B2E851}" ShortID="361882446">
+							<Comment>967294473</Comment>
+							<PropertyList>
+								<Property Name="OutputBusLowpass" Type="int16">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OutputBusVolume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="LocationMusic" ID="{21BA3FD5-68D6-4456-AA2D-A6B092694F24}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="DJ Music Man part FILL - 04-15-21" ID="{C8EE1DAC-3225-43C1-AE3F-DA3BC6EEF987}" ShortID="784630829">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="DJ Music Man part FILL - 04-15-21" ID="{73D38684-00D3-4D3E-A536-3961897CDCCF}">
+											<Language>SFX</Language>
+											<AudioFile>DJ Music Man part FILL - 04-15-21.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="442550022"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{EAE4F5CC-12A3-48DA-B54C-C967E2685840}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{D94C4704-CBE4-44BA-B55C-C56FB9220FAE}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="DJ Music Man part FILL - 04-15-21" ID="{520F8ADC-0007-4E6C-88E6-2D0A1A778CEB}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="1845.98639455782"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="DJ Music Man part FILL - 04-15-21" ID="{73D38684-00D3-4D3E-A536-3961897CDCCF}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{94FE7F6A-C8A7-43D3-800E-522C24A544EC}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{5F4D2CBE-974E-46BE-95E9-0F859D0E7559}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="1845.98639455782"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicPlaylistContainer Name="DJMM_Part6" ID="{E10B6517-4FAE-417A-AB06-28831CF2F907}" ShortID="533270126">
+							<Comment>167420968</Comment>
+							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="LocationMusic" ID="{21BA3FD5-68D6-4456-AA2D-A6B092694F24}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="REV_Room_Tiled_Large" ID="{023C8D2A-5240-4992-A859-393C02B2D421}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="DJ Music Man part 06 - 04-15-21" ID="{79FED2CB-1369-485C-A446-C4994A236D5C}" ShortID="316485118">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="29538.6848072562"/>
+										<Property Name="Tempo" Type="Real64" Value="130"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="LocationMusic" ID="{21BA3FD5-68D6-4456-AA2D-A6B092694F24}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="DJ Music Man part 06 - 04-15-21" ID="{C4E1409F-FF49-4E2A-B323-A5C48EF823B8}" ShortID="812822">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="DJ Music Man part 06 - 04-15-21" ID="{9F699833-34D2-48F0-93CC-278DD434A69B}">
+													<Language>SFX</Language>
+													<AudioFile>DJ Music Man part 06 - 04-15-21.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="903141809"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{887E3FD0-D6D6-4079-B093-738FDB46E154}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{E8885EFD-D973-446B-98C8-D6814B91A887}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="DJ Music Man part 06 - 04-15-21" ID="{A4CEEF04-5444-43A3-BAA4-41F047FB8B62}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="29538.6848072562"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="DJ Music Man part 06 - 04-15-21" ID="{9F699833-34D2-48F0-93CC-278DD434A69B}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{094FFB4F-96F1-42FB-8084-8F397D834680}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{9436B0CE-1D65-437D-8A53-1346710D8622}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="29538.6848072562"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{3A34B085-BC96-4B49-88E1-51ED0D3B0775}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{52190A4B-23EB-46B2-8075-F9CD5BB838A9}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists/>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{0689083A-0329-4CE8-B0E8-DF5B26CD9FC3}" ShortID="155629876">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{A2F55384-3323-4275-86A2-F97A5ED2678B}" ShortID="805160263">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="DJ Music Man part 06 - 04-15-21" ID="{79FED2CB-1369-485C-A446-C4994A236D5C}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="DJMM_Part4" ID="{39AECC74-4ADC-44A8-B887-DA5AD505CD34}" ShortID="145348272">
+							<Comment>534801184</Comment>
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="DJ Music Man part 04 - 04-15-21" ID="{4C7B7303-6130-4A1C-98D3-7A7C6BB5D046}" ShortID="271297291">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="29538.6848072562"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="DJ Music Man part 04 - 04-15-21" ID="{2953C4EF-3A33-4C1E-AD91-DD7764364BF6}" ShortID="573208587">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="DJ Music Man part 04 - 04-15-21" ID="{C3799E10-C3CD-4CDA-AE4D-28379B0B42E4}">
+													<Language>SFX</Language>
+													<AudioFile>DJ Music Man part 04 - 04-15-21.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="89480120"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{4CF48373-3B00-4DD7-998B-444F66D713FC}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{8FEDA663-618F-4BB4-9247-905628943A91}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="DJ Music Man part 04 - 04-15-21" ID="{B4D27859-2F36-4AA8-9FA6-10A976686BB6}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="29538.6848072562"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="DJ Music Man part 04 - 04-15-21" ID="{C3799E10-C3CD-4CDA-AE4D-28379B0B42E4}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{DFB4994D-313B-4F41-974A-E06C4A5E8DDD}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{B523CD78-ACD7-4B70-9059-3B27C0823F4A}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="29538.6848072562"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="DJ Music Man part 05 - 04-15-21" ID="{59688AB9-0538-4796-B0F2-2C7C5FB56016}" ShortID="762275921">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="29538.6848072562"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="DJ Music Man part 05 - 04-15-21" ID="{10FF88E7-E35E-4692-9873-511CB7447C0B}" ShortID="950108514">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="DJ Music Man part 05 - 04-15-21" ID="{0C43C4E9-0647-46E9-945F-710973F2995C}">
+													<Language>SFX</Language>
+													<AudioFile>DJ Music Man part 05 - 04-15-21.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="685614652"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{BC6F2B69-3564-4B12-8BE8-67084F40EBDC}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{56A72F3A-6487-495A-A137-F4CAA23CE453}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="DJ Music Man part 05 - 04-15-21" ID="{CC7CDD56-9454-41AD-B6CD-39FBA2468662}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="29538.6848072562"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="DJ Music Man part 05 - 04-15-21" ID="{0C43C4E9-0647-46E9-945F-710973F2995C}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{7E76878E-DA11-4BCA-93E6-E57703A18297}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{615AAE10-28F9-49BC-8042-65682D2BD46B}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="29538.6848072562"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{C650B748-EA5A-407B-8401-37D4F9161A42}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{6879DF9D-CD24-43A2-935D-5BDB5BC3485A}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists/>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{EBF37B72-B5FB-43D0-ADBE-BEFF2EC16BF2}" ShortID="954174031">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{4C6F2FAC-0EFC-4C2F-9EA6-04DDAB193231}" ShortID="772246141">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="DJ Music Man part 04 - 04-15-21" ID="{4C7B7303-6130-4A1C-98D3-7A7C6BB5D046}"/>
+										</MusicPlaylistItem>
+										<MusicPlaylistItem Name="" ID="{A4A55101-E963-4B42-9A15-EF079BAC5F8C}" ShortID="309059888">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="DJ Music Man part 05 - 04-15-21" ID="{59688AB9-0538-4796-B0F2-2C7C5FB56016}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="DJMM_Part1" ID="{4713F096-403A-4EB8-9996-E3759ED471BF}" ShortID="995322870">
+							<Comment>584548988</Comment>
+							<PropertyList>
+								<Property Name="OutputBusLowpass" Type="int16">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OutputBusVolume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="LocationMusic" ID="{21BA3FD5-68D6-4456-AA2D-A6B092694F24}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="DJ Music Man part 01 - 04-15-21" ID="{BA5F07C9-70C7-46B3-89A3-7CC1EC2F10AE}" ShortID="945525458">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="29538.6848072562"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="DJ Music Man part 01 - 04-15-21" ID="{87B59BA0-A1BB-46F6-B890-F6B074CC0709}" ShortID="752786543">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="DJ Music Man part 01 - 04-15-21" ID="{531A85F4-570F-41EF-9128-0448E4905FE5}">
+													<Language>SFX</Language>
+													<AudioFile>DJ Music Man part 01 - 04-15-21.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="785626513"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{980FB832-2DDC-4385-8F01-B5805C1180E4}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{A4410D9B-CCF5-4276-9F6A-4D1DC976EFF3}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="DJ Music Man part 01 - 04-15-21" ID="{0ADA4129-C6DD-487B-9A64-07D37804C85D}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="29538.6848072562"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="DJ Music Man part 01 - 04-15-21" ID="{531A85F4-570F-41EF-9128-0448E4905FE5}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{AA6D1F9E-550A-4F1A-97E2-8CBA62E2E157}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{79990171-7976-44D8-8680-812F54079779}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="29538.6848072562"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{86FC38A5-95C6-44E4-91BB-4852ACB67157}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{0E4A2653-9588-4BF6-AFCF-F47D5C2B6151}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists/>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{D0AB187A-7EF8-402A-8E97-FF10A8C6C52F}" ShortID="107769456">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{AE18FB13-FBD3-460C-A70D-CF19EBD2D956}" ShortID="424557413">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="DJ Music Man part 01 - 04-15-21" ID="{BA5F07C9-70C7-46B3-89A3-7CC1EC2F10AE}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="DJMM_Part2" ID="{206C070F-95A3-4175-9AF7-F2B85F05AD78}" ShortID="156114984">
+							<Comment>683960388</Comment>
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="DJ Music Man part 02 - 04-15-21" ID="{E88D5695-FD67-49A2-8207-689612E1ECE4}" ShortID="1020907959">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="29538.6848072562"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="DJ Music Man part 02 - 04-15-21" ID="{76B0162F-6125-44A8-8742-DCFC1EFFDA79}" ShortID="374269135">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="DJ Music Man part 02 - 04-15-21" ID="{F2788426-18E4-4D6D-A1B0-71068864016F}">
+													<Language>SFX</Language>
+													<AudioFile>DJ Music Man part 02 - 04-15-21.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="981604572"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{484EE6BC-77BA-4B0E-873A-B776537345AD}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{546C488E-68DD-47AC-A122-4A81D64EF290}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="DJ Music Man part 02 - 04-15-21" ID="{5815D57B-822F-4CF2-93B6-A6430173BBE8}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="29538.6848072562"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="DJ Music Man part 02 - 04-15-21" ID="{F2788426-18E4-4D6D-A1B0-71068864016F}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{6657F23B-23C9-48BC-980E-8998FF2E1253}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{3A58D0F9-FB6A-422A-9F8E-E784508A45FF}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="29538.6848072562"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{9273EE41-89F3-4F5F-A2B2-0984C0EF7636}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{36189D97-3CB6-4173-BB11-9A0B762AB6E3}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists/>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{283CA979-C391-4FE7-B5E3-0B59D8B26C25}" ShortID="107448273">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{09CC5801-115A-4837-BC38-92C6C19FF7AA}" ShortID="121587791">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="DJ Music Man part 02 - 04-15-21" ID="{E88D5695-FD67-49A2-8207-689612E1ECE4}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="DJMM_Part3" ID="{5BE7BE8F-6CEF-4D30-86C5-A5E491576041}" ShortID="16460057">
+							<Comment>863383155</Comment>
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="DJ Music Man part 03 - 04-15-21" ID="{B452277D-3584-4329-A899-15E2C1C818DD}" ShortID="192702141">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="29538.6848072562"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="DJ Music Man part 03 - 04-15-21" ID="{A87B804B-E352-499D-816D-BF0F8667C51C}" ShortID="636623325">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="DJ Music Man part 03 - 04-15-21" ID="{5FA6A253-67CE-4379-9F9D-DA2F50E37A3E}">
+													<Language>SFX</Language>
+													<AudioFile>DJ Music Man part 03 - 04-15-21.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="96558355"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{CB8AD8C4-317E-4868-ABB7-3E4D7AD856F8}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{071F00C4-7027-48B2-9D45-0394F2C6C662}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="DJ Music Man part 03 - 04-15-21" ID="{DB2737D4-10DB-4EFA-99C3-6BFAA0617804}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="29538.6848072562"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="DJ Music Man part 03 - 04-15-21" ID="{5FA6A253-67CE-4379-9F9D-DA2F50E37A3E}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{10B66C5C-11BE-4628-A68E-4C5A2BC7C6A0}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{DED48423-A56F-4EE0-947B-2A866E241DB4}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="29538.6848072562"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{07974D58-C2AD-410F-8F03-4FBE141CEC14}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{46E64922-2059-4CEB-B421-C80992C86B2C}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ObjectLists/>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{2C6EBBC4-C2BC-4363-A2F1-4F0D3C6A3227}" ShortID="514377574">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{9D76203E-6AAC-4287-AFD7-20BD6346F7DE}" ShortID="872791482">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="DJ Music Man part 03 - 04-15-21" ID="{B452277D-3584-4329-A899-15E2C1C818DD}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+						<MusicSegment Name="DJ Music Man part FILL - 04-15-21 Final Transition" ID="{357879E4-F5C9-4090-A2A3-9887756E914D}" ShortID="1038755123">
+							<Comment>227966391</Comment>
+							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="Tempo" Type="Real64" Value="130"/>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="LocationMusic" ID="{21BA3FD5-68D6-4456-AA2D-A6B092694F24}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="REV_Room_Tiled_Large" ID="{023C8D2A-5240-4992-A859-393C02B2D421}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="DJ Music Man part FILL - 04-15-21" ID="{20EFB4CE-BCED-4BC0-BC29-E18FAA2BA0FD}" ShortID="868344692">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="DJ Music Man part FILL - 04-15-21" ID="{7DC7D132-13C5-4917-AA9D-2EEB65A832B3}">
+											<Language>SFX</Language>
+											<AudioFile>DJ Music Man part FILL - 04-15-21.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="442550022"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{9A147871-A5B2-4C46-969A-503765E7510E}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{7A9339A1-35AC-47A0-BFBD-FF4A889DE321}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="DJ Music Man part FILL - 04-15-21" ID="{D46F435E-6C5D-43F2-8CA4-BFA049FCBF7B}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="1845.98639455782"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="DJ Music Man part FILL - 04-15-21" ID="{7DC7D132-13C5-4917-AA9D-2EEB65A832B3}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{E5C85A30-930D-4288-AEC4-E69AE99C54BB}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{9277F971-C4DA-4CAB-AB79-553CBDF5CDA2}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="1845.98639455782"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{D29517E4-F2A6-4CA9-AAB8-DF4824A3ADE9}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{35E8D1E5-3224-47D0-8BE2-3D2F6506DADB}">
+									<PropertyList>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="DJ Music Man part FILL - 04-15-21" ID="{9BBA97EC-531E-4C9C-AA5C-D4C141B2E851}" WorkUnitID="{ED9B8629-2B86-4F03-8F03-9A99E71DF017}"/>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{DDBE7837-9325-474E-8EDD-28A8A4D7B4F4}">
+												<PropertyList>
+													<Property Name="FadeCurve" Type="int16" Value="6"/>
+													<Property Name="FadeOffset" Type="Real64" Value="0.6"/>
+													<Property Name="FadeTime" Type="Real64" Value="0.6"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{E5758554-455B-4530-B76A-5FB1B9D4444C}">
+									<PropertyList>
+										<Property Name="SourceContextType" Type="int16" Value="1"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{2550D46B-C6A8-4E87-8B9C-D77996A3CFD8}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="1"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+									</PropertyList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{5ECA8B20-7731-461D-B72A-F30CA4AB8239}">
+												<PropertyList>
+													<Property Name="FadeTime" Type="Real64" Value="10"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{50EB0860-D484-4E09-B849-9B5A46DDB9B7}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="DJMM_Part6" ID="{E10B6517-4FAE-417A-AB06-28831CF2F907}" WorkUnitID="{ED9B8629-2B86-4F03-8F03-9A99E71DF017}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="DJ Music Man part FILL - 04-15-21 Final Transition" ID="{357879E4-F5C9-4090-A2A3-9887756E914D}" WorkUnitID="{ED9B8629-2B86-4F03-8F03-9A99E71DF017}"/>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{CA6A383C-E2CB-46EB-B25B-54435D9CE40C}">
+												<PropertyList>
+													<Property Name="FadeCurve" Type="int16" Value="6"/>
+													<Property Name="FadeOffset" Type="Real64" Value="0.6"/>
+													<Property Name="FadeTime" Type="Real64" Value="0.6"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{5E425E2F-32E2-4C43-86E2-A960363CA515}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
+										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="DJMM_Part4" ID="{39AECC74-4ADC-44A8-B887-DA5AD505CD34}" WorkUnitID="{ED9B8629-2B86-4F03-8F03-9A99E71DF017}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="DJMM_Part4" ID="{39AECC74-4ADC-44A8-B887-DA5AD505CD34}" WorkUnitID="{ED9B8629-2B86-4F03-8F03-9A99E71DF017}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<ObjectLists/>
+					<ArgumentList>
+						<ArgumentRef Name="djmusicman_stage" ID="{B12AFB40-F95F-4555-923E-55DE32B6944C}"/>
+					</ArgumentList>
+					<EntryList>
+						<Entry>
+							<Path>
+								<PathElementRef Name="stage1" ID="{356D5061-E7AA-4370-9D1E-5EDDC3B285D4}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="DJMM_Part1" ID="{4713F096-403A-4EB8-9996-E3759ED471BF}" WorkUnitID="{ED9B8629-2B86-4F03-8F03-9A99E71DF017}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="stage2" ID="{605D9717-7DF7-4BFC-B424-7F73F6BED557}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="DJMM_Part2" ID="{206C070F-95A3-4175-9AF7-F2B85F05AD78}" WorkUnitID="{ED9B8629-2B86-4F03-8F03-9A99E71DF017}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="stage3" ID="{42B9ADF2-3348-4878-9A8B-72DCE780D132}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="DJMM_Part3" ID="{5BE7BE8F-6CEF-4D30-86C5-A5E491576041}" WorkUnitID="{ED9B8629-2B86-4F03-8F03-9A99E71DF017}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="stage4" ID="{9D605B88-F906-44BF-8C10-D01D40E1A496}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="DJMM_Part4" ID="{39AECC74-4ADC-44A8-B887-DA5AD505CD34}" WorkUnitID="{ED9B8629-2B86-4F03-8F03-9A99E71DF017}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="stage5" ID="{CE8A6E59-15D6-46DA-AFE0-4343A9392F2B}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="DJMM_Part4" ID="{39AECC74-4ADC-44A8-B887-DA5AD505CD34}" WorkUnitID="{ED9B8629-2B86-4F03-8F03-9A99E71DF017}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="stage6" ID="{979C6264-F641-471D-A974-04CFED12534D}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="DJMM_Part6" ID="{E10B6517-4FAE-417A-AB06-28831CF2F907}" WorkUnitID="{ED9B8629-2B86-4F03-8F03-9A99E71DF017}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+					</EntryList>
+				</MusicSwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>

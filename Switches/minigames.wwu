@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B82705D1-11BF-47B3-9ADC-BF49806BFB59}" SchemaVersion="103">
+	<Switches>
+		<WorkUnit Name="minigames" ID="{B82705D1-11BF-47B3-9ADC-BF49806BFB59}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="golf_current_hole" ID="{B2D417D0-C33A-4D53-AFF0-0108B21CBBCE}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="_1" ID="{B9EE07B2-CB5F-4D7C-918B-2A38DB000B6D}"/>
+						<Switch Name="_2" ID="{C65F0EB7-1146-44A8-AA73-A47FFB64D5CB}"/>
+						<Switch Name="_3" ID="{7EA909D3-B777-4002-A6DC-5186BF4D4B54}"/>
+						<Switch Name="_4" ID="{9133B309-A1B7-4980-AEB1-ECBCB0A9F693}"/>
+						<Switch Name="_5" ID="{D7BDAAAD-2B7D-44E2-9E7D-FC58088B48C4}"/>
+						<Switch Name="_6" ID="{95716826-35A0-4746-A24A-FC7A5B181B99}"/>
+						<Switch Name="_7" ID="{A4BFF0F6-3A9E-4D18-B0F3-C7803025CCB4}"/>
+						<Switch Name="_8" ID="{A831CA2D-8C47-4EDF-966E-308ACA16FEA4}"/>
+						<Switch Name="_9" ID="{AA53092B-39A3-4D8A-A9FC-53751E9397F4}"/>
+						<Switch Name="_10" ID="{405D2756-6906-4A10-ACCB-ABE738EC6E1D}"/>
+						<Switch Name="_11" ID="{23CF402B-C34B-4DDD-B15A-3126748F42AC}"/>
+						<Switch Name="_12" ID="{0ADFC851-A62A-42C9-8706-34761F01F9B6}"/>
+						<Switch Name="_13" ID="{1308B3FB-F6BB-4007-9C19-F4DD5D541D27}"/>
+						<Switch Name="_14" ID="{C82FEAA5-C77C-4178-991D-F5E2F69588D3}"/>
+						<Switch Name="_15" ID="{3C73319C-2B42-4671-9738-BCF664F812BA}"/>
+						<Switch Name="_16" ID="{2E7F7961-85D5-4B9B-B91A-A9DAC4773A0C}"/>
+						<Switch Name="_17" ID="{7FAEF212-40D1-45FE-8FC0-FDD59B8BED1B}"/>
+						<Switch Name="_18" ID="{110D4BC7-7A1A-489F-9F73-D2623D2709E3}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="golf_current_hole" ID="{AC55B927-F1FE-49C8-97C7-43432F614790}"/>
+						<Curve Name="" ID="{DA716CA2-A49D-4D48-AF2E-5B5FA637A388}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>3</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>4</XPos>
+									<YPos>4</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>5</XPos>
+									<YPos>5</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>6</XPos>
+									<YPos>6</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>7</XPos>
+									<YPos>7</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>8</XPos>
+									<YPos>8</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>9</XPos>
+									<YPos>9</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>10</XPos>
+									<YPos>10</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>11</XPos>
+									<YPos>11</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>12</XPos>
+									<YPos>12</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>13</XPos>
+									<YPos>13</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>14</XPos>
+									<YPos>14</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>15</XPos>
+									<YPos>15</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>16</XPos>
+									<YPos>16</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>17</XPos>
+									<YPos>17</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>18</XPos>
+									<YPos>18</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

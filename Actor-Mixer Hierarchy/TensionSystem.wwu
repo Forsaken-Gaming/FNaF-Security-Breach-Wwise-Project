@@ -1,0 +1,3720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{87208FE3-F825-4FF0-B2F3-CCF93EA34C28}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="TensionSystem" ID="{87208FE3-F825-4FF0-B2F3-CCF93EA34C28}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="TensionSystem" ID="{6D4CF090-7704-4EBE-9A7A-822E1249B634}" ShortID="1018953996">
+					<Comment>841675417</Comment>
+					<PropertyList>
+						<Property Name="Priority" Type="int16">
+							<ValueList>
+								<Value>100</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{81E74B8C-5EEA-4726-9576-7BF09564C364}" ShortID="328462989">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="vanny_threat_level" ID="{2036BB6D-F05D-4676-90F2-9A45237CEBCD}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{6ABF8902-6CD6-4295-8D2D-8037120E75F1}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log2</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>0.5</XPos>
+												<YPos>-200</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>-200</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="TensionSystem" ID="{5E04A37B-BA20-43F2-BD92-ECB2F4330AEF}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="StoryTensions" ID="{40AEB163-8688-47FB-9632-0C7E3A235405}" ShortID="246823046">
+							<Comment>1056834338</Comment>
+							<PropertyList>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverridePriority" Type="bool" Value="True"/>
+								<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="Tension_Gord_02" ID="{44F962BD-CD3C-4FC1-8C1E-1E90A7B6AE63}" ShortID="1036912426">
+									<Comment>596163602</Comment>
+									<PropertyList>
+										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-13</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="FNAF_SB_tension2_int1_lp" ID="{DDFBC8BB-9F48-4BA3-817D-648CCC39598B}" ShortID="599394907">
+											<Comment>192372863</Comment>
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FNAF_SB_tension2_int1_lp" ID="{95E8519C-17F4-4590-B2E1-843B468DAC5A}">
+													<Language>SFX</Language>
+													<AudioFile>FNAF_SB_tension2_int1_lp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="30679498"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="FNAF_SB_tension2_int1_lp" ID="{95E8519C-17F4-4590-B2E1-843B468DAC5A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FNAF_SB_tension2_int2_lp" ID="{57C0D656-B365-4355-87E6-CDAC175B29D8}" ShortID="296867587">
+											<Comment>704658297</Comment>
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FNAF_SB_tension2_int2_lp" ID="{B8857604-4853-4E38-8127-0FCB1BBD2940}">
+													<Language>SFX</Language>
+													<AudioFile>FNAF_SB_tension2_int2_lp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="658770179"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="FNAF_SB_tension2_int2_lp" ID="{B8857604-4853-4E38-8127-0FCB1BBD2940}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FNAF_SB_tension2_int3_lp" ID="{A6A17059-8A93-4214-95A0-DFBFD5E9CE76}" ShortID="104872868">
+											<Comment>919844291</Comment>
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FNAF_SB_tension2_int3_lp" ID="{D30C8ACD-508B-42F5-B639-D61189C5D220}">
+													<Language>SFX</Language>
+													<AudioFile>FNAF_SB_tension2_int3_lp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="615871823"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="FNAF_SB_tension2_int3_lp" ID="{D30C8ACD-508B-42F5-B639-D61189C5D220}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+									<BlendTrackList>
+										<BlendTrack Name="Tension" ID="{AE4E382C-FAC9-4771-A3BA-3CF96BAAF613}" ShortID="921545524">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="AI_PROXIMITY" ID="{83C4449A-21EB-4583-8E31-BFFA996834C5}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="FNAF_SB_tension2_int1_lp" ID="{DDFBC8BB-9F48-4BA3-817D-648CCC39598B}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>-1</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>45.375</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="FNAF_SB_tension2_int2_lp" ID="{57C0D656-B365-4355-87E6-CDAC175B29D8}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>17.444</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>87.545</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="FNAF_SB_tension2_int3_lp" ID="{A6A17059-8A93-4214-95A0-DFBFD5E9CE76}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>60.505</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<BlendContainer Name="Tension_Gord_02_RoxyPrizeCounterPostCinematic" ID="{AB11C9F8-0F71-4CFA-B50D-5F64B654DCFF}" ShortID="557978124">
+									<PropertyList>
+										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+										<Property Name="Lowpass" Type="int16">
+											<RTPCList>
+												<RTPC Name="" ID="{0F213D4F-1617-43CD-B6AE-35D824B3EB63}" ShortID="63127185">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="AI_PROXIMITY" ID="{83C4449A-21EB-4583-8E31-BFFA996834C5}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{582C63E1-7C78-4FE4-BDF1-6AE1E1683DA0}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-1</XPos>
+																<YPos>-15</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-18</Value>
+											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{96784A7E-D881-4E75-9DEA-CBA156C25609}" ShortID="249035596">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="AI_PROXIMITY" ID="{83C4449A-21EB-4583-8E31-BFFA996834C5}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{BB441C1F-1BCB-435C-ADDB-D99EB0DC9E89}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-1</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="TensionSystem" ID="{5E04A37B-BA20-43F2-BD92-ECB2F4330AEF}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="FNAF_SB_tension2_int1_lp" ID="{A93FA2B5-0B6E-4E7A-A608-B0D62A0FE96C}" ShortID="132272565">
+											<Comment>192372863</Comment>
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FNAF_SB_tension2_int1_lp" ID="{2E1E927A-BD99-4655-898C-AB60FA877123}">
+													<Language>SFX</Language>
+													<AudioFile>FNAF_SB_tension2_int1_lp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="30679498"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="FNAF_SB_tension2_int1_lp" ID="{2E1E927A-BD99-4655-898C-AB60FA877123}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FNAF_SB_tension2_int2_lp" ID="{F99B53BB-A3A6-495A-A641-F753743F0777}" ShortID="604949633">
+											<Comment>704658297</Comment>
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FNAF_SB_tension2_int2_lp" ID="{9C53EBA8-6BDF-40EC-87D4-46CC73AEDBD8}">
+													<Language>SFX</Language>
+													<AudioFile>FNAF_SB_tension2_int2_lp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="658770179"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="FNAF_SB_tension2_int2_lp" ID="{9C53EBA8-6BDF-40EC-87D4-46CC73AEDBD8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="animatronic_attack" ID="{2C0A1ABC-D91C-4BDC-8B2C-D2110D3CC8C3}"/>
+											</StateGroupInfo>
+											<StateGroupInfo>
+												<StateGroupRef Name="hour3_prizeCounterPostOG" ID="{DE63B356-5CEA-4C8B-974B-8275FC0AD068}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="active" ID="{88F3669C-4589-48FB-93F6-48D3814286C4}"/>
+												<CustomState Name="" ID="{3BBDBFEF-2D85-4C42-B279-6FCD0679D35B}" ShortID="1072924905"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="attack" ID="{39AF2023-A12A-494F-8A93-E0E439D26B2C}"/>
+												<CustomState Name="" ID="{701D7402-4BC3-4D34-9CA5-20E01E845F89}" ShortID="990072301">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="26"/>
+														<Property Name="Volume" Type="Real64" Value="-12"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="seeking" ID="{B673A572-7F57-4995-B225-AA8B95DAFD27}"/>
+												<CustomState Name="" ID="{8C51173D-799E-441F-8597-0C5B345EDFD3}" ShortID="788052560">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="29"/>
+														<Property Name="Volume" Type="Real64" Value="-12"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="roxyEncounter" ID="{8F29E4F8-0A99-4D21-85B2-1ADEB346BBCC}"/>
+												<CustomState Name="" ID="{5316F59C-C4AF-4DE4-A8C3-9FB43353412B}" ShortID="992834779">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="29"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ObjectLists/>
+									<BlendTrackList>
+										<BlendTrack Name="New Blend Track" ID="{5FA0604F-1399-49FD-9212-8530F66915B1}" ShortID="661576689">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="AI_PROXIMITY" ID="{83C4449A-21EB-4583-8E31-BFFA996834C5}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="FNAF_SB_tension2_int1_lp" ID="{A93FA2B5-0B6E-4E7A-A608-B0D62A0FE96C}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>-1</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>66.873</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="FNAF_SB_tension2_int2_lp" ID="{F99B53BB-A3A6-495A-A641-F753743F0777}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>25.828</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<BlendContainer Name="Tension_Gord_02_RoxyBossBattle" ID="{060ADF4A-B3D8-4C6D-9A1A-9463EA0A735C}" ShortID="953753801">
+									<PropertyList>
+										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+										<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-17</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="TensionSystem" ID="{5E04A37B-BA20-43F2-BD92-ECB2F4330AEF}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="FNAF_SB_tension2_int1_lp" ID="{529E8D35-3917-4CAF-96D4-574D87916751}" ShortID="1027732166">
+											<Comment>192372863</Comment>
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FNAF_SB_tension2_int1_lp" ID="{53A8D5FA-761D-41CE-A7DB-F454F01DD161}">
+													<Language>SFX</Language>
+													<AudioFile>FNAF_SB_tension2_int1_lp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="30679498"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="FNAF_SB_tension2_int1_lp" ID="{53A8D5FA-761D-41CE-A7DB-F454F01DD161}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FNAF_SB_tension2_int2_lp" ID="{83C5EAE8-DBFB-4E53-8EB9-AEF9713B3ECA}" ShortID="175353170">
+											<Comment>704658297</Comment>
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FNAF_SB_tension2_int2_lp" ID="{0D0A05AA-62F5-44DF-935C-C2750574F110}">
+													<Language>SFX</Language>
+													<AudioFile>FNAF_SB_tension2_int2_lp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="658770179"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="FNAF_SB_tension2_int2_lp" ID="{0D0A05AA-62F5-44DF-935C-C2750574F110}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FNAF_SB_tension2_int3_lp" ID="{CB1AEB18-CECF-4A06-8CDB-BD8FEB525719}" ShortID="874784833">
+											<Comment>919844291</Comment>
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FNAF_SB_tension2_int3_lp" ID="{B646F4A4-763D-41B5-8C3B-C5DAE2C7516B}">
+													<Language>SFX</Language>
+													<AudioFile>FNAF_SB_tension2_int3_lp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="615871823"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="FNAF_SB_tension2_int3_lp" ID="{B646F4A4-763D-41B5-8C3B-C5DAE2C7516B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+									<BlendTrackList>
+										<BlendTrack Name="Tension" ID="{BC208857-22F0-445C-868E-B1CF96DD9800}" ShortID="541834325">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="AI_PROXIMITY" ID="{83C4449A-21EB-4583-8E31-BFFA996834C5}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="FNAF_SB_tension2_int1_lp" ID="{529E8D35-3917-4CAF-96D4-574D87916751}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>-1</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>41.321</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="FNAF_SB_tension2_int2_lp" ID="{83C5EAE8-DBFB-4E53-8EB9-AEF9713B3ECA}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>21.847</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>96.492</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="FNAF_SB_tension2_int3_lp" ID="{CB1AEB18-CECF-4A06-8CDB-BD8FEB525719}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>68.403</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<BlendContainer Name="Tension_Gord_02_MontyBossBattle" ID="{18F516E3-5546-4F07-8119-214715756826}" ShortID="868130382">
+									<PropertyList>
+										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-17</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="FNAF_SB_tension2_int1_lp" ID="{967102F6-E0C3-4BBE-A0E8-5D0BBAB28419}" ShortID="259702128">
+											<Comment>192372863</Comment>
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="TensionSystem" ID="{5E04A37B-BA20-43F2-BD92-ECB2F4330AEF}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FNAF_SB_tension2_int1_lp" ID="{1B9F4802-9F44-4C55-B909-A25799C2E1C5}">
+													<Language>SFX</Language>
+													<AudioFile>FNAF_SB_tension2_int1_lp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="30679498"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="FNAF_SB_tension2_int1_lp" ID="{1B9F4802-9F44-4C55-B909-A25799C2E1C5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FNAF_SB_tension2_int2_lp" ID="{EEC6D3C3-C276-4630-AFC4-27CA9859B8DC}" ShortID="1036736533">
+											<Comment>704658297</Comment>
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="TensionSystem" ID="{5E04A37B-BA20-43F2-BD92-ECB2F4330AEF}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FNAF_SB_tension2_int2_lp" ID="{F7937FE6-E3C3-405B-9094-9D2E89B69148}">
+													<Language>SFX</Language>
+													<AudioFile>FNAF_SB_tension2_int2_lp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="658770179"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="FNAF_SB_tension2_int2_lp" ID="{F7937FE6-E3C3-405B-9094-9D2E89B69148}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FNAF_SB_tension2_int3_lp" ID="{B7BD4E86-2FA2-4B08-BE25-7D241A29D33E}" ShortID="425110216">
+											<Comment>919844291</Comment>
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="TensionSystem" ID="{5E04A37B-BA20-43F2-BD92-ECB2F4330AEF}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FNAF_SB_tension2_int3_lp" ID="{7F2BC242-7261-4049-B27D-BD33E172A4AB}">
+													<Language>SFX</Language>
+													<AudioFile>FNAF_SB_tension2_int3_lp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="615871823"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="FNAF_SB_tension2_int3_lp" ID="{7F2BC242-7261-4049-B27D-BD33E172A4AB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="cinematics" ID="{35AD109F-EB16-4C57-BC75-CE20D8C80321}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="ending_vip" ID="{A9EC8D5E-B3D2-4026-8A07-7A6B7B807B6B}"/>
+												<CustomState Name="" ID="{E30D1C40-3613-4352-A72A-BFC29132B231}" ShortID="551433930"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour1_walkToFirstAid" ID="{0A5B277D-51B6-408B-BDF8-191E34BEDBCA}"/>
+												<CustomState Name="" ID="{3FA8982D-5834-45AB-ACD0-4C799AF52D29}" ShortID="123888222"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour4_lostAndFound" ID="{021CDB90-A0C3-4091-ADF6-758A5CC5479B}"/>
+												<CustomState Name="" ID="{3CD15A88-FFB5-4D07-B6B4-7D4B689983EC}" ShortID="623532028"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour1_getOutOfFreddy" ID="{3EC1CDF0-33B3-411C-9364-89DBC44EB09C}"/>
+												<CustomState Name="" ID="{A077BE78-86BB-425F-B9F9-059E899528B1}" ShortID="162836113"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="ending_vannyDestroy" ID="{5CF4F1A2-5E49-4162-8970-DB2315D004C7}"/>
+												<CustomState Name="" ID="{E0C4781E-EEC9-4A7D-9714-5C802EDC480F}" ShortID="579913688"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour1_introVideo" ID="{F4177EDC-FDE6-41A8-8B65-28DA8BFE7073}"/>
+												<CustomState Name="" ID="{DB9D4F39-7A6D-448C-963A-762700D791B6}" ShortID="713840278"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="roxyBossBattleIntro_sloMo" ID="{40E854B2-C05B-424A-AB8A-3AD1A2246F6E}"/>
+												<CustomState Name="" ID="{71740E95-AA33-4C3A-A0F9-DB73858960EA}" ShortID="719548440"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="stageLift" ID="{4A5D54EB-12E7-42AA-8BBA-70C7151C2DAC}"/>
+												<CustomState Name="" ID="{2B5CE9C1-9BEB-4066-828B-EDA61299AB48}" ShortID="131983029"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour2_slideNoEntry" ID="{E2FCF099-1ED8-42D0-A0DE-72628F1CDE3D}"/>
+												<CustomState Name="" ID="{A39B214E-6B9E-469E-AFD4-AB3A22D336D4}" ShortID="848476266"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="overtime_vannyIntro" ID="{32D1844A-673C-4323-A71F-D02CC0F9D2C7}"/>
+												<CustomState Name="" ID="{18DBCBDF-3E43-4701-A852-62646A0E1FDE}" ShortID="570834652"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour2_sunmanIntro" ID="{E38D2332-FD2D-4416-BF9E-B86D5674BC3D}"/>
+												<CustomState Name="" ID="{97DE9B5A-A0BB-48A1-A6F2-840C345FA840}" ShortID="15097429"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour2_slideEnter" ID="{FCC39C1F-50A3-449D-A980-D04590E8BF77}"/>
+												<CustomState Name="" ID="{0DA37297-F8EE-42A0-B2FE-539F5D61B70B}" ShortID="1027243085"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour1_vanessaWalksBy" ID="{5D1D824D-98BB-44F1-8D58-6173BB361F55}"/>
+												<CustomState Name="" ID="{E5B01CD5-0C56-43C1-AE62-7FD0A05C040B}" ShortID="1063486818"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="ending_loadingDock" ID="{619F7619-CE9E-45BE-90C7-01497F508FEE}"/>
+												<CustomState Name="" ID="{72895829-A52F-473E-B08F-AD8E0B56EC03}" ShortID="951405587"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="dumpBallsMonty" ID="{7B017E59-A472-463A-A4BB-0CCF03218005}"/>
+												<CustomState Name="" ID="{DE0596C6-409B-4680-85CA-0C6C19A34432}" ShortID="962299715">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="ending_gregoryInAlley" ID="{F72C765B-2888-4697-8B8B-B07639E07F8F}"/>
+												<CustomState Name="" ID="{E0610570-6AD1-4DFE-BF65-B12D9B56A79A}" ShortID="911150731"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour5_endoIntro" ID="{686240C9-3E18-4712-AEA9-BCD3F185FD23}"/>
+												<CustomState Name="" ID="{F18FFFF4-2DBC-4D74-A672-532C0479A0F8}" ShortID="956446802"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour4_transitionToLostAndFound" ID="{DD7F38A1-4F24-477B-A883-8519614CD4B6}"/>
+												<CustomState Name="" ID="{148ABD0F-9F53-49A4-A4B4-59C43F2E3C44}" ShortID="178410948"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="overtime_endGame" ID="{538DF698-6C3E-480E-9155-86F353CA4F47}"/>
+												<CustomState Name="" ID="{1A141CB5-9620-4E5C-B369-59BB6B76B110}" ShortID="862043749"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour1_firstAidDialogue" ID="{2B7059FB-8507-4890-9F88-DFD2BA54389F}"/>
+												<CustomState Name="" ID="{9DC0BCA4-38F1-48A6-9C8E-64E6CC48E973}" ShortID="711166845"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour1_startInFreddy" ID="{1952BCC2-AC63-489D-8F80-CE5A2E2A0201}"/>
+												<CustomState Name="" ID="{9BB8015A-6DF1-47DE-9E38-95F86F83B9E0}" ShortID="740959470"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="burntrapBossBattleIntro" ID="{DF39FD7F-BAF6-48B5-8845-B09D5A05E655}"/>
+												<CustomState Name="" ID="{6E7DA3E7-18E3-4182-88CF-9A58F54F84E9}" ShortID="343719434"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour2_transitionToMoonMan" ID="{9788E4E0-0D74-48BB-91C3-919A603B07AA}"/>
+												<CustomState Name="" ID="{E1B8FBAF-94CD-42C1-B83C-EE4A56D57B65}" ShortID="899503680"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="ending_vannyRedeem" ID="{F02118E3-DD48-48C4-B9DC-908242FCBAF1}"/>
+												<CustomState Name="" ID="{15C1789D-5156-495A-ABCB-9ECD9A9F078F}" ShortID="619833238"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour4_mmattack" ID="{4CFD8EE8-F6B5-4910-A302-52306D8FC135}"/>
+												<CustomState Name="" ID="{A559C65F-3B7D-4257-988E-2D592F2CCB19}" ShortID="503095595"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour2_sunmanCarryPlayer" ID="{BAB27990-E15E-495E-958E-FF1708FA0F70}"/>
+												<CustomState Name="" ID="{8E312AC9-4F3F-4629-A136-725328683F1C}" ShortID="648872654"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="dumpBallsMonty_sloMo" ID="{1E5325C9-AE5F-49CA-98C7-DB7951581544}"/>
+												<CustomState Name="" ID="{B753EB90-1347-4887-A48D-F87DCAAA4A57}" ShortID="346986235">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour3_littleMusicManVent" ID="{808AFA6B-7084-4A3F-BC96-895407D2372A}"/>
+												<CustomState Name="" ID="{6BDB5E90-57EF-4439-A0F4-7A3721146CE0}" ShortID="16040744"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="ending_burntrap" ID="{FC1155BB-A3D1-4BC3-A19D-BE4A6C601046}"/>
+												<CustomState Name="" ID="{15266844-D196-4650-81C9-EB20D3879562}" ShortID="141226049"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="montyBossBattleIntro" ID="{8041F43C-95C6-4C29-A681-31B068CF4270}"/>
+												<CustomState Name="" ID="{48DF492B-F0D0-41DC-A983-45E1EC90451E}" ShortID="909094764"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour3_elevatorTrap" ID="{1009D2FB-402E-4D74-A042-11B8F50A6C0A}"/>
+												<CustomState Name="" ID="{3726E1AE-0777-4420-88AE-F759E1C314DE}" ShortID="743521488"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour3_chicaKitchen_Static" ID="{C724B0D5-D77C-4D79-B128-43B173EC744E}"/>
+												<CustomState Name="" ID="{5D5803B9-6B9C-4B6F-B7F3-A389AA310DD0}" ShortID="611850071"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="chicaBossBattleIntro" ID="{9425692E-3573-4D7F-B7E7-0DEB452EC86F}"/>
+												<CustomState Name="" ID="{891ADAE5-D46C-42F2-87F9-F8CCE0155EDB}" ShortID="255723650"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour3_chicaKitchen" ID="{05248840-36EB-4E4A-AA51-36C1C4D67B28}"/>
+												<CustomState Name="" ID="{CDCAD235-4D75-4D6F-BD78-6D8F80E93725}" ShortID="24098748"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour1_afterIntroVideo" ID="{49453665-FF4F-4E7D-949F-330C39548180}"/>
+												<CustomState Name="" ID="{1D034214-A754-489B-B834-927078F940CB}" ShortID="946985310"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="roxyBossBattleIntro" ID="{EF3510C8-18F5-4F04-A659-0D6C46265C4C}"/>
+												<CustomState Name="" ID="{0ED8C913-3428-4438-876C-9FD0D0AE256B}" ShortID="679254905"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour2_kickedOutOfDaycare" ID="{E8C3C4DE-EC3A-4F65-9D23-843B61FEB3FD}"/>
+												<CustomState Name="" ID="{D4484041-8273-441C-A09F-E1D83F442CCF}" ShortID="309865474"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ObjectLists/>
+									<BlendTrackList>
+										<BlendTrack Name="New Blend Track" ID="{105382CF-0E0D-45E2-A876-D5BA6D08C402}" ShortID="937729056">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="AI_PROXIMITY" ID="{83C4449A-21EB-4583-8E31-BFFA996834C5}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="FNAF_SB_tension2_int1_lp" ID="{967102F6-E0C3-4BBE-A0E8-5D0BBAB28419}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>-1</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>41.321</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="FNAF_SB_tension2_int2_lp" ID="{EEC6D3C3-C276-4630-AFC4-27CA9859B8DC}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>15.557</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>79.297</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="FNAF_SB_tension2_int3_lp" ID="{B7BD4E86-2FA2-4B08-BE25-7D241A29D33E}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>49.741</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<BlendContainer Name="Tension_Gord_02_StaffBot" ID="{18017C75-6F24-46BE-8E9E-B4C482803129}" ShortID="817606489">
+									<PropertyList>
+										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+										<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-19</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="TensionSystem" ID="{5E04A37B-BA20-43F2-BD92-ECB2F4330AEF}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="FNAF_SB_tension2_int1_lp" ID="{F55B83B8-10C5-4016-AB9A-73F748FBFC8B}" ShortID="551273252">
+											<Comment>192372863</Comment>
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FNAF_SB_tension2_int1_lp" ID="{E358D76C-326C-4BE5-BBAB-7545A0AE00B0}">
+													<Language>SFX</Language>
+													<AudioFile>FNAF_SB_tension2_int1_lp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="30679498"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="FNAF_SB_tension2_int1_lp" ID="{E358D76C-326C-4BE5-BBAB-7545A0AE00B0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FNAF_SB_tension2_int2_lp" ID="{68CF6F46-5E22-4F06-8617-62CBD2094875}" ShortID="929644210">
+											<Comment>704658297</Comment>
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FNAF_SB_tension2_int2_lp" ID="{F3F9ED75-BB56-4DF6-8C8C-F6DEE44195A6}">
+													<Language>SFX</Language>
+													<AudioFile>FNAF_SB_tension2_int2_lp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="658770179"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="FNAF_SB_tension2_int2_lp" ID="{F3F9ED75-BB56-4DF6-8C8C-F6DEE44195A6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+									<BlendTrackList>
+										<BlendTrack Name="Tension" ID="{7B478881-574B-46BA-87A0-DBFDFE2814D2}" ShortID="599663189">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="AI_PROXIMITY" ID="{83C4449A-21EB-4583-8E31-BFFA996834C5}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="FNAF_SB_tension2_int1_lp" ID="{F55B83B8-10C5-4016-AB9A-73F748FBFC8B}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>-1</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>68.928</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="FNAF_SB_tension2_int2_lp" ID="{68CF6F46-5E22-4F06-8617-62CBD2094875}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>19.786</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<BlendContainer Name="Tension_Gord_03_LMM" ID="{AF7D3A12-CD99-4A43-A984-5034BC38E30A}" ShortID="5469078">
+									<PropertyList>
+										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-11</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="FNAF_SB_tension3_int1_lp" ID="{FD6608B6-2957-487F-A936-19AF207ED5BB}" ShortID="56066043">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FNAF_SB_tension3_int1_lp" ID="{FBAE9CBC-CC08-41AE-8912-55D883021A22}">
+													<Language>SFX</Language>
+													<AudioFile>FNAF_SB_tension3_int1_lp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="28974825"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="FNAF_SB_tension3_int1_lp" ID="{FBAE9CBC-CC08-41AE-8912-55D883021A22}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FNAF_SB_tension3_int2_lp" ID="{5425D20A-08AF-46EC-8050-AFCD9FEBA754}" ShortID="1008714848">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FNAF_SB_tension3_int2_lp" ID="{015BFC38-9C02-495C-BEB1-A7ECA34DB775}">
+													<Language>SFX</Language>
+													<AudioFile>FNAF_SB_tension3_int2_lp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="236242168"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="FNAF_SB_tension3_int2_lp" ID="{015BFC38-9C02-495C-BEB1-A7ECA34DB775}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FNAF_SB_tension3_int3_lp" ID="{F7454B57-86FF-4F26-9BA6-2D1E8B7A7C0B}" ShortID="913189657">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FNAF_SB_tension3_int3_lp" ID="{FE8348DB-85BD-449A-B9D0-5E028D50FF88}">
+													<Language>SFX</Language>
+													<AudioFile>FNAF_SB_tension3_int3_lp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="952359146"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="FNAF_SB_tension3_int3_lp" ID="{FE8348DB-85BD-449A-B9D0-5E028D50FF88}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+									<BlendTrackList>
+										<BlendTrack Name="New Blend Track" ID="{5E8ECC95-D1AA-436A-B4CF-F3A0848C6CAD}" ShortID="643457350">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{D9900CD0-20AA-4197-9D66-52E6149EC433}" ShortID="727881795">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="lmm_music_automation" ID="{F99B6420-B562-46A2-B878-5AE7D12E267D}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{2FB40C24-0C1F-4437-8C04-208EBDAF4C1B}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-4</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp2</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>3</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="lmm_music_automation" ID="{F99B6420-B562-46A2-B878-5AE7D12E267D}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="FNAF_SB_tension3_int1_lp" ID="{FD6608B6-2957-487F-A936-19AF207ED5BB}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>0.447</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="FNAF_SB_tension3_int2_lp" ID="{5425D20A-08AF-46EC-8050-AFCD9FEBA754}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0.144</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>0.821</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="FNAF_SB_tension3_int3_lp" ID="{F7454B57-86FF-4F26-9BA6-2D1E8B7A7C0B}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0.558</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>1</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<BlendContainer Name="Tension_Gord_03_Daycare" ID="{56DC4125-D7B3-4A17-940C-ADEAD60F9CA9}" ShortID="746032611">
+									<Comment>1064609398</Comment>
+									<PropertyList>
+										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+										<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="TensionSystem" ID="{5E04A37B-BA20-43F2-BD92-ECB2F4330AEF}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="FNAF_SB_tension3_int1_lp" ID="{D3DBEFB0-2216-42E5-B029-315C21FF79D1}" ShortID="728523771">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FNAF_SB_tension3_int1_lp" ID="{09F64437-C673-4AB6-88E0-B89548473AAA}">
+													<Language>SFX</Language>
+													<AudioFile>FNAF_SB_tension3_int1_lp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="28974825"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="FNAF_SB_tension3_int1_lp" ID="{09F64437-C673-4AB6-88E0-B89548473AAA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FNAF_SB_tension3_int2_lp" ID="{53D8F167-5FD3-4DCD-A7C0-2B0E2426E78D}" ShortID="141643053">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FNAF_SB_tension3_int2_lp" ID="{AA8BC459-9024-4F9E-920A-015F26934AE1}">
+													<Language>SFX</Language>
+													<AudioFile>FNAF_SB_tension3_int2_lp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="236242168"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="FNAF_SB_tension3_int2_lp" ID="{AA8BC459-9024-4F9E-920A-015F26934AE1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FNAF_SB_tension3_int3_lp" ID="{5AA8718A-0DDC-43DB-9174-BB3202E7E668}" ShortID="865783285">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FNAF_SB_tension3_int3_lp" ID="{2A83F72F-0129-4C89-8952-F07EA06A75F5}">
+													<Language>SFX</Language>
+													<AudioFile>FNAF_SB_tension3_int3_lp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="952359146"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="FNAF_SB_tension3_int3_lp" ID="{2A83F72F-0129-4C89-8952-F07EA06A75F5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+									<BlendTrackList>
+										<BlendTrack Name="New Blend Track" ID="{8277802F-C8A8-44CD-93B4-739F5B82F342}" ShortID="489008001">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{90EA488F-287B-486D-ADAE-20BF90D58686}" ShortID="402618471">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="daycare_generators_activated" ID="{394C4A91-EDF4-4C47-BDD1-5BEDE0B212CD}" WorkUnitID="{F9702D36-210A-4EEA-A47E-53005AB3E897}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{CE7BD12C-9C83-4561-AFB1-427BA2AE7E94}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>-9</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>4</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>5</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="AI_PROXIMITY" ID="{83C4449A-21EB-4583-8E31-BFFA996834C5}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="FNAF_SB_tension3_int1_lp" ID="{D3DBEFB0-2216-42E5-B029-315C21FF79D1}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>-1</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>59.612</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="FNAF_SB_tension3_int2_lp" ID="{53D8F167-5FD3-4DCD-A7C0-2B0E2426E78D}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>39.387</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>87.824</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="FNAF_SB_tension3_int3_lp" ID="{5AA8718A-0DDC-43DB-9174-BB3202E7E668}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>69.793</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="office_game" ID="{24C96790-2EF2-451F-B3E6-7E5498E3D878}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="underground" ID="{1E88ADCB-29B8-40BF-A6EE-6F9ADC6EEAAC}"/>
+										<CustomState Name="" ID="{4C397695-E037-4CE9-A0B8-2FB6D5BCEBA4}" ShortID="150955540"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="prizeCounter" ID="{89D68429-5203-4212-A8B5-070DC8312F7E}"/>
+										<CustomState Name="" ID="{6587F3B1-9CDE-49C2-8836-6E5CD4924A14}" ShortID="985465911"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="chicaBossBattle" ID="{5D440E79-5C40-43D9-836B-6B0FAF5B8E56}"/>
+										<CustomState Name="" ID="{D85D9FB0-AB1B-4300-AAB5-89D1BB85BA1A}" ShortID="880247559"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="westArcade" ID="{8055DBB6-52A4-44EE-972E-3D3D3C771A03}"/>
+										<CustomState Name="" ID="{F1A215C7-5D73-4516-94BF-04D1706771F4}" ShortID="349171997"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="vannyBossBattle" ID="{A05DEA46-457B-4591-AD93-E8CD4A69990A}"/>
+										<CustomState Name="" ID="{13F58AF3-D253-40E2-AE25-5B9FDD16A6AA}" ShortID="41025486">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="montyBossBattle" ID="{96247B1E-B08B-47AB-A10F-FD20C400117E}"/>
+										<CustomState Name="" ID="{3C493738-C010-4728-8AE4-5277393DE0AF}" ShortID="582778195"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="daycare" ID="{CA5B3CD0-DD69-494A-9ADC-9E309E814427}"/>
+										<CustomState Name="" ID="{B35C4493-E430-4917-BC67-384893A4B73C}" ShortID="76281055"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="roxyBossBattle" ID="{A5E9D771-043B-49A8-946C-D9F3904BBC26}"/>
+										<CustomState Name="" ID="{BB1BE88B-5375-4D2D-A038-0586C0A4C452}" ShortID="638982145"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="backstage" ID="{EDCB29E4-D57C-4ACA-AC52-75D62801D861}"/>
+										<CustomState Name="" ID="{234CBE82-5E62-460B-B9D3-DD71D0EC3F2C}" ShortID="216217289"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="kitchen" ID="{ABB59049-F273-4B85-900F-264CC747D6BC}"/>
+										<CustomState Name="" ID="{E04521BB-8C15-4201-84A6-A5481C71E8E6}" ShortID="1070527149"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="fazerblast" ID="{B0569D1F-ED9C-4CBB-82D3-46D5FFCF56D5}"/>
+										<CustomState Name="" ID="{249CA748-5434-432D-AA83-1790083FE583}" ShortID="962573563"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ObjectLists/>
+						</ActorMixer>
+						<SwitchContainer Name="Tension_AttackLayers" ID="{27C575DC-B965-44D2-83F5-11995C6A541D}" ShortID="915702539">
+							<Comment>994720376</Comment>
+							<PropertyList>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverridePriority" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{6973588D-E5F4-421B-A2A2-DA1B76EC0CAE}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{05FF6426-41E4-4928-8217-432EE434F63A}" ShortID="945866166">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="dialogue_meter" ID="{4D2AF4FD-9F46-4458-85E1-F4A8A6EA037C}" WorkUnitID="{8314662B-0DBE-45C3-816B-60184D5C305A}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{67B55D66-1C92-471C-84A5-9FB18734CA4C}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-48</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>-30.046</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>-21.19</XPos>
+														<YPos>-4</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-4</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="attack" ID="{39AF2023-A12A-494F-8A93-E0E439D26B2C}" WorkUnitID="{1EF64A69-7099-438A-BD0D-A7308E0A8AF3}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="animatronic_attack" ID="{2C0A1ABC-D91C-4BDC-8B2C-D2110D3CC8C3}" WorkUnitID="{1EF64A69-7099-438A-BD0D-A7308E0A8AF3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="Tension_Gord_01" ID="{7B5C78A2-1248-44ED-87F9-C150C6B71039}" ShortID="484464666">
+									<Comment>375451509</Comment>
+									<PropertyList>
+										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-11</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Scatters" ID="{76A401DD-114F-41EA-8EAA-434B96BBB2FE}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="FNAF_SB_tension1_int1_lp" ID="{7BE4D4F3-EEB6-4DA0-A174-ABD483F2D048}" ShortID="1042396742">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FNAF_SB_tension1_int1_lp" ID="{2E822E3C-DE68-4DC6-98C3-866790234056}">
+													<Language>SFX</Language>
+													<AudioFile>FNAF_SB_tension1_int1_lp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1000428042"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="FNAF_SB_tension1_int1_lp" ID="{2E822E3C-DE68-4DC6-98C3-866790234056}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FNAF_SB_tension1_int2_lp" ID="{210CABBB-AB62-41E9-9313-B66822A4DB2B}" ShortID="140149755">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FNAF_SB_tension1_int2_lp" ID="{5B952EE8-76DF-4DEE-9623-B014C7D82674}">
+													<Language>SFX</Language>
+													<AudioFile>FNAF_SB_tension1_int2_lp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="821909007"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="FNAF_SB_tension1_int2_lp" ID="{5B952EE8-76DF-4DEE-9623-B014C7D82674}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FNAF_SB_tension1_int3_lp" ID="{B4DA5E82-F70F-4A83-AA38-A3B36335F600}" ShortID="842696556">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FNAF_SB_tension1_int3_lp" ID="{23E882AC-0A33-4E0F-9D6B-B1CB2A946348}">
+													<Language>SFX</Language>
+													<AudioFile>FNAF_SB_tension1_int3_lp.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="234527677"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="FNAF_SB_tension1_int3_lp" ID="{23E882AC-0A33-4E0F-9D6B-B1CB2A946348}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+									<BlendTrackList>
+										<BlendTrack Name="Tension" ID="{5F7FF609-EC43-4ADF-8F33-267ABFC9122B}" ShortID="1014820751">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{E4848F0A-D154-4A43-8CF5-5DDE6F28E2C5}" ShortID="350423897">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="AI_PROXIMITY" ID="{83C4449A-21EB-4583-8E31-BFFA996834C5}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{2C2A265E-2B65-447C-BC4D-B9F65D31D42B}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-1</XPos>
+																		<YPos>10</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<RTPCList>
+														<RTPC Name="" ID="{1FCA39FE-BFC9-410E-958B-803B635DBF03}" ShortID="174448165">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="AI_PROXIMITY" ID="{83C4449A-21EB-4583-8E31-BFFA996834C5}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{5F24824F-7FF3-4F43-B368-C384DACDBB63}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-1</XPos>
+																		<YPos>-9</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="AI_PROXIMITY" ID="{83C4449A-21EB-4583-8E31-BFFA996834C5}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="FNAF_SB_tension1_int1_lp" ID="{7BE4D4F3-EEB6-4DA0-A174-ABD483F2D048}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>-1</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>43.924</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="FNAF_SB_tension1_int2_lp" ID="{210CABBB-AB62-41E9-9313-B66822A4DB2B}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>16.938</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>83.659</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="FNAF_SB_tension1_int3_lp" ID="{B4DA5E82-F70F-4A83-AA38-A3B36335F600}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>56.406</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="animatronic_attack" ID="{2C0A1ABC-D91C-4BDC-8B2C-D2110D3CC8C3}"/>
+									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="office_game" ID="{24C96790-2EF2-451F-B3E6-7E5498E3D878}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="underground" ID="{1E88ADCB-29B8-40BF-A6EE-6F9ADC6EEAAC}"/>
+										<CustomState Name="" ID="{E5D41005-4B42-4F6B-A811-0E4D455E73B3}" ShortID="370982661"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="prizeCounter" ID="{89D68429-5203-4212-A8B5-070DC8312F7E}"/>
+										<CustomState Name="" ID="{FCA8CDF1-CC83-4A3E-9AF4-0874B58D8BC9}" ShortID="1003558883"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="chicaBossBattle" ID="{5D440E79-5C40-43D9-836B-6B0FAF5B8E56}"/>
+										<CustomState Name="" ID="{3E1FA15D-39D4-4684-9534-3FB480F6901A}" ShortID="529790322"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="westArcade" ID="{8055DBB6-52A4-44EE-972E-3D3D3C771A03}"/>
+										<CustomState Name="" ID="{A3081547-F351-44B3-B119-3958062CAF24}" ShortID="108020578"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="vannyBossBattle" ID="{A05DEA46-457B-4591-AD93-E8CD4A69990A}"/>
+										<CustomState Name="" ID="{25926E3B-EBE5-431D-B91B-7C3A1B6B64F0}" ShortID="170583315">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="montyBossBattle" ID="{96247B1E-B08B-47AB-A10F-FD20C400117E}"/>
+										<CustomState Name="" ID="{52349BEA-E5B2-4EF4-B9D9-AEE7F5843287}" ShortID="387344382">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="daycare" ID="{CA5B3CD0-DD69-494A-9ADC-9E309E814427}"/>
+										<CustomState Name="" ID="{8D9ABC16-91DC-4D6F-ADB2-FC138BCE4720}" ShortID="245770727"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="attack" ID="{39AF2023-A12A-494F-8A93-E0E439D26B2C}"/>
+										<CustomState Name="" ID="{E63340FA-D2AC-480C-AF11-F7C3196C3E24}" ShortID="378092610"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="seeking" ID="{B673A572-7F57-4995-B225-AA8B95DAFD27}"/>
+										<CustomState Name="" ID="{FA1B1138-AE7D-4650-A4D2-84CE5D1C7ACA}" ShortID="291135990">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16" Value="10"/>
+												<Property Name="Lowpass" Type="int16" Value="12"/>
+												<Property Name="Volume" Type="Real64" Value="-6"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="roxyBossBattle" ID="{A5E9D771-043B-49A8-946C-D9F3904BBC26}"/>
+										<CustomState Name="" ID="{F159C252-176D-4C8A-903C-81F6D9AB84E6}" ShortID="321831616">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="backstage" ID="{EDCB29E4-D57C-4ACA-AC52-75D62801D861}"/>
+										<CustomState Name="" ID="{A83B1512-982C-4E30-93D9-BA367B9BD974}" ShortID="995589021"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="kitchen" ID="{ABB59049-F273-4B85-900F-264CC747D6BC}"/>
+										<CustomState Name="" ID="{0AE10E05-7E80-4BBB-AD25-C8721BAAA181}" ShortID="271927483"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="fazerblast" ID="{B0569D1F-ED9C-4CBB-82D3-46D5FFCF56D5}"/>
+										<CustomState Name="" ID="{5C772E30-5B44-4219-9915-63C64DE1B34A}" ShortID="48898319"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ObjectLists/>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Tension_Gord_01" ID="{7B5C78A2-1248-44ED-87F9-C150C6B71039}"/>
+										<PropertyList>
+											<Property Name="ContinuePlay" Type="bool" Value="True"/>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>0.5</Value>
+												</ValueList>
+											</Property>
+											<Property Name="FadeOutTime" Type="Real64">
+												<ValueList>
+													<Value>8</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="attack" ID="{39AF2023-A12A-494F-8A93-E0E439D26B2C}"/>
+										<ItemList>
+											<ItemRef Name="Tension_Gord_01" ID="{7B5C78A2-1248-44ED-87F9-C150C6B71039}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="seeking" ID="{B673A572-7F57-4995-B225-AA8B95DAFD27}"/>
+										<ItemList>
+											<ItemRef Name="Tension_Gord_01" ID="{7B5C78A2-1248-44ED-87F9-C150C6B71039}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="Tension_AI_Prox" ID="{2AB33B9E-B474-45F8-9916-34DBC9E656E6}" ShortID="343865028">
+							<PropertyList>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverridePriority" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{313C838A-B084-4CCB-A153-0A709425DF10}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PriorityDistanceFactor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="Tension_Generic_BaseLayer" ID="{0887431E-4F3A-4630-B38D-E936DD499D1E}" ShortID="608745220">
+									<Comment>843504866</Comment>
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0A5D748D-0E5F-4227-9500-214094471EA4}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="gordLayer" ID="{85625489-C3DC-4376-8250-2BB247FCE333}" ShortID="694684584">
+											<Comment>44921120</Comment>
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>55</Value>
+													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{E1FA0705-E2A0-4479-B0F7-796444E9B81E}" ShortID="746420455">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="AI_PROXIMITY" ID="{83C4449A-21EB-4583-8E31-BFFA996834C5}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{A6DD8F69-ADA7-4D5E-8506-60DFDC297483}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>45.562</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-10</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-23</Value>
+													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{7CE65BBE-9355-49D5-9A36-E73E8B7DD362}" ShortID="787254848">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="AI_PROXIMITY" ID="{83C4449A-21EB-4583-8E31-BFFA996834C5}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{E3145856-040C-4CAE-887C-A92AA6B78331}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-1</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>39.345</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>6</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="FNAF_SB_tension3_int2_lp" ID="{03F3C4F0-8D97-492E-9C64-8A052403D0A7}" ShortID="717362840">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{4FFEADA8-9C48-4EA2-9776-455D7507D252}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FNAF_SB_tension3_int2_lp" ID="{B6EAEEAC-FFFE-4523-B62D-0A7762C92097}">
+															<Language>SFX</Language>
+															<AudioFile>FNAF_SB_tension3_int2_lp.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="236242168"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="FNAF_SB_tension3_int2_lp" ID="{B6EAEEAC-FFFE-4523-B62D-0A7762C92097}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="FNAF_SB_tension3_int1_lp" ID="{BE0EFDCF-7170-45BB-8B9A-6762FD05966A}" ShortID="735329123">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{308F3ACF-9E2B-463B-BCE0-8BD523869EA2}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="FNAF_SB_tension3_int1_lp" ID="{A33C4DE6-7459-4674-AF92-1A2F5361303E}">
+															<Language>SFX</Language>
+															<AudioFile>FNAF_SB_tension3_int1_lp.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="28974825"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="FNAF_SB_tension3_int1_lp" ID="{A33C4DE6-7459-4674-AF92-1A2F5361303E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="office_game" ID="{24C96790-2EF2-451F-B3E6-7E5498E3D878}"/>
+													</StateGroupInfo>
+													<StateGroupInfo>
+														<StateGroupRef Name="cinematics" ID="{35AD109F-EB16-4C57-BC75-CE20D8C80321}"/>
+													</StateGroupInfo>
+													<StateGroupInfo>
+														<StateGroupRef Name="hour1_corridorChase" ID="{624B85F8-30F6-46F9-AF95-7E04721A4FEF}"/>
+													</StateGroupInfo>
+													<StateGroupInfo>
+														<StateGroupRef Name="hour1_postCorridorChaseOffice" ID="{9D8E1372-E678-4F2E-BF8D-E5C305A2C1DF}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="ending_vip" ID="{A9EC8D5E-B3D2-4026-8A07-7A6B7B807B6B}"/>
+														<CustomState Name="" ID="{D40F9E69-8CD0-4B9B-91C8-1CEE4609B50B}" ShortID="832028779"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="hour1_walkToFirstAid" ID="{0A5B277D-51B6-408B-BDF8-191E34BEDBCA}"/>
+														<CustomState Name="" ID="{3EF2C1D4-1FA6-4ADB-AAD3-1B33C3C54236}" ShortID="982898541"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="hour4_lostAndFound" ID="{021CDB90-A0C3-4091-ADF6-758A5CC5479B}"/>
+														<CustomState Name="" ID="{860B2BE6-A5CB-434F-B10E-6DC62E9B723E}" ShortID="642067408"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="underground" ID="{1E88ADCB-29B8-40BF-A6EE-6F9ADC6EEAAC}"/>
+														<CustomState Name="" ID="{69CD83C5-3E57-4F52-9D24-581F9024650B}" ShortID="345504117"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="hour1_getOutOfFreddy" ID="{3EC1CDF0-33B3-411C-9364-89DBC44EB09C}"/>
+														<CustomState Name="" ID="{D341D70B-BBC4-4F55-9F3E-B934F484CE72}" ShortID="803523274">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="ending_vannyDestroy" ID="{5CF4F1A2-5E49-4162-8970-DB2315D004C7}"/>
+														<CustomState Name="" ID="{684C79E9-E172-4986-99C6-FA3BA8740439}" ShortID="216638316"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="hour1_introVideo" ID="{F4177EDC-FDE6-41A8-8B65-28DA8BFE7073}"/>
+														<CustomState Name="" ID="{1689D113-BD0B-4537-B27B-029EDBF5EA1F}" ShortID="31303811">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="prizeCounter" ID="{89D68429-5203-4212-A8B5-070DC8312F7E}"/>
+														<CustomState Name="" ID="{B80A7D58-CF1B-49C5-8463-4F068BCC0C55}" ShortID="212263557">
+															<PropertyList>
+																<Property Name="Lowpass" Type="int16" Value="10"/>
+																<Property Name="Volume" Type="Real64" Value="-5"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="roxyBossBattleIntro_sloMo" ID="{40E854B2-C05B-424A-AB8A-3AD1A2246F6E}"/>
+														<CustomState Name="" ID="{B12C3619-627C-4006-800F-9C387967EC48}" ShortID="65495308"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="stageLift" ID="{4A5D54EB-12E7-42AA-8BBA-70C7151C2DAC}"/>
+														<CustomState Name="" ID="{B47DA40D-B8D4-471C-90FD-A299DA52DD46}" ShortID="585377728"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="hour2_slideNoEntry" ID="{E2FCF099-1ED8-42D0-A0DE-72628F1CDE3D}"/>
+														<CustomState Name="" ID="{B5C7ECBB-8C25-4FB4-9883-AF3C9F16612F}" ShortID="542912385"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="overtime_vannyIntro" ID="{32D1844A-673C-4323-A71F-D02CC0F9D2C7}"/>
+														<CustomState Name="" ID="{0183AC1A-2968-4AA1-BBB3-BD9405E328DE}" ShortID="825591453"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="chicaBossBattle" ID="{5D440E79-5C40-43D9-836B-6B0FAF5B8E56}"/>
+														<CustomState Name="" ID="{5A6BC7E1-61EF-4D05-9A39-840214FB097F}" ShortID="543119142"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="hour2_sunmanIntro" ID="{E38D2332-FD2D-4416-BF9E-B86D5674BC3D}"/>
+														<CustomState Name="" ID="{4FC0F6CA-ED4B-43F9-9D4E-BAB5DF38396C}" ShortID="124289030"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="hour2_slideEnter" ID="{FCC39C1F-50A3-449D-A980-D04590E8BF77}"/>
+														<CustomState Name="" ID="{0E79AF28-9019-4BD5-B5AF-C7D240AFC7EC}" ShortID="348539798"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="westArcade" ID="{8055DBB6-52A4-44EE-972E-3D3D3C771A03}"/>
+														<CustomState Name="" ID="{7CE7B90C-20A9-49AE-AB29-039A0C3249FB}" ShortID="66626456"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="hour1_vanessaWalksBy" ID="{5D1D824D-98BB-44F1-8D58-6173BB361F55}"/>
+														<CustomState Name="" ID="{967268E9-658A-4CAE-8916-DB667FDE4558}" ShortID="1055890583">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="vannyBossBattle" ID="{A05DEA46-457B-4591-AD93-E8CD4A69990A}"/>
+														<CustomState Name="" ID="{6CD29847-FD90-43BD-8608-BCC1AE4252CD}" ShortID="746408611"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="ending_loadingDock" ID="{619F7619-CE9E-45BE-90C7-01497F508FEE}"/>
+														<CustomState Name="" ID="{9FD377D7-A37A-49BA-AC72-FDF950D9E83E}" ShortID="1057158050"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="dumpBallsMonty" ID="{7B017E59-A472-463A-A4BB-0CCF03218005}"/>
+														<CustomState Name="" ID="{CD2DFB47-3152-400C-A254-CCF95B5D5E64}" ShortID="203520839"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="ending_gregoryInAlley" ID="{F72C765B-2888-4697-8B8B-B07639E07F8F}"/>
+														<CustomState Name="" ID="{78E5BCE4-0688-4446-A565-94C87869D540}" ShortID="267712782"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="hour5_endoIntro" ID="{686240C9-3E18-4712-AEA9-BCD3F185FD23}"/>
+														<CustomState Name="" ID="{A8900250-7A4E-4E24-BD6F-683C6CC4A510}" ShortID="87113304"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="hour4_transitionToLostAndFound" ID="{DD7F38A1-4F24-477B-A883-8519614CD4B6}"/>
+														<CustomState Name="" ID="{B93D8257-0961-4A62-8ED6-B9AF41321F53}" ShortID="370906917"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="montyBossBattle" ID="{96247B1E-B08B-47AB-A10F-FD20C400117E}"/>
+														<CustomState Name="" ID="{DB3C632D-9E5F-4DD1-B1A6-05A13F6CB25C}" ShortID="597357199"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="overtime_endGame" ID="{538DF698-6C3E-480E-9155-86F353CA4F47}"/>
+														<CustomState Name="" ID="{AA729E39-94E1-43E5-B2C4-A3A31DB55003}" ShortID="983533388"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="active" ID="{37F43A7D-885E-4846-82E8-4121C83D1520}"/>
+														<CustomState Name="" ID="{547E4D60-4B37-43D2-953D-02DA81C741CB}" ShortID="707441194">
+															<PropertyList>
+																<Property Name="Lowpass" Type="int16" Value="15"/>
+																<Property Name="Volume" Type="Real64" Value="-6"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="hour1_firstAidDialogue" ID="{2B7059FB-8507-4890-9F88-DFD2BA54389F}"/>
+														<CustomState Name="" ID="{0668FFE2-50AB-4D23-9D5A-AE1075EE5749}" ShortID="644825625">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="hour1_startInFreddy" ID="{1952BCC2-AC63-489D-8F80-CE5A2E2A0201}"/>
+														<CustomState Name="" ID="{02410E8D-AE44-4145-81C2-6402FBDAF9D8}" ShortID="902711351">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="burntrapBossBattleIntro" ID="{DF39FD7F-BAF6-48B5-8845-B09D5A05E655}"/>
+														<CustomState Name="" ID="{41B37203-BA0E-4931-9F67-05CFBE056C5F}" ShortID="683716101"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="hour2_transitionToMoonMan" ID="{9788E4E0-0D74-48BB-91C3-919A603B07AA}"/>
+														<CustomState Name="" ID="{E5DE8F28-BAB1-47EB-887B-ADA78E0B184A}" ShortID="579988174"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="ending_vannyRedeem" ID="{F02118E3-DD48-48C4-B9DC-908242FCBAF1}"/>
+														<CustomState Name="" ID="{D999B77B-1AAA-4D28-ABF0-96CA117A794F}" ShortID="243585330"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="hour4_mmattack" ID="{4CFD8EE8-F6B5-4910-A302-52306D8FC135}"/>
+														<CustomState Name="" ID="{A00D231B-8C8E-400B-AF2E-D28BF7039A45}" ShortID="179442434"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="daycare" ID="{CA5B3CD0-DD69-494A-9ADC-9E309E814427}"/>
+														<CustomState Name="" ID="{C27663CB-AEDF-4C0D-A405-3519F0DA6C70}" ShortID="667773080"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="hour2_sunmanCarryPlayer" ID="{BAB27990-E15E-495E-958E-FF1708FA0F70}"/>
+														<CustomState Name="" ID="{1CB79A7C-54F2-4387-9CF2-03764C307A8C}" ShortID="409555466"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="roxyBossBattle" ID="{A5E9D771-043B-49A8-946C-D9F3904BBC26}"/>
+														<CustomState Name="" ID="{B91CF988-AC95-4040-A407-9EE506C3064E}" ShortID="295086757"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="dumpBallsMonty_sloMo" ID="{1E5325C9-AE5F-49CA-98C7-DB7951581544}"/>
+														<CustomState Name="" ID="{51004CD0-FDE5-4201-92F4-056112AC2DB4}" ShortID="688337472"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="hour3_littleMusicManVent" ID="{808AFA6B-7084-4A3F-BC96-895407D2372A}"/>
+														<CustomState Name="" ID="{AB8B6780-39B4-4B0F-BCE0-59A30CACEC9F}" ShortID="364985955"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="backstage" ID="{EDCB29E4-D57C-4ACA-AC52-75D62801D861}"/>
+														<CustomState Name="" ID="{88E35129-15B0-4C4C-ACCB-9D666E63C9C3}" ShortID="701414475">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="kitchen" ID="{ABB59049-F273-4B85-900F-264CC747D6BC}"/>
+														<CustomState Name="" ID="{F16931D4-A233-4A43-B366-63ED20CD8BFC}" ShortID="855825320"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="ending_burntrap" ID="{FC1155BB-A3D1-4BC3-A19D-BE4A6C601046}"/>
+														<CustomState Name="" ID="{3306DB20-90F2-421B-A508-90776F704AAD}" ShortID="218170636"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="montyBossBattleIntro" ID="{8041F43C-95C6-4C29-A681-31B068CF4270}"/>
+														<CustomState Name="" ID="{38E9B162-72AA-4876-AFB3-0D01EC496910}" ShortID="240034549"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="active" ID="{69FB2BEB-076F-4C41-9527-1FCE224440C0}"/>
+														<CustomState Name="" ID="{0D0C2D21-0C46-4C4E-9A5C-EBDA8419464B}" ShortID="550012665">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="fazerblast" ID="{B0569D1F-ED9C-4CBB-82D3-46D5FFCF56D5}"/>
+														<CustomState Name="" ID="{96D25754-A3FD-41DD-ADBE-B0023D2C5925}" ShortID="956689882">
+															<PropertyList>
+																<Property Name="Lowpass" Type="int16" Value="10"/>
+																<Property Name="Volume" Type="Real64" Value="-5"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="hour3_elevatorTrap" ID="{1009D2FB-402E-4D74-A042-11B8F50A6C0A}"/>
+														<CustomState Name="" ID="{E5FE2B20-8B0C-4C3A-A301-15C84528964D}" ShortID="95739633"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="hour3_chicaKitchen_Static" ID="{C724B0D5-D77C-4D79-B128-43B173EC744E}"/>
+														<CustomState Name="" ID="{8DC7AF95-B25A-4812-B9CB-30514AAF3E98}" ShortID="973253317"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="chicaBossBattleIntro" ID="{9425692E-3573-4D7F-B7E7-0DEB452EC86F}"/>
+														<CustomState Name="" ID="{2E83FBE6-3C6F-40D9-B5A2-A6C817EBCC8B}" ShortID="577358555"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="hour3_chicaKitchen" ID="{05248840-36EB-4E4A-AA51-36C1C4D67B28}"/>
+														<CustomState Name="" ID="{A82AB510-3CEE-46EE-9F7E-927D17B7A1BD}" ShortID="909857482"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="hour1_afterIntroVideo" ID="{49453665-FF4F-4E7D-949F-330C39548180}"/>
+														<CustomState Name="" ID="{08C9EAF6-88E9-4BDD-82E9-C72EC7DFFDFB}" ShortID="849139625">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="roxyBossBattleIntro" ID="{EF3510C8-18F5-4F04-A659-0D6C46265C4C}"/>
+														<CustomState Name="" ID="{043E379B-7212-4440-91F5-6F0A987C41D9}" ShortID="869856434"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="hour2_kickedOutOfDaycare" ID="{E8C3C4DE-EC3A-4F65-9D23-843B61FEB3FD}"/>
+														<CustomState Name="" ID="{F6034CFC-46B6-43B2-AFEC-FC96AFCBB7EC}" ShortID="956617389"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
+											<ObjectLists/>
+											<BlendTrackList>
+												<BlendTrack Name="New Blend Track" ID="{3CD2D92E-891A-4C72-8FE1-3AE4D7C58780}" ShortID="155527718">
+													<PropertyList>
+														<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{2F9D1166-F7DA-4E15-9E1F-925F54D38413}" ShortID="612663924">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="AI_PROXIMITY" ID="{83C4449A-21EB-4583-8E31-BFFA996834C5}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{4C0E7AC7-B685-4D01-82B8-BA1E0547874E}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>-1</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>65.51</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>Exp3</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>93.372</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="LayerCrossFadeControlInput">
+															<ObjectRef Name="AI_PROXIMITY" ID="{83C4449A-21EB-4583-8E31-BFFA996834C5}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+														</Reference>
+													</ReferenceList>
+													<BlendTrackAssocList>
+														<BlendTrackAssoc>
+															<ItemRef Name="FNAF_SB_tension3_int1_lp" ID="{BE0EFDCF-7170-45BB-8B9A-6762FD05966A}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>65.622</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<RightEdgePos>92.866</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+														<BlendTrackAssoc>
+															<ItemRef Name="FNAF_SB_tension3_int2_lp" ID="{03F3C4F0-8D97-492E-9C64-8A052403D0A7}"/>
+															<CrossfadingInfo>
+																<LeftEdgePos>83.092</LeftEdgePos>
+																<LeftFadingMode>Automatic</LeftFadingMode>
+																<RightEdgePos>100</RightEdgePos>
+																<RightFadingMode>Automatic</RightFadingMode>
+															</CrossfadingInfo>
+														</BlendTrackAssoc>
+													</BlendTrackAssocList>
+												</BlendTrack>
+											</BlendTrackList>
+										</BlendContainer>
+										<Sound Name="sfx_tension_generic_layer1" ID="{9BBE4451-7BAE-4A90-80B7-5AC601473FDD}" ShortID="979382513">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{22AA1FAD-CA07-4A79-9CB9-7963FDB8C4D8}" ShortID="386257310">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="AI_PROXIMITY" ID="{83C4449A-21EB-4583-8E31-BFFA996834C5}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{C47C23BD-F2B1-47BA-817D-D584048F6C6A}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-1</XPos>
+																		<YPos>-13.9</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>4.803</XPos>
+																		<YPos>-12.5</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>46.806</XPos>
+																		<YPos>-10.2</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>71.261</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_tension_generic_layer1" ID="{DD2E6205-2427-4DCF-B81D-45DF1502A192}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_tension_generic_layer1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="565059516"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_tension_generic_layer1" ID="{DD2E6205-2427-4DCF-B81D-45DF1502A192}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_tension_generic_layer2" ID="{B4278916-ABA6-4429-BAE3-405C3E81316A}" ShortID="664917758">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{0947AED7-F6A1-4271-8AFF-6067BA2D9498}" ShortID="689814919">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="AI_PROXIMITY" ID="{83C4449A-21EB-4583-8E31-BFFA996834C5}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{09653867-E3E6-4553-91D4-4F880EA9939F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-1</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>11.733</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>52.661</XPos>
+																		<YPos>-6.2</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>SCurve</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-5</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_tension_generic_layer2" ID="{220EC15E-5AB3-4CBD-B41C-4BADDD11FF36}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_tension_generic_layer2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="141314299"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_tension_generic_layer2" ID="{220EC15E-5AB3-4CBD-B41C-4BADDD11FF36}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="hour1_lobbyMagnet" ID="{A3E30906-4FDE-4B00-8B36-5C03205ABB30}"/>
+											</StateGroupInfo>
+											<StateGroupInfo>
+												<StateGroupRef Name="office_game" ID="{24C96790-2EF2-451F-B3E6-7E5498E3D878}"/>
+											</StateGroupInfo>
+											<StateGroupInfo>
+												<StateGroupRef Name="hour3_chicaBathroom" ID="{A76E502F-8BF2-49FE-8B82-6C70F6498EA1}"/>
+											</StateGroupInfo>
+											<StateGroupInfo>
+												<StateGroupRef Name="animatronic_attack" ID="{2C0A1ABC-D91C-4BDC-8B2C-D2110D3CC8C3}"/>
+											</StateGroupInfo>
+											<StateGroupInfo>
+												<StateGroupRef Name="cinematics" ID="{35AD109F-EB16-4C57-BC75-CE20D8C80321}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="ending_vip" ID="{A9EC8D5E-B3D2-4026-8A07-7A6B7B807B6B}"/>
+												<CustomState Name="" ID="{F4B318CD-5D4B-466C-95BD-69B220139558}" ShortID="742888281"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour1_walkToFirstAid" ID="{0A5B277D-51B6-408B-BDF8-191E34BEDBCA}"/>
+												<CustomState Name="" ID="{2D190BEF-642F-465A-BF16-288E868D7E58}" ShortID="1050102163"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour4_lostAndFound" ID="{021CDB90-A0C3-4091-ADF6-758A5CC5479B}"/>
+												<CustomState Name="" ID="{4B3F27C7-B493-4E23-8E15-8EEF66E5AB83}" ShortID="500920990"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="underground" ID="{1E88ADCB-29B8-40BF-A6EE-6F9ADC6EEAAC}"/>
+												<CustomState Name="" ID="{E07E4A08-EF31-4D8C-8AF4-CB9F5907083C}" ShortID="368967962"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour1_getOutOfFreddy" ID="{3EC1CDF0-33B3-411C-9364-89DBC44EB09C}"/>
+												<CustomState Name="" ID="{E9E1CDEF-799F-4B19-B5BD-63F689003EF8}" ShortID="1042654268"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="ending_vannyDestroy" ID="{5CF4F1A2-5E49-4162-8970-DB2315D004C7}"/>
+												<CustomState Name="" ID="{1A4F8E46-32E5-42DB-83EE-5D03886D6D59}" ShortID="132057625"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour1_introVideo" ID="{F4177EDC-FDE6-41A8-8B65-28DA8BFE7073}"/>
+												<CustomState Name="" ID="{8D6B8431-1FCC-4652-B611-E7DA0BBCEAFA}" ShortID="1041118630"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="prizeCounter" ID="{89D68429-5203-4212-A8B5-070DC8312F7E}"/>
+												<CustomState Name="" ID="{DB680F68-D917-4384-A143-1DAE7B7F54CD}" ShortID="266034075"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="roxyBossBattleIntro_sloMo" ID="{40E854B2-C05B-424A-AB8A-3AD1A2246F6E}"/>
+												<CustomState Name="" ID="{5E848267-6E00-43FA-9A8A-DB7F86E8D757}" ShortID="677550106"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="stageLift" ID="{4A5D54EB-12E7-42AA-8BBA-70C7151C2DAC}"/>
+												<CustomState Name="" ID="{AC68DFF5-3BF2-48AA-9A24-6871096732C0}" ShortID="268918729"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour2_slideNoEntry" ID="{E2FCF099-1ED8-42D0-A0DE-72628F1CDE3D}"/>
+												<CustomState Name="" ID="{37FF066A-09CF-41CF-BEA6-36348F154B41}" ShortID="739818146"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="overtime_vannyIntro" ID="{32D1844A-673C-4323-A71F-D02CC0F9D2C7}"/>
+												<CustomState Name="" ID="{53B2F9BB-7BC6-4156-80FE-C9437BBB105F}" ShortID="532648904"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="chicaBossBattle" ID="{5D440E79-5C40-43D9-836B-6B0FAF5B8E56}"/>
+												<CustomState Name="" ID="{9601EE84-8E0D-406D-B6F1-4AD68BC8327B}" ShortID="35390909"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour2_sunmanIntro" ID="{E38D2332-FD2D-4416-BF9E-B86D5674BC3D}"/>
+												<CustomState Name="" ID="{1454678A-2E8E-46F2-8191-367622930368}" ShortID="3077601"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour2_slideEnter" ID="{FCC39C1F-50A3-449D-A980-D04590E8BF77}"/>
+												<CustomState Name="" ID="{318FB60E-95E1-49C6-B749-19C9F1275C87}" ShortID="236764464"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="westArcade" ID="{8055DBB6-52A4-44EE-972E-3D3D3C771A03}"/>
+												<CustomState Name="" ID="{E426F6FA-2953-4C73-AF01-B47DEAAB137B}" ShortID="299834059"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour1_vanessaWalksBy" ID="{5D1D824D-98BB-44F1-8D58-6173BB361F55}"/>
+												<CustomState Name="" ID="{72B0C46A-FB8D-4EB1-9505-F0D6424955DF}" ShortID="218189465">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-6"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="vannyBossBattle" ID="{A05DEA46-457B-4591-AD93-E8CD4A69990A}"/>
+												<CustomState Name="" ID="{420FB3E7-8AB2-42E4-BE30-0394431AB6EC}" ShortID="93354962"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="active" ID="{01A65F3F-64FE-45B1-859B-E37F7D2028EF}"/>
+												<CustomState Name="" ID="{6810749F-43CB-4AAC-84A9-6F89E985E46D}" ShortID="346440626">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-6"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="ending_loadingDock" ID="{619F7619-CE9E-45BE-90C7-01497F508FEE}"/>
+												<CustomState Name="" ID="{132EE04E-3A3C-4DE7-B184-307F1A1B35C6}" ShortID="130418466"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="dumpBallsMonty" ID="{7B017E59-A472-463A-A4BB-0CCF03218005}"/>
+												<CustomState Name="" ID="{64061F93-8867-4543-BF4F-C417D2583693}" ShortID="824777983"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="ending_gregoryInAlley" ID="{F72C765B-2888-4697-8B8B-B07639E07F8F}"/>
+												<CustomState Name="" ID="{A58AFBD8-2B99-4033-9F88-F3520BAD84D8}" ShortID="327965009"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour5_endoIntro" ID="{686240C9-3E18-4712-AEA9-BCD3F185FD23}"/>
+												<CustomState Name="" ID="{F992B712-766B-4D6C-894A-84048793555B}" ShortID="683654884"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour4_transitionToLostAndFound" ID="{DD7F38A1-4F24-477B-A883-8519614CD4B6}"/>
+												<CustomState Name="" ID="{DDECAC1D-B15C-4E60-83E3-E5BF154977F2}" ShortID="761369003"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="montyBossBattle" ID="{96247B1E-B08B-47AB-A10F-FD20C400117E}"/>
+												<CustomState Name="" ID="{1CE47A85-93C6-49F7-AFFC-D492D2C69254}" ShortID="364391932"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="overtime_endGame" ID="{538DF698-6C3E-480E-9155-86F353CA4F47}"/>
+												<CustomState Name="" ID="{B79C9DB0-263B-4ED0-90C0-9BD31A3D5937}" ShortID="216395303"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour1_firstAidDialogue" ID="{2B7059FB-8507-4890-9F88-DFD2BA54389F}"/>
+												<CustomState Name="" ID="{1CD5FB3C-15AD-4AF2-B4EE-03C9B37F1680}" ShortID="503693659">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="10"/>
+														<Property Name="Volume" Type="Real64" Value="-9"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour1_startInFreddy" ID="{1952BCC2-AC63-489D-8F80-CE5A2E2A0201}"/>
+												<CustomState Name="" ID="{0AA1249F-1B51-4E7B-90BE-DD1F5222CA2A}" ShortID="569931346"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="burntrapBossBattleIntro" ID="{DF39FD7F-BAF6-48B5-8845-B09D5A05E655}"/>
+												<CustomState Name="" ID="{E8D9C4C2-11DD-4644-B264-B5EF87394D7C}" ShortID="908845775"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour2_transitionToMoonMan" ID="{9788E4E0-0D74-48BB-91C3-919A603B07AA}"/>
+												<CustomState Name="" ID="{F342E8BF-813C-4A32-85F0-F02DF2582E19}" ShortID="926253402"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="ending_vannyRedeem" ID="{F02118E3-DD48-48C4-B9DC-908242FCBAF1}"/>
+												<CustomState Name="" ID="{0DBDB0D8-464F-4A17-AF93-4D81F2B27CBD}" ShortID="404064938"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour4_mmattack" ID="{4CFD8EE8-F6B5-4910-A302-52306D8FC135}"/>
+												<CustomState Name="" ID="{1C66A460-5C53-4FFA-9B63-2BA49AAA978E}" ShortID="859022436"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="daycare" ID="{CA5B3CD0-DD69-494A-9ADC-9E309E814427}"/>
+												<CustomState Name="" ID="{7DC5ECA1-D612-4302-952D-B684A5CE9203}" ShortID="870439506">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="attack" ID="{39AF2023-A12A-494F-8A93-E0E439D26B2C}"/>
+												<CustomState Name="" ID="{EA76C946-1679-45B6-8977-FEF32CF1E184}" ShortID="510105471">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-6"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour2_sunmanCarryPlayer" ID="{BAB27990-E15E-495E-958E-FF1708FA0F70}"/>
+												<CustomState Name="" ID="{27F03679-D197-4C92-A8C5-B946E71A9E58}" ShortID="738035720"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="seeking" ID="{B673A572-7F57-4995-B225-AA8B95DAFD27}"/>
+												<CustomState Name="" ID="{9E89D9F0-FD4D-432D-9E6E-4300A66BA139}" ShortID="548578447">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-6"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="roxyBossBattle" ID="{A5E9D771-043B-49A8-946C-D9F3904BBC26}"/>
+												<CustomState Name="" ID="{39D2BBBE-9051-4B3E-8C6F-8BDC8EA251B3}" ShortID="132208731"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="dumpBallsMonty_sloMo" ID="{1E5325C9-AE5F-49CA-98C7-DB7951581544}"/>
+												<CustomState Name="" ID="{209E95A3-FBAD-4712-816B-FAD27E91E026}" ShortID="227230203"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour3_littleMusicManVent" ID="{808AFA6B-7084-4A3F-BC96-895407D2372A}"/>
+												<CustomState Name="" ID="{3B764FE3-B8A4-4F7C-83A1-1930C824CF46}" ShortID="558936044"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="backstage" ID="{EDCB29E4-D57C-4ACA-AC52-75D62801D861}"/>
+												<CustomState Name="" ID="{3743FD76-5804-4634-BDFC-B30C8231F917}" ShortID="894117305"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="kitchen" ID="{ABB59049-F273-4B85-900F-264CC747D6BC}"/>
+												<CustomState Name="" ID="{1704A43D-CBC0-443B-8B40-C1227A7DFDAF}" ShortID="346413142"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="ending_burntrap" ID="{FC1155BB-A3D1-4BC3-A19D-BE4A6C601046}"/>
+												<CustomState Name="" ID="{745A90E1-33FF-4716-8202-4D6E35ECEB25}" ShortID="974214419"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="montyBossBattleIntro" ID="{8041F43C-95C6-4C29-A681-31B068CF4270}"/>
+												<CustomState Name="" ID="{BD1D54B4-62AE-45C6-907C-83C3FB9111A4}" ShortID="762535679"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="fazerblast" ID="{B0569D1F-ED9C-4CBB-82D3-46D5FFCF56D5}"/>
+												<CustomState Name="" ID="{E345D68E-9D70-429B-8CAD-081914A91507}" ShortID="471433394"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour3_elevatorTrap" ID="{1009D2FB-402E-4D74-A042-11B8F50A6C0A}"/>
+												<CustomState Name="" ID="{6EE38B9B-E705-4869-B9AB-ED9AE3970154}" ShortID="254855604"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour3_chicaKitchen_Static" ID="{C724B0D5-D77C-4D79-B128-43B173EC744E}"/>
+												<CustomState Name="" ID="{D4074D65-32DF-4D69-A5DF-CB9DA4309E7C}" ShortID="158800451"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="chicaBossBattleIntro" ID="{9425692E-3573-4D7F-B7E7-0DEB452EC86F}"/>
+												<CustomState Name="" ID="{7E99B77F-410A-42DD-B5CE-AC1B414CCF35}" ShortID="442261411"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour3_chicaKitchen" ID="{05248840-36EB-4E4A-AA51-36C1C4D67B28}"/>
+												<CustomState Name="" ID="{5CC96DA9-5865-401C-9D2A-D753030A8808}" ShortID="881737295"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour1_afterIntroVideo" ID="{49453665-FF4F-4E7D-949F-330C39548180}"/>
+												<CustomState Name="" ID="{094F7395-95B8-4272-96D8-59EB2040717C}" ShortID="148144951"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="active" ID="{904A7ED5-E8F8-4EAD-A498-EAFBD260449C}"/>
+												<CustomState Name="" ID="{B09F3252-C66A-4AF0-8B0A-BBC9DCA6E455}" ShortID="726885111">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="roxyBossBattleIntro" ID="{EF3510C8-18F5-4F04-A659-0D6C46265C4C}"/>
+												<CustomState Name="" ID="{07789877-2780-4701-8655-92E3F5102D51}" ShortID="327645704"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="hour2_kickedOutOfDaycare" ID="{E8C3C4DE-EC3A-4F65-9D23-843B61FEB3FD}"/>
+												<CustomState Name="" ID="{187679A7-5992-43B9-AC82-97B23FAEA806}" ShortID="111436935"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ObjectLists/>
+								</BlendContainer>
+							</ChildrenList>
+							<StateInfo>
+								<StatePropertyList>
+									<Property Name="Highpass"/>
+									<Property Name="Lowpass"/>
+									<Property Name="MakeUpGain"/>
+									<Property Name="Pitch"/>
+									<Property Name="Priority"/>
+									<Property Name="Volume"/>
+								</StatePropertyList>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="office_game" ID="{24C96790-2EF2-451F-B3E6-7E5498E3D878}"/>
+									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="hour3_prizeCounterPostOG" ID="{DE63B356-5CEA-4C8B-974B-8275FC0AD068}"/>
+									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="cinematics" ID="{35AD109F-EB16-4C57-BC75-CE20D8C80321}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="ending_vip" ID="{A9EC8D5E-B3D2-4026-8A07-7A6B7B807B6B}"/>
+										<CustomState Name="" ID="{BE995315-2706-46B6-B88D-41DD3CA5CBE1}" ShortID="265393918">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour1_walkToFirstAid" ID="{0A5B277D-51B6-408B-BDF8-191E34BEDBCA}"/>
+										<CustomState Name="" ID="{8EF67F8B-4FEA-4E3D-A212-1BB6693C104A}" ShortID="495026295">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour4_lostAndFound" ID="{021CDB90-A0C3-4091-ADF6-758A5CC5479B}"/>
+										<CustomState Name="" ID="{3EB222C9-93F7-427F-A8FC-D81F22480477}" ShortID="544852248">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="underground" ID="{1E88ADCB-29B8-40BF-A6EE-6F9ADC6EEAAC}"/>
+										<CustomState Name="" ID="{CD90BE27-144B-4F6E-B431-1BA2D1B4196C}" ShortID="905485199">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour1_getOutOfFreddy" ID="{3EC1CDF0-33B3-411C-9364-89DBC44EB09C}"/>
+										<CustomState Name="" ID="{67D77B79-787D-4269-80E0-5703C3E55597}" ShortID="770453906">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ending_vannyDestroy" ID="{5CF4F1A2-5E49-4162-8970-DB2315D004C7}"/>
+										<CustomState Name="" ID="{173C049C-C699-4E2D-A36E-273C07480525}" ShortID="881982277">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour1_introVideo" ID="{F4177EDC-FDE6-41A8-8B65-28DA8BFE7073}"/>
+										<CustomState Name="" ID="{E7FB75F9-AA34-4DCB-AB19-83C2795FE85E}" ShortID="435843906">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="prizeCounter" ID="{89D68429-5203-4212-A8B5-070DC8312F7E}"/>
+										<CustomState Name="" ID="{4CFE508B-8BD3-4A7B-9DF0-FF853A0DC7A2}" ShortID="646782337">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="roxyBossBattleIntro_sloMo" ID="{40E854B2-C05B-424A-AB8A-3AD1A2246F6E}"/>
+										<CustomState Name="" ID="{FDB10224-E51C-4FA0-ADA9-2709B5BD580D}" ShortID="406170737">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="stageLift" ID="{4A5D54EB-12E7-42AA-8BBA-70C7151C2DAC}"/>
+										<CustomState Name="" ID="{7C4719AF-1857-4FE9-834B-A6EBC6B42012}" ShortID="992420468">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour2_slideNoEntry" ID="{E2FCF099-1ED8-42D0-A0DE-72628F1CDE3D}"/>
+										<CustomState Name="" ID="{297AE75A-C964-447E-B145-530A1255CDF3}" ShortID="203078953">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="overtime_vannyIntro" ID="{32D1844A-673C-4323-A71F-D02CC0F9D2C7}"/>
+										<CustomState Name="" ID="{1BADECB8-7583-4872-974A-558DA9B89ED1}" ShortID="256352646">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="chicaBossBattle" ID="{5D440E79-5C40-43D9-836B-6B0FAF5B8E56}"/>
+										<CustomState Name="" ID="{C3909C01-4981-41DC-996D-94F845603FA0}" ShortID="370439078">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour2_sunmanIntro" ID="{E38D2332-FD2D-4416-BF9E-B86D5674BC3D}"/>
+										<CustomState Name="" ID="{A52FC707-D936-4E41-B7BD-12E582F2C471}" ShortID="980888783">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour2_slideEnter" ID="{FCC39C1F-50A3-449D-A980-D04590E8BF77}"/>
+										<CustomState Name="" ID="{B0F5C307-87D9-40C6-9D1E-5CB465F92B68}" ShortID="931129545">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="westArcade" ID="{8055DBB6-52A4-44EE-972E-3D3D3C771A03}"/>
+										<CustomState Name="" ID="{CAFC5B20-C726-4A37-8A30-C8B4898069E4}" ShortID="999191270">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour1_vanessaWalksBy" ID="{5D1D824D-98BB-44F1-8D58-6173BB361F55}"/>
+										<CustomState Name="" ID="{088B35A4-D8D9-4C89-9734-A203CE15B6F4}" ShortID="513852673">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="vannyBossBattle" ID="{A05DEA46-457B-4591-AD93-E8CD4A69990A}"/>
+										<CustomState Name="" ID="{EA2A6CA1-76EE-4A23-B48E-A5A04C3AD5EC}" ShortID="791492710">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ending_loadingDock" ID="{619F7619-CE9E-45BE-90C7-01497F508FEE}"/>
+										<CustomState Name="" ID="{901B9F72-F954-4C8D-8A09-B356ED6A3B26}" ShortID="879535980">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="dumpBallsMonty" ID="{7B017E59-A472-463A-A4BB-0CCF03218005}"/>
+										<CustomState Name="" ID="{2165C88C-F2F2-4CD4-91D6-1D3304C03D6D}" ShortID="938000533">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ending_gregoryInAlley" ID="{F72C765B-2888-4697-8B8B-B07639E07F8F}"/>
+										<CustomState Name="" ID="{B77DD232-1192-4D2D-A428-251C9A1588F6}" ShortID="734785673">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour5_endoIntro" ID="{686240C9-3E18-4712-AEA9-BCD3F185FD23}"/>
+										<CustomState Name="" ID="{AB6D6F92-8FC5-4588-98CE-F43985575FAA}" ShortID="89267439">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour4_transitionToLostAndFound" ID="{DD7F38A1-4F24-477B-A883-8519614CD4B6}"/>
+										<CustomState Name="" ID="{9A44F142-F78E-47EE-BDD4-71162DB38F19}" ShortID="719399690">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="montyBossBattle" ID="{96247B1E-B08B-47AB-A10F-FD20C400117E}"/>
+										<CustomState Name="" ID="{37872749-ED72-42E6-9A32-1AAA1200EE13}" ShortID="57032870">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="overtime_endGame" ID="{538DF698-6C3E-480E-9155-86F353CA4F47}"/>
+										<CustomState Name="" ID="{A73CBF3C-FE63-4302-847C-358385D12C92}" ShortID="501750793">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour1_firstAidDialogue" ID="{2B7059FB-8507-4890-9F88-DFD2BA54389F}"/>
+										<CustomState Name="" ID="{7E929A7C-6493-44B7-BE75-7984BFD8C22F}" ShortID="808413991">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour1_startInFreddy" ID="{1952BCC2-AC63-489D-8F80-CE5A2E2A0201}"/>
+										<CustomState Name="" ID="{1E7DB7A3-A2CE-4032-9CD2-2259E3CBB095}" ShortID="1067916898">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="burntrapBossBattleIntro" ID="{DF39FD7F-BAF6-48B5-8845-B09D5A05E655}"/>
+										<CustomState Name="" ID="{0BFD7D20-CF8F-4256-B948-05AACAB030C6}" ShortID="1066341865">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour2_transitionToMoonMan" ID="{9788E4E0-0D74-48BB-91C3-919A603B07AA}"/>
+										<CustomState Name="" ID="{0B20D5F5-B6DD-46F1-B2D7-349B84EBC15D}" ShortID="315317809">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ending_vannyRedeem" ID="{F02118E3-DD48-48C4-B9DC-908242FCBAF1}"/>
+										<CustomState Name="" ID="{E02D8F0A-DF29-4FEE-B039-392AAA42C36E}" ShortID="12988396">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="active" ID="{88F3669C-4589-48FB-93F6-48D3814286C4}"/>
+										<CustomState Name="" ID="{0ED26F23-3FA9-4286-99B5-6DBC268BDF56}" ShortID="550314219">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour4_mmattack" ID="{4CFD8EE8-F6B5-4910-A302-52306D8FC135}"/>
+										<CustomState Name="" ID="{858288BF-1561-46A4-9823-15E905532235}" ShortID="285486705">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="daycare" ID="{CA5B3CD0-DD69-494A-9ADC-9E309E814427}"/>
+										<CustomState Name="" ID="{3DCEB127-86F2-4C30-A6FE-6B0066BDB222}" ShortID="624548360">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour2_sunmanCarryPlayer" ID="{BAB27990-E15E-495E-958E-FF1708FA0F70}"/>
+										<CustomState Name="" ID="{ABFC7C2A-3947-4E05-B3CB-5ECB25442274}" ShortID="1073212397">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="roxyBossBattle" ID="{A5E9D771-043B-49A8-946C-D9F3904BBC26}"/>
+										<CustomState Name="" ID="{CC147548-6BFB-4E81-B8FA-CD56D4D04CF5}" ShortID="594046859">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="dumpBallsMonty_sloMo" ID="{1E5325C9-AE5F-49CA-98C7-DB7951581544}"/>
+										<CustomState Name="" ID="{DC2000D0-F819-42AC-A8D3-E7CD505F82AC}" ShortID="175528672">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour3_littleMusicManVent" ID="{808AFA6B-7084-4A3F-BC96-895407D2372A}"/>
+										<CustomState Name="" ID="{D5580A02-5241-4297-971B-076B4031F807}" ShortID="156243183">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="backstage" ID="{EDCB29E4-D57C-4ACA-AC52-75D62801D861}"/>
+										<CustomState Name="" ID="{17FBD0F6-39A1-41CA-94CA-742DCEA3DCF5}" ShortID="69609039">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="kitchen" ID="{ABB59049-F273-4B85-900F-264CC747D6BC}"/>
+										<CustomState Name="" ID="{4057392C-9197-48F4-A0F1-52D99A2AFB31}" ShortID="69172029">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ending_burntrap" ID="{FC1155BB-A3D1-4BC3-A19D-BE4A6C601046}"/>
+										<CustomState Name="" ID="{DE01E473-70AB-4245-AF51-7124728C6216}" ShortID="809790341">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="montyBossBattleIntro" ID="{8041F43C-95C6-4C29-A681-31B068CF4270}"/>
+										<CustomState Name="" ID="{84C0B592-5402-4000-B79E-DD73D6748C14}" ShortID="168331971">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="fazerblast" ID="{B0569D1F-ED9C-4CBB-82D3-46D5FFCF56D5}"/>
+										<CustomState Name="" ID="{31AB68B1-39E4-496B-9571-1382B933EE21}" ShortID="358494189">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64" Value="-4"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="roxyEncounter" ID="{8F29E4F8-0A99-4D21-85B2-1ADEB346BBCC}"/>
+										<CustomState Name="" ID="{A9F17691-807D-4BF1-985F-2CAC6B63C523}" ShortID="425383206">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="-100"/>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour3_elevatorTrap" ID="{1009D2FB-402E-4D74-A042-11B8F50A6C0A}"/>
+										<CustomState Name="" ID="{B0A8F2E3-CD4F-4AF5-8879-20FD91B064E6}" ShortID="99344022">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour3_chicaKitchen_Static" ID="{C724B0D5-D77C-4D79-B128-43B173EC744E}"/>
+										<CustomState Name="" ID="{519FC453-8747-4B4C-9E15-B192CCFE1E1E}" ShortID="1058468836">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="chicaBossBattleIntro" ID="{9425692E-3573-4D7F-B7E7-0DEB452EC86F}"/>
+										<CustomState Name="" ID="{9700C142-8380-4629-A409-F60A48C35479}" ShortID="772294667">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour3_chicaKitchen" ID="{05248840-36EB-4E4A-AA51-36C1C4D67B28}"/>
+										<CustomState Name="" ID="{B673BC5F-A00C-4D8B-AFBF-B49F3E2DD8EE}" ShortID="530476682">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour1_afterIntroVideo" ID="{49453665-FF4F-4E7D-949F-330C39548180}"/>
+										<CustomState Name="" ID="{87D1A279-E74F-418B-8ED2-D44996499A18}" ShortID="653790326">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="roxyBossBattleIntro" ID="{EF3510C8-18F5-4F04-A659-0D6C46265C4C}"/>
+										<CustomState Name="" ID="{947EC34D-BA7D-41B4-819B-3460B5F3F7C4}" ShortID="509703841">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour2_kickedOutOfDaycare" ID="{E8C3C4DE-EC3A-4F65-9D23-843B61FEB3FD}"/>
+										<CustomState Name="" ID="{F5BA6351-051E-4C64-B4E5-752BECCEF195}" ShortID="119161166">
+											<PropertyList>
+												<Property Name="Priority" Type="int16" Value="0"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ObjectLists/>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Tension_Generic_BaseLayer" ID="{0887431E-4F3A-4630-B38D-E936DD499D1E}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="cinematics" ID="{35AD109F-EB16-4C57-BC75-CE20D8C80321}"/>
+							</StateGroupInfo>
+							<StateGroupInfo>
+								<StateGroupRef Name="office_game" ID="{24C96790-2EF2-451F-B3E6-7E5498E3D878}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="ending_vip" ID="{A9EC8D5E-B3D2-4026-8A07-7A6B7B807B6B}"/>
+								<CustomState Name="" ID="{1FD274BC-3CC3-470F-A03E-1AFCAA4AF09E}" ShortID="76159683"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="hour1_walkToFirstAid" ID="{0A5B277D-51B6-408B-BDF8-191E34BEDBCA}"/>
+								<CustomState Name="" ID="{9C7D3B98-C095-4042-83DB-B1DA5B3F1BC4}" ShortID="442003797"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="hour4_lostAndFound" ID="{021CDB90-A0C3-4091-ADF6-758A5CC5479B}"/>
+								<CustomState Name="" ID="{ED0E213F-A3EA-4224-91BF-85A53EA6F0DD}" ShortID="232489922"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="underground" ID="{1E88ADCB-29B8-40BF-A6EE-6F9ADC6EEAAC}"/>
+								<CustomState Name="" ID="{0B3B2EA9-927C-4A54-A5FF-536826904BF7}" ShortID="363145223"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="hour1_getOutOfFreddy" ID="{3EC1CDF0-33B3-411C-9364-89DBC44EB09C}"/>
+								<CustomState Name="" ID="{AE6AB905-11A4-4ED4-BC12-0DAF3CC6E865}" ShortID="1054881809"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="ending_vannyDestroy" ID="{5CF4F1A2-5E49-4162-8970-DB2315D004C7}"/>
+								<CustomState Name="" ID="{BA3294F7-81A4-4B87-A162-05DD86E01B3A}" ShortID="646150147"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="hour1_introVideo" ID="{F4177EDC-FDE6-41A8-8B65-28DA8BFE7073}"/>
+								<CustomState Name="" ID="{E886D303-5461-44B6-B7FD-D1840857E0E6}" ShortID="265973048"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="prizeCounter" ID="{89D68429-5203-4212-A8B5-070DC8312F7E}"/>
+								<CustomState Name="" ID="{0BF3E181-B1B8-49A2-840F-3437593DCF1C}" ShortID="461233644"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="roxyBossBattleIntro_sloMo" ID="{40E854B2-C05B-424A-AB8A-3AD1A2246F6E}"/>
+								<CustomState Name="" ID="{7A9D06BA-1F8F-4C6B-B190-D7A89B11412F}" ShortID="195900079"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="stageLift" ID="{4A5D54EB-12E7-42AA-8BBA-70C7151C2DAC}"/>
+								<CustomState Name="" ID="{C807D5DD-CB31-4F66-B9E1-22AA70CEF8C1}" ShortID="906043093"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="hour2_slideNoEntry" ID="{E2FCF099-1ED8-42D0-A0DE-72628F1CDE3D}"/>
+								<CustomState Name="" ID="{AF15FF1B-D586-4A4A-8214-B874AFA89E23}" ShortID="74233428"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="overtime_vannyIntro" ID="{32D1844A-673C-4323-A71F-D02CC0F9D2C7}"/>
+								<CustomState Name="" ID="{91EAEB43-96A9-4B78-83F8-80616E1D2272}" ShortID="264143233"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="chicaBossBattle" ID="{5D440E79-5C40-43D9-836B-6B0FAF5B8E56}"/>
+								<CustomState Name="" ID="{46385345-61D6-4D7A-BD64-8FD01FC73D6F}" ShortID="368488251"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="hour2_sunmanIntro" ID="{E38D2332-FD2D-4416-BF9E-B86D5674BC3D}"/>
+								<CustomState Name="" ID="{8D91743F-C97E-4C6F-8E4F-F4A97F53E326}" ShortID="543121910"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="hour2_slideEnter" ID="{FCC39C1F-50A3-449D-A980-D04590E8BF77}"/>
+								<CustomState Name="" ID="{0D27DB95-D0DD-4FBA-977C-6C20B1CD2CC6}" ShortID="250129254"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="westArcade" ID="{8055DBB6-52A4-44EE-972E-3D3D3C771A03}"/>
+								<CustomState Name="" ID="{A741900F-6BD9-42B2-8705-4816C8F135B7}" ShortID="757247196"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="hour1_vanessaWalksBy" ID="{5D1D824D-98BB-44F1-8D58-6173BB361F55}"/>
+								<CustomState Name="" ID="{5F067496-7B0D-4841-A593-67CF5EE7C5C2}" ShortID="689859296"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="vannyBossBattle" ID="{A05DEA46-457B-4591-AD93-E8CD4A69990A}"/>
+								<CustomState Name="" ID="{B9D166C8-5A86-498E-BB6B-DB009C485A3E}" ShortID="793148741"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="ending_loadingDock" ID="{619F7619-CE9E-45BE-90C7-01497F508FEE}"/>
+								<CustomState Name="" ID="{7F597731-788D-4FF5-821C-74F98D780652}" ShortID="536141060"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="dumpBallsMonty" ID="{7B017E59-A472-463A-A4BB-0CCF03218005}"/>
+								<CustomState Name="" ID="{F09C22F2-BCD3-4872-924E-CF1D8BF617C0}" ShortID="410879027"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="ending_gregoryInAlley" ID="{F72C765B-2888-4697-8B8B-B07639E07F8F}"/>
+								<CustomState Name="" ID="{AEA00493-C532-4DB1-85F0-C52CA7F1FDC1}" ShortID="97329118"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="hour5_endoIntro" ID="{686240C9-3E18-4712-AEA9-BCD3F185FD23}"/>
+								<CustomState Name="" ID="{06EC53CC-3D75-4794-9F8D-259C9E9330B5}" ShortID="483380475"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="hour4_transitionToLostAndFound" ID="{DD7F38A1-4F24-477B-A883-8519614CD4B6}"/>
+								<CustomState Name="" ID="{637EBB57-9B11-45F7-A44E-976C0AD0BFAD}" ShortID="193852441"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="montyBossBattle" ID="{96247B1E-B08B-47AB-A10F-FD20C400117E}"/>
+								<CustomState Name="" ID="{99078AC6-85C8-4F9A-AD0C-D9861624FAEC}" ShortID="684108571"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="overtime_endGame" ID="{538DF698-6C3E-480E-9155-86F353CA4F47}"/>
+								<CustomState Name="" ID="{247938CC-A92D-47BA-B092-1EC71F5B2DCF}" ShortID="879733033"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="hour1_firstAidDialogue" ID="{2B7059FB-8507-4890-9F88-DFD2BA54389F}"/>
+								<CustomState Name="" ID="{9B970C16-C009-4F83-9345-F6733293676F}" ShortID="536702630"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="hour1_startInFreddy" ID="{1952BCC2-AC63-489D-8F80-CE5A2E2A0201}"/>
+								<CustomState Name="" ID="{026AB3C1-B26E-4654-AB0D-83E1EBFB1D87}" ShortID="372329947"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="burntrapBossBattleIntro" ID="{DF39FD7F-BAF6-48B5-8845-B09D5A05E655}"/>
+								<CustomState Name="" ID="{E19F4519-3907-4696-A237-AA8835FA897C}" ShortID="510733363">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="hour2_transitionToMoonMan" ID="{9788E4E0-0D74-48BB-91C3-919A603B07AA}"/>
+								<CustomState Name="" ID="{DE57D61C-9061-4C82-9378-FD258AE047FB}" ShortID="331570884"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="ending_vannyRedeem" ID="{F02118E3-DD48-48C4-B9DC-908242FCBAF1}"/>
+								<CustomState Name="" ID="{25EE912A-2EE8-4027-BD10-3A3C451106A1}" ShortID="842824480"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="hour4_mmattack" ID="{4CFD8EE8-F6B5-4910-A302-52306D8FC135}"/>
+								<CustomState Name="" ID="{74B9886F-CBE8-43C0-9D91-574B40C1D649}" ShortID="552984286"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="daycare" ID="{CA5B3CD0-DD69-494A-9ADC-9E309E814427}"/>
+								<CustomState Name="" ID="{A5284232-1F2E-4811-8ACE-F46590DDF57A}" ShortID="624115093"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="hour2_sunmanCarryPlayer" ID="{BAB27990-E15E-495E-958E-FF1708FA0F70}"/>
+								<CustomState Name="" ID="{5C8AB34E-EF88-4894-85B3-562F2A9509BF}" ShortID="421366525"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="roxyBossBattle" ID="{A5E9D771-043B-49A8-946C-D9F3904BBC26}"/>
+								<CustomState Name="" ID="{D0C8CCDD-F877-46FC-A91F-B516779E4FC2}" ShortID="919516388"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="dumpBallsMonty_sloMo" ID="{1E5325C9-AE5F-49CA-98C7-DB7951581544}"/>
+								<CustomState Name="" ID="{5AF34FAB-AE65-446B-9F88-4C37A6BFA100}" ShortID="832813913"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="hour3_littleMusicManVent" ID="{808AFA6B-7084-4A3F-BC96-895407D2372A}"/>
+								<CustomState Name="" ID="{45162880-EFD1-43D7-9E25-3C692CBC1DAD}" ShortID="279179218"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="backstage" ID="{EDCB29E4-D57C-4ACA-AC52-75D62801D861}"/>
+								<CustomState Name="" ID="{1509445C-3ABD-4880-87BA-08CAD088B3B6}" ShortID="73079209"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="kitchen" ID="{ABB59049-F273-4B85-900F-264CC747D6BC}"/>
+								<CustomState Name="" ID="{F76FE178-9750-4E45-A06B-E5C47D2A2117}" ShortID="392293475"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="ending_burntrap" ID="{FC1155BB-A3D1-4BC3-A19D-BE4A6C601046}"/>
+								<CustomState Name="" ID="{200F96CA-4CC2-4063-BD59-05696F815945}" ShortID="329917283"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="montyBossBattleIntro" ID="{8041F43C-95C6-4C29-A681-31B068CF4270}"/>
+								<CustomState Name="" ID="{29C61D73-BC22-4F69-8EC8-E93C4AFFC880}" ShortID="57841726"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="fazerblast" ID="{B0569D1F-ED9C-4CBB-82D3-46D5FFCF56D5}"/>
+								<CustomState Name="" ID="{4C76E773-696A-43DB-8C14-2D6203B74BE9}" ShortID="1065058880"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="hour3_elevatorTrap" ID="{1009D2FB-402E-4D74-A042-11B8F50A6C0A}"/>
+								<CustomState Name="" ID="{53814592-D468-4F76-A560-5E71851A0AC7}" ShortID="326060078"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="hour3_chicaKitchen_Static" ID="{C724B0D5-D77C-4D79-B128-43B173EC744E}"/>
+								<CustomState Name="" ID="{758055E8-79F3-4E2D-AF9E-8B08D45F6FEB}" ShortID="433556459"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="chicaBossBattleIntro" ID="{9425692E-3573-4D7F-B7E7-0DEB452EC86F}"/>
+								<CustomState Name="" ID="{83437219-D4C6-41C4-BD20-D39202F5228F}" ShortID="946584432"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="hour3_chicaKitchen" ID="{05248840-36EB-4E4A-AA51-36C1C4D67B28}"/>
+								<CustomState Name="" ID="{A9A89F57-ED61-4656-9A54-8409587A9A92}" ShortID="525937268"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="hour1_afterIntroVideo" ID="{49453665-FF4F-4E7D-949F-330C39548180}"/>
+								<CustomState Name="" ID="{79D9A018-D817-41C1-B080-0E3A6EF962C0}" ShortID="168472716"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="roxyBossBattleIntro" ID="{EF3510C8-18F5-4F04-A659-0D6C46265C4C}"/>
+								<CustomState Name="" ID="{6773CC51-A14F-416C-9978-8AE08C82C5B6}" ShortID="214857390"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="hour2_kickedOutOfDaycare" ID="{E8C3C4DE-EC3A-4F65-9D23-843B61FEB3FD}"/>
+								<CustomState Name="" ID="{AF68F03A-C584-4C6A-A861-2B3FD654DB6F}" ShortID="431169368"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<ObjectLists/>
+				</ActorMixer>
+				<BlendContainer Name="VannyAttackTension" ID="{3F53803E-01F8-468A-BDDA-055019E7EBE3}" ShortID="450607185">
+					<PropertyList>
+						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+						<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+						<Property Name="Lowpass" Type="int16">
+							<RTPCList>
+								<RTPC Name="" ID="{86B4E652-FEA3-4D6E-887A-0EAFBE791733}" ShortID="607760510">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="vanny_threat_level" ID="{2036BB6D-F05D-4676-90F2-9A45237CEBCD}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{786A6D9D-8E2C-4BC1-8F69-2A3D33C0AB76}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>0.289</XPos>
+												<YPos>0</YPos>
+												<Flags>0</Flags>
+												<SegmentShape>Log1</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>21</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Priority" Type="int16">
+							<ValueList>
+								<Value>100</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-20</Value>
+							</ValueList>
+							<RTPCList>
+								<RTPC Name="" ID="{93B3FF24-2077-4DC5-B8B5-3C4835012B70}" ShortID="482438001">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="dialogue_meter" ID="{4D2AF4FD-9F46-4458-85E1-F4A8A6EA037C}" WorkUnitID="{8314662B-0DBE-45C3-816B-60184D5C305A}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{39E4C3E9-8049-4556-A68E-9B462DF0C4DB}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>-48</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>-35.986</XPos>
+												<YPos>0</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>-24.888</XPos>
+												<YPos>-6</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-6</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+								<RTPC Name="" ID="{1F4B1CCC-2575-4DDA-A20E-970E262A2A9D}" ShortID="669550152">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="vanny_threat_level" ID="{2036BB6D-F05D-4676-90F2-9A45237CEBCD}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{CB2DC361-1282-42D3-BFAF-741E0237DE36}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>0.201</XPos>
+												<YPos>0</YPos>
+												<Flags>0</Flags>
+												<SegmentShape>SCurve</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>0.66</XPos>
+												<YPos>-8.9</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>-8.9</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{A867F19E-CB7E-4AAD-A9A7-0796F176AC8C}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="FNAF_SB_tension1_int1_lp" ID="{217D5D8D-1DC7-41DE-937B-BAF3E6A9E6A6}" ShortID="31743289">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FNAF_SB_tension1_int1_lp" ID="{8F617B0A-0732-4DA0-BC8C-13CBA261756E}">
+									<Language>SFX</Language>
+									<AudioFile>FNAF_SB_tension1_int1_lp.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1000428042"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="FNAF_SB_tension1_int1_lp" ID="{8F617B0A-0732-4DA0-BC8C-13CBA261756E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="FNAF_SB_tension1_int2_lp" ID="{70D628FC-A66E-40EC-8E86-86E07C6A9C2C}" ShortID="417099339">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FNAF_SB_tension1_int2_lp" ID="{F831DAE8-761D-4FC0-AB81-246D6371556A}">
+									<Language>SFX</Language>
+									<AudioFile>FNAF_SB_tension1_int2_lp.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="821909007"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="FNAF_SB_tension1_int2_lp" ID="{F831DAE8-761D-4FC0-AB81-246D6371556A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="FNAF_SB_tension1_int3_lp" ID="{BB0859CB-5BF8-41C9-9CD6-26940391C11D}" ShortID="131997456">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FNAF_SB_tension1_int3_lp" ID="{D697CA1F-74E3-44E7-94C8-D7313713B5D3}">
+									<Language>SFX</Language>
+									<AudioFile>FNAF_SB_tension1_int3_lp.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="234527677"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="FNAF_SB_tension1_int3_lp" ID="{D697CA1F-74E3-44E7-94C8-D7313713B5D3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+					<BlendTrackList>
+						<BlendTrack Name="Tension" ID="{EA1B355B-E0C0-466F-8EC7-CF609E8591AD}" ShortID="719913266">
+							<PropertyList>
+								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{540D0D37-4E5B-4DDD-8414-634CE14DF3F6}" ShortID="515366073">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="AI_PROXIMITY" ID="{83C4449A-21EB-4583-8E31-BFFA996834C5}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{339259CA-2339-44D8-91A0-8F64F571B20D}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-1</XPos>
+														<YPos>10</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{3AB88186-F7A4-4133-899B-319E00EF5660}" ShortID="719991489">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="AI_PROXIMITY" ID="{83C4449A-21EB-4583-8E31-BFFA996834C5}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{422334DF-E186-4597-970A-3D2E1EBF7B61}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-1</XPos>
+														<YPos>-9</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="LayerCrossFadeControlInput">
+									<ObjectRef Name="AI_PROXIMITY" ID="{83C4449A-21EB-4583-8E31-BFFA996834C5}" WorkUnitID="{05AF3F97-C276-45A7-953B-B71665CC3721}"/>
+								</Reference>
+							</ReferenceList>
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="FNAF_SB_tension1_int1_lp" ID="{217D5D8D-1DC7-41DE-937B-BAF3E6A9E6A6}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>-1</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>43.924</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="FNAF_SB_tension1_int2_lp" ID="{70D628FC-A66E-40EC-8E86-86E07C6A9C2C}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>16.938</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>83.659</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="FNAF_SB_tension1_int3_lp" ID="{BB0859CB-5BF8-41C9-9CD6-26940391C11D}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>56.406</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>100</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+					</BlendTrackList>
+				</BlendContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

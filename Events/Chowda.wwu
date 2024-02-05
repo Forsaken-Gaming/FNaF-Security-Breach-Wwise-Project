@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{924A3E65-FE54-4CEF-B54E-4A9B884E99F1}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Chowda" ID="{924A3E65-FE54-4CEF-B54E-4A9B884E99F1}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_CFF_PowerUp" ID="{7CF389EF-1F97-4E55-B808-C3DA90EA26DD}">
+					<ChildrenList>
+						<Action Name="" ID="{AD115D25-030E-459D-913C-154E4DD8F2C6}" ShortID="148852780">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PowerUp" ID="{279FD3DC-0F80-49CA-A7EF-C3A7707B2E70}" WorkUnitID="{56D185C1-AEAC-41AA-BA37-0BE8F23DBD4B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CFF_PopaBoy" ID="{9892F5B9-59F3-4D5B-97F1-B580E4FD6F23}">
+					<ChildrenList>
+						<Action Name="" ID="{52731FEB-7E0C-4742-A627-D3A694997B46}" ShortID="867023892">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PopaBoy" ID="{18A5703A-39FE-4F72-885C-DC09FFA5DFC6}" WorkUnitID="{56D185C1-AEAC-41AA-BA37-0BE8F23DBD4B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CFF_TwinStickFire" ID="{63BD3B8B-28D9-4CBA-B0D0-2AC414D45E82}">
+					<ChildrenList>
+						<Action Name="" ID="{7519307D-A5E1-4EAB-84E2-0AF82F88DE43}" ShortID="898388952">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TwinStickFire" ID="{C4B9F81C-AFD5-4A5C-9042-1CE69C62F53B}" WorkUnitID="{56D185C1-AEAC-41AA-BA37-0BE8F23DBD4B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

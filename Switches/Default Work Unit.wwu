@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A7EDC4CE-758F-47BD-92C1-C8D51ABA8835}" SchemaVersion="103">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{A7EDC4CE-758F-47BD-92C1-C8D51ABA8835}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="light_active" ID="{4BF7736C-2A8D-4BBF-807A-2C3613C4882F}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="deactivated" ID="{5B20DC5F-7AA4-45C9-8784-077A33740B67}"/>
+						<Switch Name="activated" ID="{D1EDB314-77E0-417D-8569-82B6E80DB225}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="light_active" ID="{E4B27099-DCFC-46EC-8C46-0473B2EF2DC2}"/>
+						<Curve Name="" ID="{6F786F21-8DBC-44E8-87B8-A381526C2647}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.001</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>2</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="LOCATION" ID="{607D1313-DC95-41E8-80E8-1B3E2E996D5C}">
+					<ChildrenList>
+						<Switch Name="AMB_Catwalks" ID="{44B2D713-E3CF-4B94-894D-4721CA6DFC83}"/>
+						<Switch Name="AMB_BowlingAlley" ID="{BA694B95-78ED-4D8D-8ED9-FBF159565337}"/>
+						<Switch Name="AMB_FazerTag" ID="{8C2ABA35-EB56-4E40-ABC2-5C986D87CBB9}"/>
+						<Switch Name="AMB_Chowda_Kitchen" ID="{6A3E09A1-E58E-4FB0-BB03-DD77F8E13D71}"/>
+						<Switch Name="AMB_Chowda_Raceway_InformationCenter" ID="{236BC073-B302-4D19-8A3B-3ECD19434347}"/>
+						<Switch Name="AMB_Utilidor_Small" ID="{BCCDAFB0-B0FD-4B21-81AB-BCF66144972C}"/>
+						<Switch Name="AMB_ParkingGarage" ID="{5A328D7B-1218-454A-B0C8-AE6B9AEA5526}"/>
+						<Switch Name="AMB_Utilidor_Large" ID="{AB3E7AB1-0AE0-4A6A-9EBC-534EC25A5F0C}"/>
+						<Switch Name="AMB_Bathroom" ID="{9AE8F435-9219-40A2-B684-22E58F85C1B0}"/>
+						<Switch Name="AMB_Stairwell" ID="{EFE6BB17-3469-4C2D-B25D-A5112C1DF56C}"/>
+						<Switch Name="AMB_GatorGolf_MedRoom" ID="{3451D904-CF22-4B82-A2D9-95AA1B5033D9}"/>
+						<Switch Name="AMB_Chowda_Cupcake_ArcadeRoom" ID="{9E3F513D-9E7A-485A-838D-8214312377F7}"/>
+						<Switch Name="AMB_Chowda_Daycare_Lobby" ID="{35A554D3-0B3B-4E51-90EE-3C014DB630BE}"/>
+						<Switch Name="AMB_GeneralRoom_Small" ID="{FCD84305-FC8A-43B0-B973-9EB9E0B7B3FC}"/>
+						<Switch Name="AMB_GatorGolf" ID="{0E35F935-175F-4EC3-BC6F-751A30B1D701}"/>
+						<Switch Name="AMB_Kitchen" ID="{E1CDD3B0-F00E-4DF9-8835-5F4CED7A1050}"/>
+						<Switch Name="AMB_Chowda_GatorGolf_Bathroom" ID="{FC0FF14E-4C37-4A01-B86E-22B4F7C59C08}"/>
+						<Switch Name="AMB_Chowda_Sinkhole__Entrance" ID="{3D6B6817-5F02-4C43-B984-2D707386D776}"/>
+						<Switch Name="AMB_Chowda_BonnieBowl_BlueRoom" ID="{9C0C6785-F005-4962-ADB8-E53D880BEF07}"/>
+						<Switch Name="AMB_Chowda_Vent" ID="{45806408-2C4B-4DD7-A742-CBB872778893}"/>
+						<Switch Name="AMB_DarkHallway" ID="{56C0DC8F-943C-4E97-BD0E-02F25A2F3983}"/>
+						<Switch Name="AMB_Chowda_Cupcake_Shop" ID="{70C0867B-E4D6-46C0-B230-0D19AF26E65F}"/>
+						<Switch Name="AMB_Chowda_Daycare_Giftshop" ID="{F82A349C-7DD5-4448-AA86-9002388FA365}"/>
+						<Switch Name="AMB_ServerRoom" ID="{73FF07EC-5C15-4FB3-8498-535B7C8F76EA}"/>
+						<Switch Name="AMB_Chowda_Daycare_Backstage_Corridor" ID="{D9F5C51E-FE4C-4457-A292-9CB02D21A5E4}"/>
+						<Switch Name="AMB_MontyGolf_TrippyHall" ID="{7F601B4C-4B01-4A0B-9932-8DF7C5271C5D}"/>
+						<Switch Name="AMB_Chowda_Sinkhole_BurntrapRooms" ID="{0C189AA6-A915-47C8-91A4-1BE0079E40F0}"/>
+						<Switch Name="AMB_FazerTag_Entrance" ID="{A5D4E011-8E3C-4676-8842-520D5C33E07D}"/>
+						<Switch Name="AMB_WestArcade" ID="{C26918BE-DAC5-40DC-945E-53894BE81156}"/>
+						<Switch Name="AMB_Chowda_GatorGolf_TransitionRoom" ID="{5594E887-5F14-4ECD-9571-6226A3DEBF46}"/>
+						<Switch Name="AMB_Chowda_LobbyVent" ID="{DC4FA8C3-6B5B-47FE-823B-0EF049D15B43}"/>
+						<Switch Name="AMB_Chowda_KitchenRoom" ID="{1696D852-35DB-4C5F-91FE-C2EC0003EC1A}"/>
+						<Switch Name="AMB_Chowda_BonnieBowl_Main" ID="{59E1B3AF-1538-438A-ADE9-58F4361A4E7B}"/>
+						<Switch Name="AMB_Chowda_Daycare_Theater" ID="{D9D1D220-A95C-4B9D-B31D-AF12D1A9D747}"/>
+						<Switch Name="AMB_Chowda_Salon_SalonBathroom" ID="{93243BD2-2DB0-40B9-9AC6-A5C7E63DF7CA}"/>
+						<Switch Name="AMB_RehearsalRoom" ID="{3FDFF867-26E7-48A5-BA12-F1E33F666EC4}"/>
+						<Switch Name="AMB_Chowda_Cupcake_Main" ID="{BE87FDAA-5A2C-4EB8-8022-474DFC9AB790}"/>
+						<Switch Name="AMB_Chowda_Salon_Airlock" ID="{AF6F0020-3565-4D02-912C-8FDE915E1241}"/>
+						<Switch Name="AMB_Chowda_ElevatorShaft" ID="{9F4A31CF-6079-4377-BC38-EC6EA3162C7E}"/>
+						<Switch Name="AMB_LobbyCafe" ID="{0095A360-FE0B-41C8-A66D-8133323195D6}"/>
+						<Switch Name="AMB_Sewer_Medium" ID="{B278A5EB-0C8A-4A83-9FB8-F853B1C7307A}"/>
+						<Switch Name="AMB_Chowda_Salon_LogRide" ID="{665EC694-7BC1-4308-BFDF-B56482005828}"/>
+						<Switch Name="AMB_Utilidor_Medium" ID="{4855DA4C-5448-4917-95A6-D1050A86F82E}"/>
+						<Switch Name="AMB_NeonRoom_Small" ID="{28377B30-7300-4DE8-B092-E3E86DBB41D4}"/>
+						<Switch Name="AMB_MontyGolf_Mechanical" ID="{AE0DB5C0-4652-48D1-8088-C42132FB9541}"/>
+						<Switch Name="AMB_Chowda_Salon_CavernStairs" ID="{ADA90EE0-8A7D-4E77-BA6C-17257C4AAA61}"/>
+						<Switch Name="AMB_pas_Dome" ID="{0DD104A1-ACE3-43F4-B71A-070F06ED952F}"/>
+						<Switch Name="AMB_Arcade" ID="{B1C32C00-91EF-47E7-AC7A-3A1E2C065DF4}"/>
+						<Switch Name="AMB_NeonRoom_Large" ID="{9C3BA24B-79E1-4E47-BAFE-3B538A18429C}"/>
+						<Switch Name="AMB_Chowda_Fazerblast_SecurityOffice" ID="{724A3E6B-CB6F-4560-9B25-4198F86B6440}"/>
+						<Switch Name="AMB_Chowda_Sinkhole__Cave" ID="{940969DC-7C0A-421D-B675-5AD93E275179}"/>
+						<Switch Name="AMB_Daycare" ID="{778C3491-6939-47E7-B257-2F3A9E4D46C6}"/>
+						<Switch Name="AMB_Chowda_Cupcake_Kitchen_BackRoom" ID="{2C934456-9076-424C-9CF7-9143D9D420F1}"/>
+						<Switch Name="AMB_Sewer_Tunnel" ID="{8BCBB9DD-8BAE-4A06-B6DB-C27722267DE7}"/>
+						<Switch Name="AMB_Chowda_GatorGolf_Main" ID="{E2C07D64-3B90-438C-8F22-E2F01CD46938}"/>
+						<Switch Name="AMB_GlamrockGifts" ID="{B9AB0BD0-E9FD-4E05-8E4A-CBA88D669282}"/>
+						<Switch Name="AMB_HardRoomSmall" ID="{AB0121D3-E516-4D5F-9327-2DD22DAEE1D3}"/>
+						<Switch Name="AMB_Chowda_Daycare_Backstage_Room" ID="{09EFE9A2-44CE-46DF-AA05-13483E903BB6}"/>
+						<Switch Name="AMB_FizzyFazVats" ID="{A242E338-20AC-420B-AC70-5CD404A5135B}"/>
+						<Switch Name="AMB_Chowda_Sinkhole__Main" ID="{E9143B53-54E9-4C1C-B0E4-ACC9758B848E}"/>
+						<Switch Name="AMB_Chowda_Catwalks_FactoryRoom" ID="{7FB04E8F-58E0-4303-A4A6-5A0600AB39D5}"/>
+						<Switch Name="AMB_Chowda_BonnieBowl_Bathrooms" ID="{037B1695-B960-4A63-92E7-AF0E92B802E6}"/>
+						<Switch Name="AMB_Sinkhole" ID="{C3B53DE4-88F1-4484-A937-DAC84E5C217C}"/>
+						<Switch Name="AMB_Chowda_Sinkhole__Rooms" ID="{1B5A57AA-CFF8-4BB1-8338-F1403E0D8D71}"/>
+						<Switch Name="AMB_Chowda_GatorGolf_WarehouseStorage" ID="{4146AB14-EBDC-4FAC-AE73-5332BEDA9C9B}"/>
+						<Switch Name="AMB_Chowda_Daycare_Main" ID="{415708A7-0344-4428-BA6A-0EA68BB13454}"/>
+						<Switch Name="AMB_MechanicalRoom_Small" ID="{BE4AA9E4-1D9E-4D4B-AAC5-EF5216216FA0}"/>
+						<Switch Name="AMB_MontyBossBattle_Room" ID="{A9B35F1E-CE90-4702-B761-A5637D96AF99}"/>
+						<Switch Name="AMB_Chowda_Cupcake_Kitchen" ID="{00B9E975-2B5D-4BEC-A56D-32BE6C4EC6E3}"/>
+						<Switch Name="AMB_Chowda_GatorGolf_Main_Hall" ID="{B8CB28AA-086E-4379-8E00-674791922572}"/>
+						<Switch Name="AMB_Chowda_Cupcake_Roof" ID="{7A670FF2-779B-4BA1-912B-348254C42FDB}"/>
+						<Switch Name="AMB_Chowda_Catwalks_Main" ID="{F262BE39-9D4F-4779-A232-00D290EF09BD}"/>
+						<Switch Name="AMB_Chowda_Cupcake_AR_ServerHallway" ID="{2745354E-CEF4-45B2-9E35-F406D95401B5}"/>
+						<Switch Name="AMB_Chowda_Salon_Bathroom" ID="{E2F979FA-F4C4-4552-88E0-AAA84FDC2A30}"/>
+						<Switch Name="AMB_Raceway" ID="{E2925318-C60F-4719-B8ED-C7B2D13F129D}"/>
+						<Switch Name="AMB_Chowda_GatorGolf_Store" ID="{AF7D9EA8-BF28-4D30-9AF4-C28E361E844A}"/>
+						<Switch Name="AMB_Chowda_Cupcake_Factory" ID="{157E596A-B088-4B45-B288-F000501F273C}"/>
+						<Switch Name="AMB_GeneralRoom_Medium" ID="{75564321-6E28-4281-A48A-A65C1DB97EC5}"/>
+						<Switch Name="AMB_Chowda_Daycare_Backstage" ID="{FA2ADE1F-6EF0-4A4A-9212-F20F0160CA06}"/>
+						<Switch Name="AMB_NeonRoom_Medium" ID="{A558FF49-1232-4445-B787-D648774BD07D}"/>
+						<Switch Name="AMB_Chowda_Cupcake_Bathroom" ID="{AE69977A-18D9-4447-A5FC-582F46319D96}"/>
+						<Switch Name="AMB_Chowda_Catwalks_VirtualBridge" ID="{73B6486F-D792-4555-A652-F969E0D39648}"/>
+						<Switch Name="AMB_Fire" ID="{23F6EDDA-6347-4CEE-9D97-F900B1D9341C}"/>
+						<Switch Name="AMB_Office_Medium" ID="{A6A077F2-D1F2-47FF-BDA1-5086CBA7C528}"/>
+						<Switch Name="AMB_Chowda_GlamRockGifts" ID="{A35C5575-919A-4668-9B8E-54F30AEB2924}"/>
+						<Switch Name="AMB_Sewer" ID="{294D3AA8-2E8F-4CF1-85AF-ABBF9AEDE88E}"/>
+						<Switch Name="AMB_Sewer_Large" ID="{D1165523-31B9-48E5-82C9-1C561A9BD0FE}"/>
+						<Switch Name="AMB_VentilationInside" ID="{5E3A3572-4BD4-4555-97BB-F97689C338A7}"/>
+						<Switch Name="AMB_Chowda_Fazerblast_Main" ID="{95CC455F-3044-4C54-964C-BC931EB4B8CC}"/>
+						<Switch Name="AMB_Chowda_Cupcake_Server_SideRoom" ID="{92077CD6-C947-4D40-8A82-BB952FCFC81B}"/>
+						<Switch Name="AMB_MachineRoom" ID="{E75627A6-4D15-4112-8E90-773BD4A0C384}"/>
+						<Switch Name="AMB_Chowda_Salon_Quiet_ARWorld" ID="{0C1D87C1-6CD6-4D6C-B3D0-E3A55BAA4761}"/>
+						<Switch Name="AMB_Docks" ID="{C5E83117-4BDE-4579-9B75-9D9688741C16}"/>
+						<Switch Name="AMB_Chowda_Raceway_Freight_ElevatorShaft" ID="{C85B6DC1-529E-41BB-9465-E66A413143D9}"/>
+						<Switch Name="AMB_Chowda_Raceway_ServiceGarage" ID="{8FE92E12-2467-43D1-8B78-7FDC541DDCD1}"/>
+						<Switch Name="AMB_Freezer_Large" ID="{63BBF684-08CE-4A39-9A20-EA268B2659F7}"/>
+						<Switch Name="AMB_Chowda_GatorGolf_Stomach" ID="{A636474F-47E3-4349-A8DA-D9C79FF42A3D}"/>
+						<Switch Name="AMB_Laundry_Large" ID="{E651CFA4-9B23-413A-B485-ED059307D3D5}"/>
+						<Switch Name="AMB_Chowda_Cupcake_AR_ServerSide" ID="{02B43B08-B516-4C53-971D-E350F5C18442}"/>
+						<Switch Name="AMB_Closet_Small" ID="{A5B8BEE5-EE57-4369-A4AE-BCC0CD347420}"/>
+						<Switch Name="AMB_Chowda_Salon_Main" ID="{79B8766C-1532-4C68-8E81-F70A536941F0}"/>
+						<Switch Name="AMB_Chowda_GatorGolf_SecurityRoom" ID="{5CD361CB-421A-4966-972E-741596FF2C71}"/>
+						<Switch Name="AMB_Chowda_GatorGolf_Kitchen" ID="{E693BCFA-922D-4CEE-A6BF-F8D52F05108D}"/>
+						<Switch Name="AMB_Chowda_Cupcake_Server_Hallway" ID="{CA465EC9-8AA3-4F8E-B19B-BF71438A36F7}"/>
+						<Switch Name="AMB_Kitchen_Large" ID="{0A79EE86-B968-4679-9B6E-CE9078C5BD71}"/>
+						<Switch Name="AMB_Chowda_BonnieBowl_Entrance" ID="{1D0C2F74-A199-4A4C-A587-0A385B88C039}"/>
+						<Switch Name="AMB_Chowda_MainLobby" ID="{D50F1B30-0C3C-41A5-A4C1-3724F28977AC}"/>
+						<Switch Name="AMB_Chowda_BonnieBowl_NarrowCorridor" ID="{16A44571-AAB9-4C03-A92C-7190BAAA119E}"/>
+						<Switch Name="AMB_Chowda_Utilidoors" ID="{1F188CA3-E93A-429C-8AFF-43917C13C431}"/>
+						<Switch Name="AMB_Chowda_Catwalks_BackHall" ID="{CC124406-FD80-4C10-8E04-1BC06726066F}"/>
+						<Switch Name="AMB_Theatre" ID="{95871D8E-1EC1-4D92-9743-CAC56DFA8837}"/>
+						<Switch Name="AMB_Silence" ID="{09C2636C-2A3D-4B56-9B02-BD0553836AEB}"/>
+						<Switch Name="AMB_Atrium" ID="{CE1BBFD0-8A9E-4A02-9848-343BC60A7A28}"/>
+						<Switch Name="AMB_Chowda_GatorGolf_SecurityHall" ID="{82638018-1E19-4A4C-B716-9B02DACE7643}"/>
+						<Switch Name="AMB_Chowda_Raceway_Main" ID="{87DD4532-0492-4DA1-9404-C4674338E747}"/>
+						<Switch Name="AMB_Chowda_Catwalks_MontyRide" ID="{4810EB3C-BC56-40C3-B87F-FB283105A061}"/>
+						<Switch Name="AMB_Chowda_Stairwell" ID="{A154513C-A79B-4BFE-82DF-98EEBED8E5A4}"/>
+						<Switch Name="AMB_Chowda_Salon_Backstage" ID="{5B469114-7701-4FC6-A8E6-CB0A44401D18}"/>
+						<Switch Name="AMB_Burntrap" ID="{2B88CFDF-4339-42E0-8B24-1F10934DBE3E}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="FOOTSTEP_MATERIAL" ID="{0EC29A9E-BC54-4074-B00B-7197F8329012}">
+					<ChildrenList>
+						<Switch Name="HardPlastic" ID="{33CC0685-855E-4AB8-A214-8EB83B4D92CD}"/>
+						<Switch Name="Rubber" ID="{4C6DD4E3-319D-4EB0-B600-098312E05AA9}"/>
+						<Switch Name="StickyTile" ID="{170005F0-02CE-4E3A-A66E-E4600A804746}"/>
+						<Switch Name="Mud" ID="{F5C76279-37E6-4937-B727-4979F6701A17}"/>
+						<Switch Name="Concrete" ID="{96F3C2AF-2086-47E8-B950-1DC5F9229270}"/>
+						<Switch Name="Cardboard" ID="{351B77D3-13D8-430D-9737-4F4609F86430}"/>
+						<Switch Name="Organic_Garbage" ID="{B2BB47AF-1FE7-4919-BA96-9759E6F96615}"/>
+						<Switch Name="LooseMetal" ID="{EA0544D0-56D3-4C36-9081-539EEC1D4144}"/>
+						<Switch Name="Wood" ID="{57800C0A-1F93-4D94-82EA-BA8E07D547B1}"/>
+						<Switch Name="Dirt" ID="{06889D59-5FA5-488A-902E-741F15449EF6}"/>
+						<Switch Name="Carpet" ID="{70DC9923-73CE-481F-AE4F-7FD7EDEF3EA3}"/>
+						<Switch Name="Glass" ID="{6DDBC65F-DCB2-4C22-8005-3DBA7B73DEB4}"/>
+						<Switch Name="Metal" ID="{907BA34A-13D2-4330-BED3-FC410DEE197A}"/>
+						<Switch Name="Roach_Layer" ID="{CE1CEB42-1DD3-46D7-A811-E4B4A6566B9F}"/>
+						<Switch Name="Tile" ID="{A5DC0821-0A9F-420C-AC6A-9B02D2F8DC86}"/>
+						<Switch Name="Water" ID="{82683D68-BFBD-4E87-B46D-D0B5B6628CA3}"/>
+						<Switch Name="Tarp" ID="{C3F6D8EC-8309-4C3A-96DD-585928AF06BE}"/>
+						<Switch Name="Paper" ID="{335B24A1-D8BE-4B38-99AD-43A3B6FC28AA}"/>
+						<Switch Name="Vinyl" ID="{6F896F57-AAC4-42AA-87E6-6936FA203A2A}"/>
+						<Switch Name="Vent" ID="{1D75D294-A89A-41F9-88EE-D91F0BD5AF55}"/>
+						<Switch Name="ARFloor" ID="{FA233178-9CDB-4DBC-B7B8-EF9AB08426A2}"/>
+						<Switch Name="ChainlinkFence" ID="{7F442145-25F3-4D68-9C0F-278A8D9A7462}"/>
+						<Switch Name="DebrisMud" ID="{12C1CB86-F5B2-4A00-823E-0E90FC6F692F}"/>
+						<Switch Name="DebrisMetal" ID="{6BE5769E-C338-4511-B013-A3499C117A17}"/>
+						<Switch Name="Wood_Creaky" ID="{037FA19A-0BAD-4DFD-A4D1-2ACBA4CF1926}"/>
+						<Switch Name="BallPit" ID="{172EFAD9-232A-45B7-8F24-2A88820D2399}"/>
+						<Switch Name="FloodWater" ID="{E9BF9292-0724-4F8E-8C44-A1A3A1AB262E}"/>
+						<Switch Name="Fatigue_Mat" ID="{683689C0-B942-4D22-9A23-2FA568D06FBE}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="footstep_debris_add" ID="{997D9023-3599-4137-8F79-8543F8C9D12C}">
+					<ChildrenList>
+						<Switch Name="false" ID="{7D60E402-2798-4369-8905-DBD085631D8B}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

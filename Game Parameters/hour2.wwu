@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F9702D36-210A-4EEA-A47E-53005AB3E897}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="hour2" ID="{F9702D36-210A-4EEA-A47E-53005AB3E897}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="daycare_generators_activated" ID="{394C4A91-EDF4-4C47-BDD1-5BEDE0B212CD}">
+					<PropertyList>
+						<Property Name="FilterTimeUp" Type="Real64" Value="8"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="5"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

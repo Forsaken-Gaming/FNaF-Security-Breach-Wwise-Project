@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F38DBB65-B657-4C8B-AA0F-FF2D4FA854CD}" SchemaVersion="103">
+	<States>
+		<WorkUnit Name="Chowda" ID="{F38DBB65-B657-4C8B-AA0F-FF2D4FA854CD}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="AmbienceState" ID="{8791F101-4758-47A1-9F9E-4730E48E7207}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.6"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{D7D73066-98D5-4929-9CA0-9F98935ED0E9}"/>
+						<State Name="RWBlocker" ID="{240F5729-D7F3-4C51-B056-364C73D33535}"/>
+						<State Name="Tunnel" ID="{49507C5D-71FF-48EB-85F7-11B22700F198}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="RWBlocker" ID="{240F5729-D7F3-4C51-B056-364C73D33535}"/>
+							<EndState Name="None" ID="{D7D73066-98D5-4929-9CA0-9F98935ED0E9}"/>
+							<Time>0.6</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{D7D73066-98D5-4929-9CA0-9F98935ED0E9}"/>
+							<EndState Name="RWBlocker" ID="{240F5729-D7F3-4C51-B056-364C73D33535}"/>
+							<Time>0.3</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="AR_World" ID="{B5E006F9-7E1E-4337-9E28-542C8E8BA9D0}">
+					<ChildrenList>
+						<State Name="None" ID="{8BD26758-E6E6-454D-BAED-A47B37826999}"/>
+						<State Name="Active" ID="{217FB795-B0F6-4670-BF5D-A823519C52E5}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Active" ID="{217FB795-B0F6-4670-BF5D-A823519C52E5}"/>
+							<EndState Name="None" ID="{8BD26758-E6E6-454D-BAED-A47B37826999}"/>
+							<Time>0.8</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="DLC" ID="{EE30B68A-A079-4D3D-B72B-816857513BF5}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.7"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{01E3BD8A-FAC7-4E7D-A067-95FE20E42BC9}"/>
+						<State Name="RUIN" ID="{D6327BF3-1653-4F04-95DD-7DF0A391F72B}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Story" ID="{A6A41FAC-0A9E-4307-9554-B95FE7E2A489}">
+					<ChildrenList>
+						<State Name="None" ID="{4BA13D97-D8E9-47EF-8ED9-2988AE5270AC}"/>
+						<State Name="Sequence" ID="{7D45B0AC-4C33-4633-AA8C-9C6B622D5CA0}"/>
+						<State Name="VOSequence" ID="{574F908C-830B-4506-98E2-BD8ADD4AD10B}"/>
+						<State Name="Cinematic" ID="{A30DC1DC-9E2B-436F-856A-829677E49843}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{4BA13D97-D8E9-47EF-8ED9-2988AE5270AC}"/>
+							<EndState Name="Cinematic" ID="{A30DC1DC-9E2B-436F-856A-829677E49843}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Cinematic" ID="{A30DC1DC-9E2B-436F-856A-829677E49843}"/>
+							<EndState Name="VOSequence" ID="{574F908C-830B-4506-98E2-BD8ADD4AD10B}"/>
+							<Time>1.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3A02D445-C60E-4819-800C-E3681257D877}" SchemaVersion="103">
+	<Switches>
+		<WorkUnit Name="physics" ID="{3A02D445-C60E-4819-800C-E3681257D877}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="movement_type" ID="{DB409169-E12D-4607-88CD-6A7E996EC0FC}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="scrape" ID="{561B4D97-0B50-44F0-BC3A-A8DADE572F7E}"/>
+						<Switch Name="impact" ID="{0617026B-B240-4AA9-A437-A65B8E4B9DAB}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="PHYSICS_IMPACT_VALUE" ID="{B304ACB0-4E06-49B4-91BC-1D225D2E3EDB}"/>
+						<Curve Name="" ID="{7368FFF3-A6EE-4942-A50F-5A003CFB57D1}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.43</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>2</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

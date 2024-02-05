@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1000224F-DF98-4B12-8C99-94CD27B2FA29}" SchemaVersion="103">
+	<States>
+		<WorkUnit Name="story_moments" ID="{1000224F-DF98-4B12-8C99-94CD27B2FA29}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="cinematics" ID="{35AD109F-EB16-4C57-BC75-CE20D8C80321}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.5"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{28D740BC-A6D2-4472-AD4A-61C92F4E943B}"/>
+						<State Name="hour2_sunmanIntro" ID="{E38D2332-FD2D-4416-BF9E-B86D5674BC3D}"/>
+						<State Name="hour2_sunmanCarryPlayer" ID="{BAB27990-E15E-495E-958E-FF1708FA0F70}"/>
+						<State Name="dumpBallsMonty" ID="{7B017E59-A472-463A-A4BB-0CCF03218005}"/>
+						<State Name="stageLift" ID="{4A5D54EB-12E7-42AA-8BBA-70C7151C2DAC}"/>
+						<State Name="hour3_elevatorTrap" ID="{1009D2FB-402E-4D74-A042-11B8F50A6C0A}"/>
+						<State Name="montyBossBattleIntro" ID="{8041F43C-95C6-4C29-A681-31B068CF4270}"/>
+						<State Name="hour1_firstAidDialogue" ID="{2B7059FB-8507-4890-9F88-DFD2BA54389F}"/>
+						<State Name="hour3_chicaKitchen" ID="{05248840-36EB-4E4A-AA51-36C1C4D67B28}"/>
+						<State Name="hour3_chicaKitchen_Static" ID="{C724B0D5-D77C-4D79-B128-43B173EC744E}"/>
+						<State Name="hour1_introVideo" ID="{F4177EDC-FDE6-41A8-8B65-28DA8BFE7073}"/>
+						<State Name="hour1_afterIntroVideo" ID="{49453665-FF4F-4E7D-949F-330C39548180}"/>
+						<State Name="hour1_startInFreddy" ID="{1952BCC2-AC63-489D-8F80-CE5A2E2A0201}"/>
+						<State Name="hour1_getOutOfFreddy" ID="{3EC1CDF0-33B3-411C-9364-89DBC44EB09C}"/>
+						<State Name="hour2_slideEnter" ID="{FCC39C1F-50A3-449D-A980-D04590E8BF77}"/>
+						<State Name="hour2_kickedOutOfDaycare" ID="{E8C3C4DE-EC3A-4F65-9D23-843B61FEB3FD}"/>
+						<State Name="hour2_transitionToMoonMan" ID="{9788E4E0-0D74-48BB-91C3-919A603B07AA}"/>
+						<State Name="hour2_slideNoEntry" ID="{E2FCF099-1ED8-42D0-A0DE-72628F1CDE3D}"/>
+						<State Name="hour3_littleMusicManVent" ID="{808AFA6B-7084-4A3F-BC96-895407D2372A}"/>
+						<State Name="hour4_mmattack" ID="{4CFD8EE8-F6B5-4910-A302-52306D8FC135}"/>
+						<State Name="hour5_endoIntro" ID="{686240C9-3E18-4712-AEA9-BCD3F185FD23}"/>
+						<State Name="hour4_transitionToLostAndFound" ID="{DD7F38A1-4F24-477B-A883-8519614CD4B6}"/>
+						<State Name="hour4_lostAndFound" ID="{021CDB90-A0C3-4091-ADF6-758A5CC5479B}"/>
+						<State Name="hour1_vanessaWalksBy" ID="{5D1D824D-98BB-44F1-8D58-6173BB361F55}"/>
+						<State Name="hour1_walkToFirstAid" ID="{0A5B277D-51B6-408B-BDF8-191E34BEDBCA}"/>
+						<State Name="chicaBossBattleIntro" ID="{9425692E-3573-4D7F-B7E7-0DEB452EC86F}"/>
+						<State Name="roxyBossBattleIntro" ID="{EF3510C8-18F5-4F04-A659-0D6C46265C4C}"/>
+						<State Name="dumpBallsMonty_sloMo" ID="{1E5325C9-AE5F-49CA-98C7-DB7951581544}"/>
+						<State Name="roxyBossBattleIntro_sloMo" ID="{40E854B2-C05B-424A-AB8A-3AD1A2246F6E}"/>
+						<State Name="burntrapBossBattleIntro" ID="{DF39FD7F-BAF6-48B5-8845-B09D5A05E655}"/>
+						<State Name="overtime_vannyIntro" ID="{32D1844A-673C-4323-A71F-D02CC0F9D2C7}"/>
+						<State Name="overtime_endGame" ID="{538DF698-6C3E-480E-9155-86F353CA4F47}"/>
+						<State Name="ending_gregoryInAlley" ID="{F72C765B-2888-4697-8B8B-B07639E07F8F}"/>
+						<State Name="ending_loadingDock" ID="{619F7619-CE9E-45BE-90C7-01497F508FEE}"/>
+						<State Name="ending_vip" ID="{A9EC8D5E-B3D2-4026-8A07-7A6B7B807B6B}"/>
+						<State Name="ending_burntrap" ID="{FC1155BB-A3D1-4BC3-A19D-BE4A6C601046}"/>
+						<State Name="ending_vannyDestroy" ID="{5CF4F1A2-5E49-4162-8970-DB2315D004C7}"/>
+						<State Name="ending_vannyRedeem" ID="{F02118E3-DD48-48C4-B9DC-908242FCBAF1}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{28D740BC-A6D2-4472-AD4A-61C92F4E943B}"/>
+							<EndState Name="hour2_sunmanIntro" ID="{E38D2332-FD2D-4416-BF9E-B86D5674BC3D}"/>
+							<Time>3</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="hour3_chicaKitchen" ID="{05248840-36EB-4E4A-AA51-36C1C4D67B28}"/>
+							<EndState Name="hour3_chicaKitchen_Static" ID="{C724B0D5-D77C-4D79-B128-43B173EC744E}"/>
+							<Time>0.2</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="hour1_startInFreddy" ID="{1952BCC2-AC63-489D-8F80-CE5A2E2A0201}"/>
+							<EndState Name="hour1_getOutOfFreddy" ID="{3EC1CDF0-33B3-411C-9364-89DBC44EB09C}"/>
+							<Time>0.08</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="hour3_chicaKitchen_Static" ID="{C724B0D5-D77C-4D79-B128-43B173EC744E}"/>
+							<EndState Name="None" ID="{28D740BC-A6D2-4472-AD4A-61C92F4E943B}"/>
+							<Time>0.25</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="hour1_vanessaWalksBy" ID="{5D1D824D-98BB-44F1-8D58-6173BB361F55}"/>
+							<EndState Name="None" ID="{28D740BC-A6D2-4472-AD4A-61C92F4E943B}"/>
+							<Time>5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="dumpBallsMonty" ID="{7B017E59-A472-463A-A4BB-0CCF03218005}"/>
+							<EndState Name="dumpBallsMonty_sloMo" ID="{1E5325C9-AE5F-49CA-98C7-DB7951581544}"/>
+							<Time>0.2</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="dumpBallsMonty_sloMo" ID="{1E5325C9-AE5F-49CA-98C7-DB7951581544}"/>
+							<EndState Name="dumpBallsMonty" ID="{7B017E59-A472-463A-A4BB-0CCF03218005}"/>
+							<Time>0.2</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{28D740BC-A6D2-4472-AD4A-61C92F4E943B}"/>
+							<EndState Name="dumpBallsMonty" ID="{7B017E59-A472-463A-A4BB-0CCF03218005}"/>
+							<Time>3</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="office_game" ID="{24C96790-2EF2-451F-B3E6-7E5498E3D878}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.2"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{CCA618A2-B9C6-49EF-BAAF-8FC716E62A19}"/>
+						<State Name="kitchen" ID="{ABB59049-F273-4B85-900F-264CC747D6BC}"/>
+						<State Name="backstage" ID="{EDCB29E4-D57C-4ACA-AC52-75D62801D861}"/>
+						<State Name="prizeCounter" ID="{89D68429-5203-4212-A8B5-070DC8312F7E}"/>
+						<State Name="daycare" ID="{CA5B3CD0-DD69-494A-9ADC-9E309E814427}"/>
+						<State Name="fazerblast" ID="{B0569D1F-ED9C-4CBB-82D3-46D5FFCF56D5}"/>
+						<State Name="montyBossBattle" ID="{96247B1E-B08B-47AB-A10F-FD20C400117E}"/>
+						<State Name="underground" ID="{1E88ADCB-29B8-40BF-A6EE-6F9ADC6EEAAC}"/>
+						<State Name="westArcade" ID="{8055DBB6-52A4-44EE-972E-3D3D3C771A03}"/>
+						<State Name="roxyBossBattle" ID="{A5E9D771-043B-49A8-946C-D9F3904BBC26}"/>
+						<State Name="chicaBossBattle" ID="{5D440E79-5C40-43D9-836B-6B0FAF5B8E56}"/>
+						<State Name="vannyBossBattle" ID="{A05DEA46-457B-4591-AD93-E8CD4A69990A}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{CCA618A2-B9C6-49EF-BAAF-8FC716E62A19}"/>
+							<EndState Name="kitchen" ID="{ABB59049-F273-4B85-900F-264CC747D6BC}"/>
+							<Time>3</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="roxyBossBattle" ID="{A5E9D771-043B-49A8-946C-D9F3904BBC26}"/>
+							<EndState Name="None" ID="{CCA618A2-B9C6-49EF-BAAF-8FC716E62A19}"/>
+							<Time>8</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{CCA618A2-B9C6-49EF-BAAF-8FC716E62A19}"/>
+							<EndState Name="underground" ID="{1E88ADCB-29B8-40BF-A6EE-6F9ADC6EEAAC}"/>
+							<Time>20</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="hour1_postCorridorChaseOffice" ID="{9D8E1372-E678-4F2E-BF8D-E5C305A2C1DF}">
+					<ChildrenList>
+						<State Name="None" ID="{6A63C445-C5AB-4F8C-AB00-13BD61B28FE7}"/>
+						<State Name="active" ID="{37F43A7D-885E-4846-82E8-4121C83D1520}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{6A63C445-C5AB-4F8C-AB00-13BD61B28FE7}"/>
+							<EndState Name="active" ID="{37F43A7D-885E-4846-82E8-4121C83D1520}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="active" ID="{37F43A7D-885E-4846-82E8-4121C83D1520}"/>
+							<EndState Name="None" ID="{6A63C445-C5AB-4F8C-AB00-13BD61B28FE7}"/>
+							<Time>2</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="DJMM_music" ID="{3DAB17BE-8393-402B-BC55-114F0176AFC9}">
+					<ChildrenList>
+						<State Name="None" ID="{4F6CF191-E02B-460E-94FD-FD3FFADE673B}"/>
+						<State Name="active" ID="{22C808CA-489C-4714-BAFC-3ADEA51E22EB}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="hour1_corridorChase" ID="{624B85F8-30F6-46F9-AF95-7E04721A4FEF}">
+					<ChildrenList>
+						<State Name="None" ID="{AD8D2A34-2ED2-447A-84F2-A23DE421D5A0}"/>
+						<State Name="active" ID="{69FB2BEB-076F-4C41-9527-1FCE224440C0}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="hour3_chicaBathroomIntro" ID="{75F032B3-0D20-48B0-8302-96DACD53AD17}">
+					<ChildrenList>
+						<State Name="None" ID="{77E4D625-B503-48F9-9C18-C83CF9F05D80}"/>
+						<State Name="active" ID="{7A76D498-8162-438D-87DB-F59E7FFD333B}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="hour4_showtime" ID="{BF60F4F3-D9DB-4E1F-A8FC-CEFAD3F3D658}">
+					<ChildrenList>
+						<State Name="None" ID="{FC88F97D-75D2-4E3D-B1B8-BE97152E0A78}"/>
+						<State Name="active" ID="{B058B87B-7C2B-4E9C-A92F-A7C8F4CDA983}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="hour4_stageThemeIntro" ID="{604C0031-D1AA-45FE-998E-5DC47E14811F}">
+					<ChildrenList>
+						<State Name="None" ID="{40D3864A-BEB4-456A-BC1E-3DC5BC7687EA}"/>
+						<State Name="active" ID="{69ED6C3D-31D7-4D75-98FA-76806C30EBAD}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{40D3864A-BEB4-456A-BC1E-3DC5BC7687EA}"/>
+							<EndState Name="active" ID="{69ED6C3D-31D7-4D75-98FA-76806C30EBAD}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="active" ID="{69ED6C3D-31D7-4D75-98FA-76806C30EBAD}"/>
+							<EndState Name="None" ID="{40D3864A-BEB4-456A-BC1E-3DC5BC7687EA}"/>
+							<Time>5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="roxy_eyes_state" ID="{2E30F6F7-8404-47AF-81F7-ED9E1C0A44C6}">
+					<ChildrenList>
+						<State Name="None" ID="{32E0DB0D-31D3-4D22-8B90-4D30E09842EB}"/>
+						<State Name="installed" ID="{901D75D8-1D1C-4F00-B9A2-84A20A9B56B9}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

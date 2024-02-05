@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3D0B8969-6D62-4A31-BBD6-7662C1062863}" SchemaVersion="103">
+	<Switches>
+		<WorkUnit Name="character" ID="{3D0B8969-6D62-4A31-BBD6-7662C1062863}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="CHARACTER_VO_UNIVERSAL" ID="{CC1051F8-8793-404A-9708-3991FF411B24}">
+					<ChildrenList>
+						<Switch Name="SpottedPlayer" ID="{EAD31ABB-42DC-444C-B4C2-F9BC4DBF666A}"/>
+						<Switch Name="InPursuit" ID="{A03B2D09-618C-4DF6-9E86-5BEED15F670E}"/>
+						<Switch Name="SearchingNormal" ID="{FEC9366D-5037-4DFD-BC41-7381A33AE0CD}"/>
+						<Switch Name="LostPlayer" ID="{D5A75D1C-EFEF-4EB1-A722-8E61F353662B}"/>
+						<Switch Name="HeardSomething" ID="{67426965-1C92-47AA-BE33-4E3EF9670022}"/>
+						<Switch Name="AnotherAnimatronicInTheWay" ID="{37D93BB6-D066-4BF2-804C-B90767D2EDFB}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="staffbot_voice_gender" ID="{56E7DE5E-220F-4112-973F-A7DE5F367FF5}">
+					<ChildrenList>
+						<Switch Name="masculine" ID="{756578FE-2BC8-4AA1-9640-81600F57E8DC}"/>
+						<Switch Name="feminine" ID="{DB091143-AD3C-4006-A1F4-909A2FF63DC2}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Gregory_RunningEfforts_Tension" ID="{1A6B6D64-50B9-486E-9B54-DE840036028F}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Normal" ID="{3FBD548D-6228-4069-97E7-5B47E62D485E}"/>
+						<Switch Name="Tense" ID="{1EBC2701-4560-4F38-A3F3-A50E711EFD8B}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="AI_PROXIMITY" ID="{83C4449A-21EB-4583-8E31-BFFA996834C5}"/>
+						<Curve Name="" ID="{4DB27B75-B6E4-4D1D-87FD-3BFFF9AE62D7}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>-1</XPos>
+									<YPos>2</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>49.5</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>100</XPos>
+									<YPos>1</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="gregory_outside_freddy" ID="{8E2780DB-9CCF-473D-9E03-B166CB6A0EB2}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="inside" ID="{4F0A9CE8-681B-4A80-95EE-19F83385A615}"/>
+						<Switch Name="outside" ID="{FC1B06A9-EE13-46E2-9E23-F13BEF085DAB}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="GREGORY_OUTSIDE_FREDDY" ID="{C3F17D56-A915-411E-AEAE-6601B0A179E0}"/>
+						<Curve Name="" ID="{9761BDA8-6102-416D-B0B8-2572B2368DCB}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.901</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>2</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="LOCO_SPEED" ID="{B6C4B734-DF52-4AC1-BFA6-71D7E2ACFC1F}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Sneaking" ID="{135446A9-BA96-41D2-A67A-85E08CD7FB90}"/>
+						<Switch Name="Walking" ID="{9EC3C534-1E76-4B7A-BB59-FB40CF04A5C0}"/>
+						<Switch Name="Running" ID="{4C0B6589-7AC0-4648-A417-CA934E4630CE}"/>
+						<Switch Name="SneakRunning" ID="{2E69DBD3-F9F0-4DFA-AD83-1D053203A538}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="GP_LOCO_SPEED" ID="{7343F605-AF03-4F94-8B2D-02230514C557}"/>
+						<Curve Name="" ID="{9406D2B1-A416-4522-8D1C-7E9A5A349BBB}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>200</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>525</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1000</XPos>
+									<YPos>3</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="LOCO_SPEED_ANIMATRONIC" ID="{04726009-0E8C-442C-AA93-EA7438C38C43}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Run" ID="{4B4085A8-92DA-41B3-B0A3-64E069925992}"/>
+						<Switch Name="Walk" ID="{A6F0324B-AE6B-4F65-9DA2-7FC8EC1709EE}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="GP_LOCO_SPEED" ID="{7343F605-AF03-4F94-8B2D-02230514C557}"/>
+						<Curve Name="" ID="{D88BACB1-E26B-408F-8048-55BE5D371AD6}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>2</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>210</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1000</XPos>
+									<YPos>1</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="LOCO_SPEED_GREGORY" ID="{4572B88B-305B-413D-8857-510855AF0F7C}">
+					<ChildrenList>
+						<Switch Name="Sneaking" ID="{61E0CD20-39FD-41D3-BC07-B090F52A14F0}"/>
+						<Switch Name="Walking" ID="{A4ACC612-352E-4326-A681-C1405B7FA7E8}"/>
+						<Switch Name="Running" ID="{74A536B2-01B9-401F-9B96-4A7FDE62500B}"/>
+						<Switch Name="SneakRunning" ID="{E28B6246-362F-480F-8ABC-87E2EEC333DC}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="GP_LOCO_SPEED" ID="{7343F605-AF03-4F94-8B2D-02230514C557}"/>
+						<Curve Name="" ID="{CF9D4B97-6C7E-4A14-A0FD-E588100182DC}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>0</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1000</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="CHARACTER_ANIMATRONICS" ID="{50A6A4CA-E10C-4A20-B1EB-BB80AF4EF9DD}">
+					<ChildrenList>
+						<Switch Name="Roxy_Shattered" ID="{384AD87E-45E1-4D45-8123-B5C2959A9E37}"/>
+						<Switch Name="Vanny" ID="{8E19B4C0-ACDC-4D31-85F1-D32770DFBFCC}"/>
+						<Switch Name="Monty" ID="{198191E5-BA59-4D79-997A-2DEFCABE3621}"/>
+						<Switch Name="MoonMan" ID="{DF38F25C-6CF5-45A4-BCE9-4D2B9BDB84DC}"/>
+						<Switch Name="Endos" ID="{7EA0B200-6564-4791-9451-8B98C5B742B0}"/>
+						<Switch Name="DJMusicMan" ID="{0D5285C4-A092-4E3C-851F-EB28FD4B25F7}"/>
+						<Switch Name="Monty_Shattered" ID="{ED3336B4-46D5-4B05-9506-D7F192E25875}"/>
+						<Switch Name="Roxy" ID="{FB99D07B-7933-4061-B937-3A0325252D15}"/>
+						<Switch Name="SunMan" ID="{57944B3C-CBAB-435D-9781-376D6348DCE4}"/>
+						<Switch Name="Freddy" ID="{4B9F5420-E17A-45D3-932B-50B3B5905304}"/>
+						<Switch Name="Chica_Shattered" ID="{5595BDC3-889F-4F1C-B667-8E30AEB8AB74}"/>
+						<Switch Name="Chica" ID="{365BE781-FEA2-455D-9F84-C29D263D2357}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="CHARACTER_BOTS" ID="{C37314E2-CA4D-463C-937D-99DBFA58DF8A}">
+					<ChildrenList>
+						<Switch Name="StaffBotDefault" ID="{138F0F0A-134B-4643-8319-C74CE3512898}"/>
+						<Switch Name="StaffBotFazerblast" ID="{5825B44D-0168-449A-B204-A9FAFFBB34AE}"/>
+						<Switch Name="StaffbotPizza" ID="{78196947-79DB-45A3-A45A-54990F172690}"/>
+						<Switch Name="StaffBotMap" ID="{D331A5D5-6139-426A-8F59-8DA4DC865353}"/>
+						<Switch Name="StaffBotWorker" ID="{CAA44F83-F49D-4E40-AB83-489958707E3A}"/>
+						<Switch Name="StaffBotSales" ID="{AE0A6B41-2CBF-4898-9733-A13012F2E523}"/>
+						<Switch Name="StaffBotComedian" ID="{30765FCC-BB0B-44B5-B80A-6AA8423AC94B}"/>
+						<Switch Name="StaffbotTheatre" ID="{1137A2BC-6E9A-49B0-BCF0-4AE38147AFC5}"/>
+						<Switch Name="StaffBotCleaner" ID="{433CBF86-1F82-452E-99C5-E5414F40EF78}"/>
+						<Switch Name="StaffBotSecurity" ID="{AD2D6966-FBAD-4C6C-8325-1C00C454B8DF}"/>
+						<Switch Name="StaffBotServer" ID="{86190800-FBB8-42ED-BA9B-6B600696CBF3}"/>
+						<Switch Name="MiniBot" ID="{23CA9488-7461-4DA1-8F6B-4A45C1607C48}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

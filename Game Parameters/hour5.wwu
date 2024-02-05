@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2D551166-3472-4C46-8C0A-E8CF5DCA59BF}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="hour5" ID="{2D551166-3472-4C46-8C0A-E8CF5DCA59BF}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="pas_door_open_amount" ID="{4704EBE8-FC82-46B4-9DD5-636CD52FE041}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{938A982B-B20C-4A48-94E5-6D252EBB2DEE}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="UI" ID="{938A982B-B20C-4A48-94E5-6D252EBB2DEE}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Fazwatch" ID="{69DF3CCA-DD22-493B-A890-50602035ED5A}" ShortID="945101137">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="UI_Pause" ID="{BD800DD0-1682-4002-B8C4-F7EB2B5A9B92}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sfx_ui_fazwatch_messageincoming_freddy" ID="{14D4B14F-2130-4EF6-A95A-2F736EA03F90}" ShortID="893908546">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>47</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-2400</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_ui_fazwatch_messageincoming_freddy" ID="{6B565379-A29A-452C-B23A-399C74F015EA}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.18228719851577"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.297795918367347"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sfx_ui_fazwatch_messageincoming_freddy.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="283680855"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_ui_fazwatch_messageincoming_freddy" ID="{6B565379-A29A-452C-B23A-399C74F015EA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fazwatch_camera_servo_lp" ID="{B8EF74A4-626F-492A-93CA-77AF878D6C8F}" ShortID="365382472">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>41</Value>
+									</ValueList>
+								</Property>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{D4BE9BE3-274E-4228-94DB-29C9976A37AD}" ShortID="288951340">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="camera_servo_velocity" ID="{C333996C-F09E-40C8-81BA-66189D312CB0}" WorkUnitID="{594E96D8-9DA4-4B36-AEDF-1A0FDD3B2AEC}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{2DD958B6-FB57-4C3F-88F8-CD2014C2599B}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-100</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>200</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{2E4E0CB5-88E8-4332-BEEB-3E81D89428BE}" ShortID="594922998">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="camera_servo_velocity" ID="{C333996C-F09E-40C8-81BA-66189D312CB0}" WorkUnitID="{594E96D8-9DA4-4B36-AEDF-1A0FDD3B2AEC}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{D6D47DDC-292C-4F78-8278-F53E2B079C7C}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fazwatch_camera_servo_lp" ID="{07CF3DCE-5904-437C-AC60-099665D148A2}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fazwatch_camera_servo_lp.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="110892457"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="hour1_postCorridorChaseOffice" ID="{9D8E1372-E678-4F2E-BF8D-E5C305A2C1DF}"/>
+									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="fazwatch_camera_state" ID="{1703F688-2441-46A9-B448-BEF584C4B9EC}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="active" ID="{A0BDAB07-E000-462E-99B8-220007DBBCD2}"/>
+										<CustomState Name="" ID="{9A48EB45-0540-4BD3-9428-161C44A28B17}" ShortID="1055450413"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="active" ID="{37F43A7D-885E-4846-82E8-4121C83D1520}"/>
+										<CustomState Name="" ID="{5F5A12C1-C12C-4840-ACFD-AEAA9F55E570}" ShortID="924373066">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="6"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="disabled" ID="{C8DE46AC-E763-4D67-93D0-1C5823214B2D}"/>
+										<CustomState Name="" ID="{29C5D9BD-20CE-438F-AAF1-A74A7F29A5A0}" ShortID="1063632507">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fazwatch_camera_servo_lp" ID="{07CF3DCE-5904-437C-AC60-099665D148A2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fazwatch_open" ID="{742AC0F2-128C-413A-B38A-74B80D8243B1}" ShortID="101657289">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>51</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>64</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-960</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ui_card_open" ID="{6DF4AAA8-5793-4D20-8FE6-CB783DC11B07}">
+									<Language>SFX</Language>
+									<AudioFile>ui_card_open.WAV</AudioFile>
+									<MediaIDList>
+										<MediaID ID="732282878"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="ui_card_open" ID="{6DF4AAA8-5793-4D20-8FE6-CB783DC11B07}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_ui_fazwatch_messageincoming_freddyfull" ID="{38914B93-BDDC-4663-AF17-33B13BFDB7FB}" ShortID="678731877">
+							<PropertyList>
+								<Property Name="GameAuxSendVolume" Type="Real64">
+									<ValueList>
+										<Value>-19</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>47</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>300</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-25</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{4571CD8A-EC2F-4E33-9966-CD711C095F97}" ShortID="100565807">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="GREGORY_OUTSIDE_FREDDY" ID="{C3F17D56-A915-411E-AEAE-6601B0A179E0}" WorkUnitID="{FEE21431-48A6-499F-BA50-DB6F70C63D87}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{2EEF5C43-8B46-4AAA-941E-F8BE132E3D69}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="UI_Pause" ID="{BD800DD0-1682-4002-B8C4-F7EB2B5A9B92}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_ui_fazwatch_messageincoming_freddy" ID="{7F9C94B8-F349-40E1-82F5-1E6B5A38297D}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>sfx_ui_fazwatch_messageincoming_freddy.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="625938630"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_ui_fazwatch_messageincoming_freddy" ID="{7F9C94B8-F349-40E1-82F5-1E6B5A38297D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fazwatch_close" ID="{E91BCD3E-799D-49E0-AB27-0931E2DEB608}" ShortID="597598109">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>51</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>64</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-960</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="UI_Pause" ID="{BD800DD0-1682-4002-B8C4-F7EB2B5A9B92}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ui_card_open" ID="{86BB1A78-4EF2-44FF-A99F-CE7AD3F660B9}">
+									<Language>SFX</Language>
+									<AudioFile>ui_card_open.WAV</AudioFile>
+									<MediaIDList>
+										<MediaID ID="732282878"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="ui_card_open" ID="{86BB1A78-4EF2-44FF-A99F-CE7AD3F660B9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fazwatch_screen_static_lp" ID="{C40DE935-0E61-423C-8FA7-2663D578C8A8}" ShortID="869291152">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-18</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fazwatch_screen_static_lp" ID="{B64DFF1A-8053-4C15-8C1E-F6928A5DB715}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fazwatch_screen_static_lp.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1000073372"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fazwatch_screen_static_lp" ID="{B64DFF1A-8053-4C15-8C1E-F6928A5DB715}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_fazwatch_camera_switch" ID="{79034444-916C-47CC-9E7F-020A23FB27A8}" ShortID="32927533">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_fazwatch_camera_switch" ID="{1FB7B563-85B6-486D-A5E5-8D717C195F40}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_fazwatch_camera_switch.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="353918648"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_fazwatch_camera_switch" ID="{1FB7B563-85B6-486D-A5E5-8D717C195F40}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="GeneralUI" ID="{D553A8A5-A34A-4B3A-8FDD-34EAEC1232E8}" ShortID="992092682">
+					<Comment>684317201</Comment>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="UI" ID="{E791F69E-C4EE-48BC-A875-2B695B2B8870}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SmallChildrenCrowd_Yay" ID="{B26C5264-98FD-41B6-B234-47B9CF72D53B}" ShortID="260991996">
+							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="UI_Pause" ID="{BD800DD0-1682-4002-B8C4-F7EB2B5A9B92}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CROWD_SMALL_CHIL_EC049202__online-audio-converter_com_" ID="{DDD30575-1823-49D1-BBBD-D49C01C739FC}">
+									<Language>SFX</Language>
+									<AudioFile>CROWD_SMALL_CHIL_EC049202__online-audio-converter_com_.WAV</AudioFile>
+									<MediaIDList>
+										<MediaID ID="394467716"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="CROWD_SMALL_CHIL_EC049202__online-audio-converter_com_" ID="{DDD30575-1823-49D1-BBBD-D49C01C739FC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_ui_stamina_out" ID="{0E8669E7-C470-4AEB-9A93-EF177080C954}" ShortID="946501580">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>730</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Fazwatch_Select" ID="{63EBDBC6-279A-4AE2-8912-5434B73CAA2C}">
+									<Language>SFX</Language>
+									<AudioFile>Fazwatch_Select.WAV</AudioFile>
+									<MediaIDList>
+										<MediaID ID="593970531"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Fazwatch_Select" ID="{63EBDBC6-279A-4AE2-8912-5434B73CAA2C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ui_card_open" ID="{77486C0D-BF11-437E-9F94-F3A6B65FDC18}" ShortID="912496605">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>41</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>1570</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="UI_Pause" ID="{BD800DD0-1682-4002-B8C4-F7EB2B5A9B92}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ui_card_open" ID="{B97D4B2D-A430-4606-BBFA-10DE1007B734}">
+									<Language>SFX</Language>
+									<AudioFile>ui_card_open.WAV</AudioFile>
+									<MediaIDList>
+										<MediaID ID="732282878"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="ui_card_open" ID="{B97D4B2D-A430-4606-BBFA-10DE1007B734}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="A_UI_menu_startGame" ID="{14B4FE9F-25A6-45AE-804B-7F7E45BE4D87}" ShortID="1024178270">
+							<PropertyList>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="REV_Room_Tiled_Large" ID="{023C8D2A-5240-4992-A859-393C02B2D421}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="A_UI_menu_startGame" ID="{9BAB1572-5A45-4D20-A5B9-07A0DF9B4DF0}">
+									<Language>SFX</Language>
+									<AudioFile>A_UI_menu_startGame.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="675648667"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="A_UI_menu_startGame" ID="{9BAB1572-5A45-4D20-A5B9-07A0DF9B4DF0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_ui_lightsoff_oneshot" ID="{92EB3DD1-09C5-4BFD-BBEB-7DA757603D14}" ShortID="919787673">
+							<PropertyList>
+								<Property Name="GameAuxSendVolume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_ui_lightsoff_sweetener#02" ID="{5520F4EB-ABB8-481C-B380-22BA560B7BC0}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_ui_lightsoff_sweetener#02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1059336855"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="cinematics" ID="{35AD109F-EB16-4C57-BC75-CE20D8C80321}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="ending_vip" ID="{A9EC8D5E-B3D2-4026-8A07-7A6B7B807B6B}"/>
+										<CustomState Name="" ID="{132FAD92-2FA7-4393-BE34-B0D99DE6D4E9}" ShortID="243712541"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour1_walkToFirstAid" ID="{0A5B277D-51B6-408B-BDF8-191E34BEDBCA}"/>
+										<CustomState Name="" ID="{8311668E-9B13-4C3B-8EDF-2F1230488493}" ShortID="1026259185"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour4_lostAndFound" ID="{021CDB90-A0C3-4091-ADF6-758A5CC5479B}"/>
+										<CustomState Name="" ID="{46323232-8A51-4745-884F-5AFA0317DD3D}" ShortID="441127308"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour1_getOutOfFreddy" ID="{3EC1CDF0-33B3-411C-9364-89DBC44EB09C}"/>
+										<CustomState Name="" ID="{AACA4DD3-BEE3-446A-B2CB-DC79CD7D3145}" ShortID="1066017567"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ending_vannyDestroy" ID="{5CF4F1A2-5E49-4162-8970-DB2315D004C7}"/>
+										<CustomState Name="" ID="{56FCFB61-D4EF-4DCA-924A-C41D09DCA0AB}" ShortID="238111272"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour1_introVideo" ID="{F4177EDC-FDE6-41A8-8B65-28DA8BFE7073}"/>
+										<CustomState Name="" ID="{07BCFE6B-FF02-4B00-B53F-0E3AE6E069D1}" ShortID="20945872"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="roxyBossBattleIntro_sloMo" ID="{40E854B2-C05B-424A-AB8A-3AD1A2246F6E}"/>
+										<CustomState Name="" ID="{BE2B5E70-EE22-4766-A4D3-9787B3777203}" ShortID="785501685"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="stageLift" ID="{4A5D54EB-12E7-42AA-8BBA-70C7151C2DAC}"/>
+										<CustomState Name="" ID="{E958B344-97C7-42BE-9C08-EED8EF620864}" ShortID="441837324"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour2_slideNoEntry" ID="{E2FCF099-1ED8-42D0-A0DE-72628F1CDE3D}"/>
+										<CustomState Name="" ID="{41E85EB2-3067-4E2B-B572-0DF1AE4BE2D4}" ShortID="882140144"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="overtime_vannyIntro" ID="{32D1844A-673C-4323-A71F-D02CC0F9D2C7}"/>
+										<CustomState Name="" ID="{7629850C-09D8-4CD0-885C-A1D7156CED3D}" ShortID="237153031"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour2_sunmanIntro" ID="{E38D2332-FD2D-4416-BF9E-B86D5674BC3D}"/>
+										<CustomState Name="" ID="{7C71EEAF-858A-486C-8D82-F8A90DB109F0}" ShortID="442805460"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour2_slideEnter" ID="{FCC39C1F-50A3-449D-A980-D04590E8BF77}"/>
+										<CustomState Name="" ID="{142E401B-2DAD-406E-A438-50957E78A919}" ShortID="1059240407"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour1_vanessaWalksBy" ID="{5D1D824D-98BB-44F1-8D58-6173BB361F55}"/>
+										<CustomState Name="" ID="{5B3ADCC3-4419-4965-BD1A-5B3EB68DEE8A}" ShortID="928095158"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ending_loadingDock" ID="{619F7619-CE9E-45BE-90C7-01497F508FEE}"/>
+										<CustomState Name="" ID="{48A63F76-4ED8-4CEC-A560-FB33EE7599CC}" ShortID="816097050"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="dumpBallsMonty" ID="{7B017E59-A472-463A-A4BB-0CCF03218005}"/>
+										<CustomState Name="" ID="{1C29698F-3F22-4B5D-93C0-A9A720005799}" ShortID="642290203"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ending_gregoryInAlley" ID="{F72C765B-2888-4697-8B8B-B07639E07F8F}"/>
+										<CustomState Name="" ID="{80410D1E-BA39-4594-A6E2-FB6DDFBE13CE}" ShortID="119903799"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour5_endoIntro" ID="{686240C9-3E18-4712-AEA9-BCD3F185FD23}"/>
+										<CustomState Name="" ID="{C0B0321C-B5AC-4756-9A1E-0FCAACD118A5}" ShortID="241888898"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour4_transitionToLostAndFound" ID="{DD7F38A1-4F24-477B-A883-8519614CD4B6}"/>
+										<CustomState Name="" ID="{6727AE3D-E434-46BC-B820-3608AAD26A58}" ShortID="491579057"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="overtime_endGame" ID="{538DF698-6C3E-480E-9155-86F353CA4F47}"/>
+										<CustomState Name="" ID="{E693E08A-F131-4F20-B778-DCAFF6278B57}" ShortID="749523612"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour1_firstAidDialogue" ID="{2B7059FB-8507-4890-9F88-DFD2BA54389F}"/>
+										<CustomState Name="" ID="{598A8F52-B5A2-4416-9E26-EC7BC7B70803}" ShortID="784341125"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour1_startInFreddy" ID="{1952BCC2-AC63-489D-8F80-CE5A2E2A0201}"/>
+										<CustomState Name="" ID="{221550BE-349C-42E5-9E01-981D86FB1B0E}" ShortID="330640806"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="burntrapBossBattleIntro" ID="{DF39FD7F-BAF6-48B5-8845-B09D5A05E655}"/>
+										<CustomState Name="" ID="{9B745003-BCF7-41F1-B1A4-D47461995BDD}" ShortID="163507545"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour2_transitionToMoonMan" ID="{9788E4E0-0D74-48BB-91C3-919A603B07AA}"/>
+										<CustomState Name="" ID="{65A4B759-85D5-48BE-809E-C60441D3FA63}" ShortID="1035707336"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ending_vannyRedeem" ID="{F02118E3-DD48-48C4-B9DC-908242FCBAF1}"/>
+										<CustomState Name="" ID="{F20CC82C-3F2B-419C-B59F-67B5DDE820FB}" ShortID="760007533"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour4_mmattack" ID="{4CFD8EE8-F6B5-4910-A302-52306D8FC135}"/>
+										<CustomState Name="" ID="{991BCFDD-713D-4A9A-8BF9-6FDE1BB47A84}" ShortID="1028391024"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour2_sunmanCarryPlayer" ID="{BAB27990-E15E-495E-958E-FF1708FA0F70}"/>
+										<CustomState Name="" ID="{B0CABC3E-1074-4056-9E44-E3E2BD068FC2}" ShortID="936180352"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="dumpBallsMonty_sloMo" ID="{1E5325C9-AE5F-49CA-98C7-DB7951581544}"/>
+										<CustomState Name="" ID="{C3AD0DA1-70D0-47C9-90EE-1DDC065712B8}" ShortID="259400578"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour3_littleMusicManVent" ID="{808AFA6B-7084-4A3F-BC96-895407D2372A}"/>
+										<CustomState Name="" ID="{1037F68D-1D0B-447F-B273-8FF803F942DE}" ShortID="876894402"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ending_burntrap" ID="{FC1155BB-A3D1-4BC3-A19D-BE4A6C601046}"/>
+										<CustomState Name="" ID="{B0D6F632-C770-4B90-8915-CF0C3C2ACC8E}" ShortID="7294681"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="montyBossBattleIntro" ID="{8041F43C-95C6-4C29-A681-31B068CF4270}"/>
+										<CustomState Name="" ID="{B2177705-8173-42E8-8DAF-F6C6022F9321}" ShortID="1037381765"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour3_elevatorTrap" ID="{1009D2FB-402E-4D74-A042-11B8F50A6C0A}"/>
+										<CustomState Name="" ID="{940A149C-8FF3-4200-A1BC-FD4ABD655911}" ShortID="80009486"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour3_chicaKitchen_Static" ID="{C724B0D5-D77C-4D79-B128-43B173EC744E}"/>
+										<CustomState Name="" ID="{6B8ADE41-F5B1-44AE-8993-F55BB4F05B8E}" ShortID="518801446"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="chicaBossBattleIntro" ID="{9425692E-3573-4D7F-B7E7-0DEB452EC86F}"/>
+										<CustomState Name="" ID="{A6FC9DD6-7632-4657-81CE-709B40C810C4}" ShortID="558219205"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour3_chicaKitchen" ID="{05248840-36EB-4E4A-AA51-36C1C4D67B28}"/>
+										<CustomState Name="" ID="{FBF53E82-8972-457F-8EF5-1A36A6F8AE14}" ShortID="896919209"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour1_afterIntroVideo" ID="{49453665-FF4F-4E7D-949F-330C39548180}"/>
+										<CustomState Name="" ID="{91696C1D-2A2C-43B4-A388-73A390405B3E}" ShortID="623427356"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="roxyBossBattleIntro" ID="{EF3510C8-18F5-4F04-A659-0D6C46265C4C}"/>
+										<CustomState Name="" ID="{43E30891-00B7-4A90-92F9-892AE3EEA23B}" ShortID="205713985"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="hour2_kickedOutOfDaycare" ID="{E8C3C4DE-EC3A-4F65-9D23-843B61FEB3FD}"/>
+										<CustomState Name="" ID="{A4D338AB-8F16-484C-96CD-5DF0CEC3BA0F}" ShortID="947120171">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-200"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_ui_lightsoff_sweetener#02" ID="{5520F4EB-ABB8-481C-B380-22BA560B7BC0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_ui_splash_rollover" ID="{1978B7FB-1708-4187-A630-6816BC7AC7B6}" ShortID="568925977">
+							<PropertyList>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-1310</Value>
+									</ValueList>
+								</Property>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_ui_splash_rollover_2" ID="{D8DFDADE-EA02-400A-97A0-C2A17D62DF26}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_ui_splash_rollover_2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="957037971"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{72C17A65-A45B-4FF6-8E8E-6DBA12736B20}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="77.51"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_ui_splash_rollover_2" ID="{D8DFDADE-EA02-400A-97A0-C2A17D62DF26}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_ui_pause_sweetener" ID="{90CCF075-281B-43AA-BDCF-16C7964529B8}" ShortID="426102748">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-400</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_ui_pause_sweetener#01" ID="{350A034B-6835-4C7A-9DA8-4DC0BA546E17}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_ui_pause_sweetener#01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="897660077"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_ui_pause_sweetener#01" ID="{350A034B-6835-4C7A-9DA8-4DC0BA546E17}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_ui_lightson_oneshot" ID="{0201B503-9BA9-49FD-9D6D-2DFCF2AF43AB}" ShortID="265869796">
+							<PropertyList>
+								<Property Name="GameAuxSendVolume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_ui_lightson_sweetener#05" ID="{939D18D9-A8F9-49E4-93F5-3BFD672742CA}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_ui_lightson_sweetener#05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="37871367"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_ui_lightson_sweetener#05" ID="{939D18D9-A8F9-49E4-93F5-3BFD672742CA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_ui_unpause_sweetener" ID="{342DBF39-D053-4979-AFDF-0FD6AE6A3D24}" ShortID="65252969">
+							<PropertyList>
+								<Property Name="GameAuxSendVolume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_ui_unpause_sweetener#01" ID="{926FF401-C515-4373-84F3-892EB469E8A7}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_ui_unpause_sweetener#01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="550887049"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_ui_unpause_sweetener#01" ID="{926FF401-C515-4373-84F3-892EB469E8A7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<ActorMixer Name="Menus" ID="{E7F11B6F-4240-4693-88AC-47690F57F521}" ShortID="780624437">
+							<Comment>1034146116</Comment>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="sfx_saveStation_menu_confirm" ID="{85FB3D53-BB8C-44D1-948E-8D10D989E41A}" ShortID="102048409">
+									<Comment>257428506</Comment>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="UI" ID="{E791F69E-C4EE-48BC-A875-2B695B2B8870}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_saveStation_menu_confirm_01" ID="{165FAABE-8B07-4C27-80AA-D79661C6DBCC}" ShortID="70031351">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_saveStation_menu_confirm_01" ID="{847468A4-6093-4F3A-AFCF-8179EA880829}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_saveStation_menu_confirm_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="321340363"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_saveStation_menu_confirm_01" ID="{847468A4-6093-4F3A-AFCF-8179EA880829}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_saveStation_menu_confirm_03" ID="{E398BA17-67C8-4E9A-B5EB-426E226A063D}" ShortID="560074383">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_saveStation_menu_confirm_03" ID="{517E7A0A-3F43-4E0A-8ACD-BA6C1B84A5B5}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_saveStation_menu_confirm_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="973464498"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_saveStation_menu_confirm_03" ID="{517E7A0A-3F43-4E0A-8ACD-BA6C1B84A5B5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_saveStation_menu_confirm_02" ID="{E7F59EE3-F947-401D-BC3F-4289D09FD431}" ShortID="142317985">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_saveStation_menu_confirm_02" ID="{E63C26A0-F64A-4BA5-948C-F455FE43AB31}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_saveStation_menu_confirm_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="816840301"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_saveStation_menu_confirm_02" ID="{E63C26A0-F64A-4BA5-948C-F455FE43AB31}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<Sound Name="UI_Hover" ID="{755396B6-77D3-4CC7-8916-6980BA8D847C}" ShortID="24264803">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-2400</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{DDB81DAF-8BB6-4FCA-8896-4D96D7BECD6C}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="227"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-11</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_Hover" ID="{44602C77-BBE2-43D7-B0F4-B8B036DB97CB}">
+											<Language>SFX</Language>
+											<AudioFile>UI_Hover.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="619513936"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_Hover" ID="{44602C77-BBE2-43D7-B0F4-B8B036DB97CB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_Select" ID="{128D5270-CB19-497C-8B58-DF62C804898B}" ShortID="571855372">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>43</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-1410</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{FA8EFA65-41B5-409D-BAF5-70B46ED19321}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-76"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_Select" ID="{FFF1FA04-A160-4B84-BBB8-FBACB73C38F7}">
+											<Language>SFX</Language>
+											<AudioFile>UI_Select.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="35677626"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_Select" ID="{FFF1FA04-A160-4B84-BBB8-FBACB73C38F7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<Sound Name="2_POP" ID="{61812C3E-33F6-4C7F-915F-1EDCE5E8F031}" ShortID="754926039">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="2_POP" ID="{3989162C-98E9-4D7E-90E5-BB7241193A25}">
+							<Language>SFX</Language>
+							<AudioFile>2_POP.WAV</AudioFile>
+							<MediaIDList>
+								<MediaID ID="926694895"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="2_POP" ID="{3989162C-98E9-4D7E-90E5-BB7241193A25}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

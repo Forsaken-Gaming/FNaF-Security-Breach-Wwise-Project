@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FEE21431-48A6-499F-BA50-DB6F70C63D87}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{FEE21431-48A6-499F-BA50-DB6F70C63D87}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="GREGORY_OUTSIDE_FREDDY" ID="{C3F17D56-A915-411E-AEAE-6601B0A179E0}">
+					<Comment>3436536763</Comment>
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="2"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="fnaf_occlusion" ID="{E03B7E9B-0F15-4240-8731-789B15AB1CEA}">
+					<Comment>2460182394</Comment>
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="0.1"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="freddy_voicebox_installed" ID="{53B21980-31A1-4737-AA87-8BBC9B30F77B}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="GP_LOCO_SPEED" ID="{7343F605-AF03-4F94-8B2D-02230514C557}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1000"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="500"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="500"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="monty_bucketFilledProgress" ID="{6E1B62FC-DF50-4C8D-828F-C22481385B39}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="servo_velocity" ID="{F94A6C51-05AF-477F-8B38-361EC7BB84E8}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="200"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="200"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="light_active" ID="{E4B27099-DCFC-46EC-8C46-0473B2EF2DC2}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="25"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="40"/>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="bot_actor_chasing" ID="{0DACBE79-9653-4E1B-BE6F-ECC40E2020D8}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="0.5"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.5"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="physics_object_size" ID="{5A2427EA-C375-4991-BDD3-D1A62BF1F6F1}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="intensity" ID="{16ACAA5D-7152-4E3A-B1E6-4849BF430514}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="10"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="PHYSICS_IMPACT_VALUE" ID="{B304ACB0-4E06-49B4-91BC-1D225D2E3EDB}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="BB_Jump_PitchMultiplier" ID="{8495D691-12A9-406D-AA21-4E65DB9EB711}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="BB_Tada_PitchMultiplier" ID="{A4900F74-74EE-4648-8F3B-29DE72FAE0B4}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="BB_Static_VolumeLevel" ID="{A439A270-565C-444E-AADC-B11DEA0E4A7B}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0.5"/>
+						<Property Name="Max" Type="Real64" Value="1.5"/>
+						<Property Name="Min" Type="Real64" Value="0.5"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="fazwatch_active" ID="{FAC7C381-F142-48D1-A9D4-11E6EB17497D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="1"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="fazwatch_cameras_active" ID="{58FDFFBE-7CBA-45EE-9AA6-7631D54E2899}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="1"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

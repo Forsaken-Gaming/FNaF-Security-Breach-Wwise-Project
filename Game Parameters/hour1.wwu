@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F1CC096B-E6F2-476B-8F24-2EF572DDC02B}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="hour1" ID="{F1CC096B-E6F2-476B-8F24-2EF572DDC02B}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="hour1_intro_vanessa_fs_automation" ID="{9AF0D1A5-21F2-4FCD-908F-AA769CFC1091}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="hour1_endocrawl_mute_automation" ID="{F85ECFA2-F278-417E-B771-D33A66A19457}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="0.1"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.1"/>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CDCA928E-7EC7-40C9-AF1A-61BB27A395EF}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="bind_to_parameters" ID="{CDCA928E-7EC7-40C9-AF1A-61BB27A395EF}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="occlusion" ID="{0FAACE76-AF36-41CE-8304-AEF645046474}">
+					<Comment>183903552</Comment>
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="6"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="distance" ID="{08094045-9CC5-4347-ADE2-D6410B5CB443}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="5000"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="azimuth" ID="{568715BD-BF7C-446D-B33A-6802B3A567C9}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="2"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="180"/>
+						<Property Name="Min" Type="Real64" Value="-180"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="emitter_cone" ID="{63EAE762-66AA-4410-8392-06937799D1FF}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="4"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="180"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="elevation" ID="{53345A51-D655-4C97-AC0B-C6D461F898AA}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="3"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="90"/>
+						<Property Name="Min" Type="Real64" Value="-90"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="obstruction" ID="{C98B4DBC-DBAE-4D03-BB7F-1D5D69ACC45A}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="5"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="listener_cone" ID="{6D5A875F-58AC-41EE-AADD-71DD85AD3517}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="7"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="180"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

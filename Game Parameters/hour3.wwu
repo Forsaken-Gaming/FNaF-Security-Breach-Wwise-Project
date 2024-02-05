@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DF2E4F0C-187D-4DB5-8436-DC5B989E8C50}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="hour3" ID="{DF2E4F0C-187D-4DB5-8436-DC5B989E8C50}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="hour3_kitchen_timer" ID="{46882408-F965-49CB-B999-2480BBAADCD9}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="1"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="hour3_pizzaBot_mvmt_speed" ID="{EE68F4C8-DA30-4FBB-AADA-634F7810B16C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="4"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="hour3_office_alarm_automation" ID="{A0860068-7DB9-414F-AC34-EE5B68749D2C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

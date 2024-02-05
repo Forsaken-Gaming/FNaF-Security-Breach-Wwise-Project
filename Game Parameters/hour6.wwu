@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CB0ADC5F-49FE-48A2-92EE-6E8DB06F5D51}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="hour6" ID="{CB0ADC5F-49FE-48A2-92EE-6E8DB06F5D51}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="djmm_beat_level" ID="{D3522CBA-F278-439C-93BA-6E923899123C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="6"/>
+						<Property Name="Max" Type="Real64" Value="6"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="gator_head_jumpscare_cooldown" ID="{985394CC-0837-44FE-B60A-1C0E96EE1B9C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

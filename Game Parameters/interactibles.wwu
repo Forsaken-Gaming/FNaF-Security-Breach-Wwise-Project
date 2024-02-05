@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{38C86FED-38BC-43F3-80F4-E6B3ECA7EAC5}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="interactibles" ID="{38C86FED-38BC-43F3-80F4-E6B3ECA7EAC5}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="freddy_recharge_progress" ID="{1A442235-6EBF-47F8-8464-F669866685F7}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="10"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

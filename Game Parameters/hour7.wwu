@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{03E0EF2A-103D-4196-A4AF-260D8DBF0D67}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="hour7" ID="{03E0EF2A-103D-4196-A4AF-260D8DBF0D67}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="go_kart_speed" ID="{EE551F4F-0168-4538-B20F-552B99C88AF1}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="1.5"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

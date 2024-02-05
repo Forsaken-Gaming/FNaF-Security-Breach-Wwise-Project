@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0616896B-7722-4F1C-8380-186C14ECE8B6}" SchemaVersion="103">
+	<Presets>
+		<WorkUnit Name="Default Work Unit" ID="{0616896B-7722-4F1C-8380-186C14ECE8B6}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="Room_Tiled_Huge" ID="{5C6375E4-F87E-4679-BC92-7EBBF50F5148}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+					<PropertyList>
+						<Property Name="DecayTime" Type="Real32" Value="4.9"/>
+						<Property Name="Density" Type="Real32" Value="70"/>
+						<Property Name="DryLevel" Type="Real32" Value="-96"/>
+						<Property Name="ERLevel" Type="Real32" Value="-23"/>
+						<Property Name="ERPattern" Type="int32" Value="15"/>
+						<Property Name="Filter1Freq" Type="Real32" Value="590"/>
+						<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
+						<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
+						<Property Name="Filter3Gain" Type="Real32" Value="3"/>
+						<Property Name="HFDamping" Type="Real32" Value="4.3"/>
+						<Property Name="PreDelay" Type="Real32" Value="75"/>
+						<Property Name="Quality" Type="int32" Value="14"/>
+						<Property Name="ReverbLevel" Type="Real32" Value="-23"/>
+						<Property Name="RoomShape" Type="Real32" Value="55"/>
+						<Property Name="RoomSize" Type="Real32" Value="49"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Presets>
+</WwiseDocument>

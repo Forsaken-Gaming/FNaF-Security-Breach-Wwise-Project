@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1EF64A69-7099-438A-BD0D-A7308E0A8AF3}" SchemaVersion="103">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{1EF64A69-7099-438A-BD0D-A7308E0A8AF3}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="animatronic_attack" ID="{2C0A1ABC-D91C-4BDC-8B2C-D2110D3CC8C3}">
+					<ChildrenList>
+						<State Name="None" ID="{484DE756-0247-4536-BF8B-AAF5E48C2D55}"/>
+						<State Name="attack" ID="{39AF2023-A12A-494F-8A93-E0E439D26B2C}"/>
+						<State Name="seeking" ID="{B673A572-7F57-4995-B225-AA8B95DAFD27}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{484DE756-0247-4536-BF8B-AAF5E48C2D55}"/>
+							<EndState Name="attack" ID="{39AF2023-A12A-494F-8A93-E0E439D26B2C}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="attack" ID="{39AF2023-A12A-494F-8A93-E0E439D26B2C}"/>
+							<EndState Name="None" ID="{484DE756-0247-4536-BF8B-AAF5E48C2D55}"/>
+							<Time>3</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="seeking" ID="{B673A572-7F57-4995-B225-AA8B95DAFD27}"/>
+							<EndState Name="None" ID="{484DE756-0247-4536-BF8B-AAF5E48C2D55}"/>
+							<Time>9</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="attack" ID="{39AF2023-A12A-494F-8A93-E0E439D26B2C}"/>
+							<EndState Name="seeking" ID="{B673A572-7F57-4995-B225-AA8B95DAFD27}"/>
+							<Time>3</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="seeking" ID="{B673A572-7F57-4995-B225-AA8B95DAFD27}"/>
+							<EndState Name="attack" ID="{39AF2023-A12A-494F-8A93-E0E439D26B2C}"/>
+							<Time>3</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="ambience_state" ID="{D3405E2D-3A25-41B1-8834-03EBC957CBA4}">
+					<ChildrenList>
+						<State Name="None" ID="{62D5D83E-BB53-414E-8DA5-D5754F0D00B2}"/>
+						<State Name="gatorgolf_backroom" ID="{4FDDA1FA-5A1C-4233-B88B-7E8A965ADBEA}"/>
+						<State Name="pas_dome" ID="{DA734218-CE60-40BE-9596-9513C2FC5FC4}"/>
+						<State Name="montyboss" ID="{3195C75A-85A4-4073-B0A8-584939BDF8B8}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="hiding" ID="{9104E8CD-8054-4530-9377-56FC6AEBDFAA}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.2"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{2C1F0362-3197-4E1F-BB7A-0E1470A11A2A}"/>
+						<State Name="hiding_active" ID="{2BAC5198-7122-4604-9D24-8F47D2CC9DF7}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Mono_Mode" ID="{F9A38235-4185-4D1A-861E-FBF7AD1DDAE1}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{FDE1847D-9B01-470F-92CB-56F30F2DBDCA}"/>
+						<State Name="active" ID="{CA418D9B-4A0C-43D4-8B44-5A37EA4E4398}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="BB_SOUNDTRACK" ID="{1D0FF1D6-A201-48BB-99E0-B0B0E5EB9C72}">
+					<ChildrenList>
+						<State Name="None" ID="{DD599803-A19C-4546-AA28-0D8D851D4E6C}"/>
+						<State Name="Glitched" ID="{6682DB85-EF16-4238-8FB5-A57831500D14}"/>
+						<State Name="Normal" ID="{104EE9EA-A9AC-42E3-8039-F094862B74C2}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="fazwatch_camera_state" ID="{1703F688-2441-46A9-B448-BEF584C4B9EC}">
+					<ChildrenList>
+						<State Name="None" ID="{0A03D5C7-A3EC-46EB-928A-BA6FD2725809}"/>
+						<State Name="active" ID="{A0BDAB07-E000-462E-99B8-220007DBBCD2}"/>
+						<State Name="disabled" ID="{C8DE46AC-E763-4D67-93D0-1C5823214B2D}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="fazwatch_state" ID="{3BED5B28-D145-42A6-8D33-D4203E971224}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.7"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{3F6E1FC6-629A-41D1-B8C2-F32FDD04C3EF}"/>
+						<State Name="active" ID="{6DFC4B3A-90D7-4145-B21F-0DDB3D126D15}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="inside_freddy" ID="{30301CD4-4932-4CE4-B54A-378000B0BF86}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.75"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{6345A1E6-D870-4A02-9314-93937BDE1EFB}"/>
+						<State Name="outside" ID="{872D000E-F6CE-4FA0-B8E1-4D25BE3BEC8A}"/>
+						<State Name="inside" ID="{46139A5B-603F-4EF0-8782-439D97DD257C}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="inside_recharge_station" ID="{88BE6A5F-0248-497B-B41F-EEC9B01245AB}">
+					<ChildrenList>
+						<State Name="None" ID="{08E4341E-EF0C-4E00-82BC-CE8F283D86CB}"/>
+						<State Name="inside" ID="{B5B73D6A-9BB3-4467-A1A6-89E30660078A}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="jumpscare_state" ID="{AC01D7FC-38C1-43CD-AC1F-F0375BE8B7D2}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.5"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{D9EB6F36-593E-497F-8425-3465E514B022}"/>
+						<State Name="jumpscare_active" ID="{46A46D19-7CC0-434E-9DE4-A14E957FD781}"/>
+						<State Name="game_over" ID="{7BF042E8-60B0-4F78-885F-A192611BF077}"/>
+						<State Name="nonlethal_jumpscare_active" ID="{CC555EE1-3864-4146-8900-88F7BA12BB25}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="game_over" ID="{7BF042E8-60B0-4F78-885F-A192611BF077}"/>
+							<EndState Name="None" ID="{D9EB6F36-593E-497F-8425-3465E514B022}"/>
+							<Time>3</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="jumpscare_active" ID="{46A46D19-7CC0-434E-9DE4-A14E957FD781}"/>
+							<EndState Name="game_over" ID="{7BF042E8-60B0-4F78-885F-A192611BF077}"/>
+							<Time>1.2</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="jumpscare_active" ID="{46A46D19-7CC0-434E-9DE4-A14E957FD781}"/>
+							<EndState Name="None" ID="{D9EB6F36-593E-497F-8425-3465E514B022}"/>
+							<Time>0.2</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="lights_state" ID="{527161CB-EF7E-4C8D-82CD-46C1B566FF66}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.75"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{32F45BF0-FA90-4DD6-A131-B9290F0A25D3}"/>
+						<State Name="lights_off" ID="{815A3FDA-05CA-4814-9A50-6D7045413656}"/>
+						<State Name="lights_on" ID="{52448024-765D-4254-9298-F81EF3567435}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="LOCATION_MUSIC" ID="{6C036B54-9768-41B6-A9A2-55A2937C5353}">
+					<ChildrenList>
+						<State Name="None" ID="{64C15249-0BDF-4A4C-9319-1C116C56C503}"/>
+						<State Name="MUS_FazerblastJam" ID="{C4F2D642-1D91-4F52-AC56-B2F97AE5420D}"/>
+						<State Name="MUS_FreddysTheme_Organ" ID="{366ED25C-E296-461C-BD9E-74953A148401}"/>
+						<State Name="MUS_SpaceLobby" ID="{418CDB2B-8836-4548-AE89-69EEBB48DF1B}"/>
+						<State Name="MUS_FreddysTheme_80sSynth" ID="{9A5D37DD-59F5-401F-A436-37C97A2B6B08}"/>
+						<State Name="MUS_GolfSwamp" ID="{D8DF2AE7-64E3-47F9-AE75-317A26E77DA6}"/>
+						<State Name="MUS_None" ID="{4C34C539-643B-4B20-9719-C401F01A89E4}"/>
+						<State Name="MUS_RoxyRaceway" ID="{3B2EAF62-B696-43A8-B230-88C96D7FB78B}"/>
+						<State Name="MUS_ElChips" ID="{52674E6D-8E86-4067-A2CB-7FDB6E80E8BF}"/>
+						<State Name="MUS_FreddysTheme_Muzak" ID="{ADC7C733-8CB6-4715-8069-D9A51EDE5ADF}"/>
+						<State Name="MUS_Arcade" ID="{D28FE853-012D-40BE-A648-5DE0B853EF6C}"/>
+						<State Name="MUS_Daycare" ID="{855AB3DD-D086-44DF-B6DB-EE73D6AE3498}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="paused_state" ID="{92DF246F-D667-4F3E-8EE8-80D3B73B8379}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.2"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{C9F03262-D38D-4843-BFE5-5FA424F6C8C4}"/>
+						<State Name="paused" ID="{155FD3EC-D1AC-472F-BC7C-3DA61E215D09}"/>
+						<State Name="unpaused" ID="{81209C33-0546-4F8A-86FF-7DD7B6969246}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="staffbot_alert" ID="{2073C8A5-1782-4FEA-AD1C-082AC30676D6}">
+					<ChildrenList>
+						<State Name="None" ID="{8E543254-7FEA-458B-9403-E3DF830F9466}"/>
+						<State Name="alerted" ID="{12BF8C01-6549-4263-BF6B-EA9D42A0264A}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

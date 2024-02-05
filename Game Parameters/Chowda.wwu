@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1B7D80E0-21CB-4128-B7D2-06DA78260EA9}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="Chowda" ID="{1B7D80E0-21CB-4128-B7D2-06DA78260EA9}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="monty_submerged" ID="{C2B178A5-790D-4F58-9A2B-E0FDB43F2F19}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="mimic_chase_progress" ID="{EC6AA1E1-59FE-4467-B767-249ED9437FDC}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="13"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="15"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="rabbit_static_proximity" ID="{58393383-C249-4B65-95D4-29767B943483}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="8"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="walkietalkie_goal_angle" ID="{BB39081B-050A-476F-86DC-D4FE6D81CB4B}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="360"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="walkietalkie_goal_distance" ID="{ABB5D5F7-0A1C-42AA-ADD6-7C17B055ABDE}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="8"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="monty_chasing" ID="{709F4478-F1C7-4520-8E48-97B90C77B31A}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="10"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="5"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="spline_follow_speed" ID="{20AA614F-CB85-44CA-A0B1-6E2613705E7F}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="Min" Type="Real64" Value="-1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="rabbit_agitated_time" ID="{D36B6FD6-38CD-46B1-A9DC-7CC633C6E78A}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="3"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="mimic_jumpscare_threshold" ID="{BA0F4743-7DCE-4CB5-837B-5C6764BEB38F}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="2"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="0.9"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="tunnel_lpf" ID="{7E75FB62-768F-4905-9BCE-2CA2AD5E3CB2}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="3.3"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="3.3"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="gatorgolf_power_on" ID="{ABFA7F2B-49FF-4481-9593-BA6CC0C18D4C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="New_Game_Parameter" ID="{6F331A2E-F82D-4598-8476-397E38A51671}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

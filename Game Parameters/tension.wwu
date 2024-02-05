@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{05AF3F97-C276-45A7-953B-B71665CC3721}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="tension" ID="{05AF3F97-C276-45A7-953B-B71665CC3721}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="AI_PROXIMITY" ID="{83C4449A-21EB-4583-8E31-BFFA996834C5}">
+					<Comment>3820641237</Comment>
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="8"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="vanny_threat_level" ID="{2036BB6D-F05D-4676-90F2-9A45237CEBCD}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="0.1"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="lmm_music_automation" ID="{F99B6420-B562-46A2-B878-5AE7D12E267D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="vanny_chasing" ID="{C5BFFB1C-BB2A-465C-BA81-490D187E75DF}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="3"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="3"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

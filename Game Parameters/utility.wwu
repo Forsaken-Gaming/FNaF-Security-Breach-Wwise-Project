@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FDB76B53-7643-4F93-87DF-D1632CCEB31E}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="utility" ID="{FDB76B53-7643-4F93-87DF-D1632CCEB31E}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="occlusion_counter" ID="{11ACC547-9179-4BCD-824F-CB106DFF995A}">
+					<Comment>313769113</Comment>
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="0.1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="uservolume_master" ID="{23B83D6C-338D-4E3A-A015-6A3F8B533BEE}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="uservolume_dialogue" ID="{5614C6EA-EA15-498E-A65B-5E0BEDF4FE2B}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="uservolume_sfx" ID="{3A623DDD-2850-4ED2-926E-B5FF2CA18109}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="uservolume_jumpscare" ID="{701A379D-182D-4041-A84D-B745D12E1E9A}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="uservolume_music" ID="{153B8990-9F94-4020-AC10-D372F62FD766}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

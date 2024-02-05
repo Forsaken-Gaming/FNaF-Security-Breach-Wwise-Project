@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{31B90532-A8BE-4A3D-B54C-1742E0ACCA63}" SchemaVersion="103">
+	<InteractiveMusic>
+		<WorkUnit Name="_Chowda" ID="{31B90532-A8BE-4A3D-B54C-1742E0ACCA63}" PersistMode="Standalone">
+			<Comment>35620112</Comment>
+			<ChildrenList>
+				<MusicPlaylistContainer Name="mus_mimicChase" ID="{2F36C09A-141B-4611-8004-3F8532EAE4E6}" ShortID="60581724">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="CinematicMusic" ID="{E3A8798D-1F99-4BBF-B925-CE712266B921}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="mus_mimicChase_loop" ID="{E74F6E5B-93D2-466A-95AA-30BC147B6302}" ShortID="647025906">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="80000"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="int1" ID="{3692DF50-036A-4B0D-B604-6FA10BC8F32D}" ShortID="752919907">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="mus_mimicChase_int1_lp" ID="{53210EA6-B54D-4DBC-A172-F4C043A6D899}">
+											<Language>SFX</Language>
+											<AudioFile>mus_mimicChase_int1_lp.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="768473023"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{21AF545B-5A2E-47A5-AE1E-D33CD97222CB}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{0899F73E-3A53-4F8B-94AB-CE36C6F78A6C}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="mus_mimicChase_int1_lp" ID="{8C8B6E14-0D76-4144-B96E-229966EA854D}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="80000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="mus_mimicChase_int1_lp" ID="{53210EA6-B54D-4DBC-A172-F4C043A6D899}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="int2" ID="{6826B02C-66B3-4C0F-8FE4-D9A06CA9E9A2}" ShortID="1073420749">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{6062FA1F-101C-4866-8756-7C274FB9C16B}" ShortID="873584008">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="mimic_chase_progress" ID="{EC6AA1E1-59FE-4467-B767-249ED9437FDC}" WorkUnitID="{1B7D80E0-21CB-4128-B7D2-06DA78260EA9}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{E2F06C4F-B732-4EE6-AEBA-C8FA5E52C970}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>19.59</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>40</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="mus_mimicChase_int2_lp" ID="{F24F364C-38D3-4366-9EB2-34BC5C6B47FE}">
+											<Language>SFX</Language>
+											<AudioFile>mus_mimicChase_int2_lp.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="522209971"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{8A689A5C-22DB-4194-A558-337CA2D5A262}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{2EE01D4C-CCC0-48EB-8262-246989ABF55B}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="mus_mimicChase_int2_lp" ID="{6B4FF4C2-BDF8-475B-8253-45FE26D46F64}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="80000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="mus_mimicChase_int2_lp" ID="{F24F364C-38D3-4366-9EB2-34BC5C6B47FE}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="int3" ID="{895DA1E8-704F-441A-BD72-6D33992004AF}" ShortID="410412377">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{81988EEA-32CE-4B67-B741-DBE493127AC4}" ShortID="170419304">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="mimic_chase_progress" ID="{EC6AA1E1-59FE-4467-B767-249ED9437FDC}" WorkUnitID="{1B7D80E0-21CB-4128-B7D2-06DA78260EA9}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{5D9E440B-5A33-4E74-AD1D-5FFC703A9618}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>45</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>70</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="mus_mimicChase_int3_lp" ID="{3583608C-2ABF-4202-A40D-461737FB1716}">
+											<Language>SFX</Language>
+											<AudioFile>mus_mimicChase_int3_lp.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="946122174"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{3194301F-885C-47FF-B874-432713758FF8}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{378E07E9-E1DC-4236-A328-FAC86F72AD27}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="mus_mimicChase_int3_lp" ID="{9D0E3254-C84F-4526-A2E9-046E4AE98CBB}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="80000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="mus_mimicChase_int3_lp" ID="{3583608C-2ABF-4202-A40D-461737FB1716}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="int4" ID="{1098A2D1-CEE3-4268-8B02-3A1F31138155}" ShortID="609933001">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{3E5BCC45-6CA2-497C-AAAD-15BB3B72CB1A}" ShortID="618694518">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="mimic_chase_progress" ID="{EC6AA1E1-59FE-4467-B767-249ED9437FDC}" WorkUnitID="{1B7D80E0-21CB-4128-B7D2-06DA78260EA9}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{83465DD1-DCEB-475F-86ED-0854D1A7EF85}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>60</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>85</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="mus_mimicChase_int4_lp" ID="{D148DB3C-1F63-4814-B69E-7598942F6215}">
+											<Language>SFX</Language>
+											<AudioFile>mus_mimicChase_int4_lp.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="93834728"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{5A62AFE5-1B64-493F-A75A-EB70CEA4EE1D}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{0B6BD49E-5432-44F8-9B30-265687490F35}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="mus_mimicChase_int4_lp" ID="{0BDBB05B-4CF6-47A7-8758-B4ABD961FB1A}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="80000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="mus_mimicChase_int4_lp" ID="{D148DB3C-1F63-4814-B69E-7598942F6215}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{041B2C70-36F4-419D-A8BF-F1C08EA7B079}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{206D28BF-D023-4AA9-A9B7-B0AE7E521043}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="80000"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="mus_mimicChase_intro_8s" ID="{2EEAADEE-8C92-47EF-96BA-9385FCEF5D4A}" ShortID="201988631">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="12000.3628117914"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="mus_mimicChase_intro_8s" ID="{E90262A1-D714-400B-83DC-1027D099B095}" ShortID="363865514">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DBD3C688-5201-452C-9DD9-ED9DD2C6384D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="mus_mimicChase_intro_8s" ID="{174F950D-C229-48EA-979F-A94BBC78BE05}">
+											<Language>SFX</Language>
+											<AudioFile>mus_mimicChase_intro_8s.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="894431400"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{58AA6590-7980-432E-A9F1-26B2DACAE38E}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{E7BB2675-8ED8-4835-B380-047BE574BE5D}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="mus_mimicChase_intro_8s" ID="{5F3E3579-3A4A-4660-A2C6-69E8E2FBCF27}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="12000.3628117914"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="mus_mimicChase_intro_8s" ID="{174F950D-C229-48EA-979F-A94BBC78BE05}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{33FF1C30-9C2A-427B-AB9C-084461E5B6C2}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{43C659FC-BC74-4D7A-A667-DB1F28F5DEDF}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="8000"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{9BC689BB-059D-4D61-B117-EC89BC7CDF0A}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{97DF5897-6F53-4A01-9E25-8B4AC78882F8}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<ObjectLists/>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{3BADC8E1-4DC6-4888-B297-C901DD068032}" ShortID="206123052">
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{13D3BBE7-55D1-49BA-AF26-EABC42A9DEFA}" ShortID="646833107">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="mus_mimicChase_intro_8s" ID="{2EEAADEE-8C92-47EF-96BA-9385FCEF5D4A}"/>
+								</MusicPlaylistItem>
+								<MusicPlaylistItem Name="" ID="{ED321543-383A-4C70-9D01-4B688669F167}" ShortID="87775964">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="mus_mimicChase_loop" ID="{E74F6E5B-93D2-466A-95AA-30BC147B6302}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{AF2A1A6D-4E90-4FBD-85C0-7C9DF8FCEC99}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="hour4" ID="{AF2A1A6D-4E90-4FBD-85C0-7C9DF8FCEC99}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="hour4_elevatorDescend_automation" ID="{4C5E8E6B-33BA-458B-BA5A-5D156BCE9BA1}">
+					<PropertyList>
+						<Property Name="FilterTimeUp" Type="Real64" Value="15"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

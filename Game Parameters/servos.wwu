@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{594E96D8-9DA4-4B36-AEDF-1A0FDD3B2AEC}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="servos" ID="{594E96D8-9DA4-4B36-AEDF-1A0FDD3B2AEC}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="camera_servo_velocity" ID="{C333996C-F09E-40C8-81BA-66189D312CB0}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="0.5"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.2"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="servo_length" ID="{BF7435B8-3030-4182-AB98-68AF2A78A875}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="3"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

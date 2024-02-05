@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8314662B-0DBE-45C3-816B-60184D5C305A}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="ducking" ID="{8314662B-0DBE-45C3-816B-60184D5C305A}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="dialogue_meter" ID="{4D2AF4FD-9F46-4458-85E1-F4A8A6EA037C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-48"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="montyFenceBreak_meter" ID="{9379F91B-B352-4317-A2D8-36FFAC5A987C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-48"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="chica_ability_meter" ID="{CC7D23D8-AB4F-432E-BD84-BA187767CD17}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-48"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="driverbot_jumpscare_meter" ID="{603AB1CE-6448-4AAB-BD05-ADDB678FB0A8}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-48"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="locationmusic_meter" ID="{3310CDDE-8E37-4180-9C9B-5B1A64E2C2BF}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-48"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

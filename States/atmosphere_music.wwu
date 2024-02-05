@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{34D225B9-ECF2-45F8-91AC-2C1599454114}" SchemaVersion="103">
+	<States>
+		<WorkUnit Name="atmosphere_music" ID="{34D225B9-ECF2-45F8-91AC-2C1599454114}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="elevator_music" ID="{47DFF2EC-8A9E-4ABF-8B1F-C226F682C509}">
+					<ChildrenList>
+						<State Name="None" ID="{D9C7817C-AECD-4837-BB06-FD65EE28FA3A}"/>
+						<State Name="active" ID="{546298AD-2BA4-43ED-B973-76CDB5978C00}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="hour1_lobbyMagnet" ID="{A3E30906-4FDE-4B00-8B36-5C03205ABB30}">
+					<ChildrenList>
+						<State Name="None" ID="{31E10921-BAA4-4BC2-BDEB-27DC7E21C234}"/>
+						<State Name="active" ID="{904A7ED5-E8F8-4EAD-A498-EAFBD260449C}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="hour3_atriumExplore" ID="{8E5BFE8A-D3C2-436F-8F5B-037DFE36C84B}">
+					<ChildrenList>
+						<State Name="None" ID="{E4E188CD-603C-4F3F-96F0-60E885D18E0D}"/>
+						<State Name="active" ID="{1A3C06CE-AE80-49AC-BF41-9C412B39BBC1}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="hour3_chicaBathroom" ID="{A76E502F-8BF2-49FE-8B82-6C70F6498EA1}">
+					<ChildrenList>
+						<State Name="None" ID="{13D25725-057A-4E99-B1E8-7E969DEF5221}"/>
+						<State Name="active" ID="{01A65F3F-64FE-45B1-859B-E37F7D2028EF}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="hour3_chicaFizzyFaz" ID="{ADE13A89-F948-427F-98D5-318B51B10144}">
+					<ChildrenList>
+						<State Name="None" ID="{0E2EAF49-4861-4144-A0FC-FF58ACDF2BE6}"/>
+						<State Name="active" ID="{103C2E70-57E1-40B1-A5BD-BA153B8E5E75}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="hour3_prizeCounterPostOG" ID="{DE63B356-5CEA-4C8B-974B-8275FC0AD068}">
+					<ChildrenList>
+						<State Name="None" ID="{15843160-95A2-41B7-92B1-6E1657615364}"/>
+						<State Name="roxyEncounter" ID="{8F29E4F8-0A99-4D21-85B2-1ADEB346BBCC}"/>
+						<State Name="active" ID="{88F3669C-4589-48FB-93F6-48D3814286C4}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="hour4_moonmanchase" ID="{FC5EC2A3-54B9-4BB0-85B4-1899F0FFFBE7}">
+					<ChildrenList>
+						<State Name="None" ID="{EAF52806-9D8D-42BF-B2E0-111D1F4C56AF}"/>
+						<State Name="active" ID="{37ECB9CB-D364-48AA-BBC9-B972CDB4DE46}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
